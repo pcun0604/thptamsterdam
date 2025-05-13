@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     // Tải phần header từ file header.html
-    fetch('page/header.html')
+    fetch('header.html')
         .then(response => response.text())  // Chuyển phản hồi thành văn bản
         .then(data => {
             // Chèn phần header vào mỗi trang HTML ở vị trí mong muốn
