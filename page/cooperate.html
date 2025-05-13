@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hợp tác</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
+    <style>
+            
+        .bar-list a.active{
+            background-color: #3e769a;
+            color: #fff;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+
+        <div id="main">
+            <div id="header-container"></div>
+
+            <div class="row margin-t250 content-section">
+                <ul class="col col-20pt bar-list">
+                    <a style="display: none;" class="bar-list-link" data-page="page1" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page1','Hợp tác' )">Hợp tác</a>
+                    <li><a class="bar-list-link" data-page="page2" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page2','Giới thiệu chung' )">Giới thiệu chung</a></li>
+                    <li><a class="bar-list-link" data-page="page3"  href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page3', 'Đào tạo liên kết')" >Đào tạo liên kết</a></li>
+                    <li><a class="bar-list-link" data-page="page4"  href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page4', 'Dự án quốc tế')">Dự án quốc tế</a></li>
+                    <li><a class="bar-list-link" data-page="page5"  href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page5', 'Đối tác')">Đối tác</a></li>
+
+                    <a style="display: none;" class="bar-list-link" data-page="page6"  href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page6', 'Giới thiệu chung về hợp tác quốc tế của trường THPT chuyên Hà Nội - Amsterdam')">Giới thiệu chung về hợp tác quốc tế của trường THPT chuyên Hà Nội - Amsterdam</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page7" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page7', 'Chương trình gặp gỡ giữa tập đoàn FPT và Trường THPT Chuyên Hà Nội - Amsterdam: Cơ hội hợp tác giữa nhằm thúc đẩy sự phát triển về giáo dục và công nghệ')">Chương trình gặp gỡ giữa tập đoàn FPT và Trường THPT Chuyên Hà Nội - Amsterdam: Cơ hội hợp tác giữa nhằm thúc đẩy sự phát triển về giáo dục và công nghệ</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page8" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page8', 'Thủ tướng Hà Lan giao lưu với học sinh Trường THPT chuyên Hà Nội - Amsterdam')">Thủ tướng Hà Lan giao lưu với học sinh Trường THPT chuyên Hà Nội - Amsterdam</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page9" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page9', 'Trung tâm Vũ trụ Việt Nam hợp tác với Trường THPT Chuyên Hà Nội – Amsterdam về đào tạo và phổ biến kiến thức lĩnh vực khoa học vũ trụ')">Trung tâm Vũ trụ Việt Nam hợp tác với Trường THPT Chuyên Hà Nội – Amsterdam về đào tạo và phổ biến kiến thức lĩnh vực khoa học vũ trụ</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page10" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page10', 'THƯ MỜI THAM DỰ IDP VIỆT NAM - NGÀY TRẢI NGHIỆM DU HỌC QUỐC TẾ TẠI HÀ NỘI, 3/2024')">THƯ MỜI THAM DỰ "IDP VIỆT NAM - NGÀY TRẢI NGHIỆM DU HỌC QUỐC TẾ TẠI HÀ NỘI, 3/2024"</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page11" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page11', 'Chương trình Học bổng Hiệu trưởng đề cử cho học sinh ứng tuyển vào Đại học Hồng Công (Hong Kong University) 2024')">Chương trình Học bổng Hiệu trưởng đề cử cho học sinh ứng tuyển vào Đại học Hồng Công (Hong Kong University) 2024</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page12" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page12', 'Đại sứ quán Singapore đăng ký Học bổng ASEAN năm 2024 cho thí sinh Việt Nam')">Đại sứ quán Singapore đăng ký Học bổng ASEAN năm 2024 cho thí sinh Việt Nam</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page13" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page13', 'Bắt đầu nhận ứng tuyển học bổng Dr Goh Keng Swee (Singapore) năm 2023')">Bắt đầu nhận ứng tuyển học bổng Dr Goh Keng Swee (Singapore) năm 2023</a>
+                </ul>   
+
+                <div class="col col-80pt">
+                    <div id="page1" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page6" ><img  src="https://vnsc.org.vn/wp-content/uploads/2019/06/kyket2.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page6">Giới thiệu chung về hợp tác quốc tế của trường THPT chuyên Hà Nội - Amsterdam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                08/04/2025
+                            </p>
+                            <p class="desc-introduce">Từ khi thành lập, trường Hà Nội Amsterdam đã có nhiều hoạt động giao lưu và hợp tác quốc tế với các trường phổ thông, đại học và nhiều tổ chức trên thế giới.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page7" ><img  src="/assets/img/page7-cooperate/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page7">Chương trình gặp gỡ giữa tập đoàn FPT và Trường THPT Chuyên Hà Nội - Amsterdam: Cơ hội hợp tác giữa nhằm thúc đẩy sự phát triển về giáo dục và công nghệ</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                24/11/2023
+                            </p>
+                            <p class="desc-introduce">Ngày 23/11 vừa qua đã diễn ra buổi gặp gỡ giữa thầy và trò trường THPT Hà Nội - Amsterdam với một trong những trường Đại học hàng đầu Việt Nam trong giai đoạn hiện nay - tập đoàn FPT. Cuộc trò chuyện đã đem lại những cơ hội hợp tác mang tính chiến lược về phát triển về con người và công nghệ và những kinh nghiệm rất đáng học hỏi trong lĩnh vực Giáo dục. Nhờ đó, buổi gặp mặt đã thu hút sự có mặt của gần 200 Amsers. </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page8" ><img  src="https://images2.thanhnien.vn/528068263637045248/2023/11/2/c69a4626-16989348466721141041145.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page8">Thủ tướng Hà Lan giao lưu với học sinh Trường THPT chuyên Hà Nội - Amsterdam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/11/2023
+                            </p>
+                            <p class="desc-introduce">Chiều 2.11, Thủ tướng Hà Lan Mark Rutte đã có cuộc gặp gỡ và giao lưu với các học sinh Trường THPT chuyên Hà Nội - Amsterdam.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page9" ><img  src="/assets/img/page8-cooperate/img-1.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page9">Trung tâm Vũ trụ Việt Nam hợp tác với Trường THPT Chuyên Hà Nội – Amsterdam về đào tạo và phổ biến kiến thức lĩnh vực khoa học vũ trụ</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                08/06/2019
+                            </p>
+                            <p class="desc-introduce">Ngày 6/6/2019 tại Hà Nội, Trung tâm Vũ trụ Việt Nam (Viện Hàn lâm Khoa học và Công nghệ Việt Nam) đã ký thỏa thuận hợp tác nhằm tăng cường và phát triển các hoạt động về đào tạo và phổ biến kiến thức trong lĩnh vực khoa học vũ trụ, thiên văn học, vật lí thiên văn và ứng dụng công nghệ vũ trụ với trường THPT Chuyên Hà Nội – Amsterdam.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page10" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/du_hoc_idp.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page10">THƯ MỜI THAM DỰ "IDP VIỆT NAM - NGÀY TRẢI NGHIỆM DU HỌC QUỐC TẾ TẠI HÀ NỘI, 3/2024"</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                20/02/2024
+                            </p>
+                            <p class="desc-introduce">Nhà trường cùng tổ chức Du học IDP kính mời Quý Cha Mẹ học sinh và các em học sinh quan tâm du học với học bổng từ 30% đến 100% tham gia sự kiện Ngày hội Du học Quốc tế 03/2024</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page11" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/hku.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page11">Chương trình Học bổng Hiệu trưởng đề cử cho học sinh ứng tuyển vào Đại học Hồng Công (Hong Kong University) 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                07/12/2023
+                            </p>
+                            <p class="desc-introduce">Tổng Lãnh sứ quán Việt Nam tại Hồng Công (HK) vừa có Công điện gửi 07 Trường về việc cấp 20 học bổng cho học sinh Việt Nam. Trường THPT Chuyên Hà Nội - Amsterdam nằm trong 07 trường được đề cử cấp học bổng cho học sinh năm 2024.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page12" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/asean_20234.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page12">Đại sứ quán Singapore đăng ký Học bổng ASEAN năm 2024 cho thí sinh Việt Nam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                17/02/2023
+                            </p>
+                            <p class="desc-introduce">Đại sứ quán Singapore tại Hà Nội thông báo về học bổng ASEAN (Association of Southeast Asian Nations) năm 2024 - chương trình học bổng được quản lý bởi Bộ Giáo dục Cộng hòa Singapore.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page13" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/hoc_bong_khw.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page13">Bắt đầu nhận ứng tuyển học bổng Dr Goh Keng Swee (Singapore) năm 2023</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                21/12/2022
+                            </p>
+                            <p class="desc-introduce">Ngày 15-12, Đại sứ quán Singapore tại Việt Nam cho biết, học bổng Dr Goh Keng Swee năm học 2023 đã bắt đầu nhận ứng tuyển.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page2" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page6" ><img  src="https://vnsc.org.vn/wp-content/uploads/2019/06/kyket2.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page6">Giới thiệu chung về hợp tác quốc tế của trường THPT chuyên Hà Nội - Amsterdam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                08/04/2025
+                            </p>
+                            <p class="desc-introduce">Từ khi thành lập, trường Hà Nội Amsterdam đã có nhiều hoạt động giao lưu và hợp tác quốc tế với các trường phổ thông, đại học và nhiều tổ chức trên thế giới.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="page3" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page10" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/du_hoc_idp.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page10">THƯ MỜI THAM DỰ "IDP VIỆT NAM - NGÀY TRẢI NGHIỆM DU HỌC QUỐC TẾ TẠI HÀ NỘI, 3/2024"</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                20/02/2024
+                            </p>
+                            <p class="desc-introduce">Nhà trường cùng tổ chức Du học IDP kính mời Quý Cha Mẹ học sinh và các em học sinh quan tâm du học với học bổng từ 30% đến 100% tham gia sự kiện Ngày hội Du học Quốc tế 03/2024</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page11" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/hku.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page11">Chương trình Học bổng Hiệu trưởng đề cử cho học sinh ứng tuyển vào Đại học Hồng Công (Hong Kong University) 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                07/12/2023
+                            </p>
+                            <p class="desc-introduce">Tổng Lãnh sứ quán Việt Nam tại Hồng Công (HK) vừa có Công điện gửi 07 Trường về việc cấp 20 học bổng cho học sinh Việt Nam. Trường THPT Chuyên Hà Nội - Amsterdam nằm trong 07 trường được đề cử cấp học bổng cho học sinh năm 2024.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page4" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page8" ><img  src="https://images2.thanhnien.vn/528068263637045248/2023/11/2/c69a4626-16989348466721141041145.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page8">Thủ tướng Hà Lan giao lưu với học sinh Trường THPT chuyên Hà Nội - Amsterdam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/11/2023
+                            </p>
+                            <p class="desc-introduce">Chiều 2.11, Thủ tướng Hà Lan Mark Rutte đã có cuộc gặp gỡ và giao lưu với các học sinh Trường THPT chuyên Hà Nội - Amsterdam.</p>
+                            </div>
+                        </div> 
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page12" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/asean_20234.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page12">Đại sứ quán Singapore đăng ký Học bổng ASEAN năm 2024 cho thí sinh Việt Nam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                17/02/2023
+                            </p>
+                            <p class="desc-introduce">Đại sứ quán Singapore tại Hà Nội thông báo về học bổng ASEAN (Association of Southeast Asian Nations) năm 2024 - chương trình học bổng được quản lý bởi Bộ Giáo dục Cộng hòa Singapore.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page13" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/hoc_bong_khw.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page13">Bắt đầu nhận ứng tuyển học bổng Dr Goh Keng Swee (Singapore) năm 2023</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                21/12/2022
+                            </p>
+                            <p class="desc-introduce">Ngày 15-12, Đại sứ quán Singapore tại Việt Nam cho biết, học bổng Dr Goh Keng Swee năm học 2023 đã bắt đầu nhận ứng tuyển.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page5" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page9" ><img  src="/assets/img/page8-cooperate/img-1.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page9">Trung tâm Vũ trụ Việt Nam hợp tác với Trường THPT Chuyên Hà Nội – Amsterdam về đào tạo và phổ biến kiến thức lĩnh vực khoa học vũ trụ</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                08/06/2019
+                            </p>
+                            <p class="desc-introduce">Ngày 6/6/2019 tại Hà Nội, Trung tâm Vũ trụ Việt Nam (Viện Hàn lâm Khoa học và Công nghệ Việt Nam) đã ký thỏa thuận hợp tác nhằm tăng cường và phát triển các hoạt động về đào tạo và phổ biến kiến thức trong lĩnh vực khoa học vũ trụ, thiên văn học, vật lí thiên văn và ứng dụng công nghệ vũ trụ với trường THPT Chuyên Hà Nội – Amsterdam.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="cooperate.html?page=page7" ><img  src="/assets/img/page7-cooperate/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="cooperate.html?page=page7">Chương trình gặp gỡ giữa tập đoàn FPT và Trường THPT Chuyên Hà Nội - Amsterdam: Cơ hội hợp tác giữa nhằm thúc đẩy sự phát triển về giáo dục và công nghệ</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                24/11/2023
+                            </p>
+                            <p class="desc-introduce">Ngày 23/11 vừa qua đã diễn ra buổi gặp gỡ giữa thầy và trò trường THPT Hà Nội - Amsterdam với một trong những trường Đại học hàng đầu Việt Nam trong giai đoạn hiện nay - tập đoàn FPT. Cuộc trò chuyện đã đem lại những cơ hội hợp tác mang tính chiến lược về phát triển về con người và công nghệ và những kinh nghiệm rất đáng học hỏi trong lĩnh vực Giáo dục. Nhờ đó, buổi gặp mặt đã thu hút sự có mặt của gần 200 Amsers. </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="col col-80pt content-detail " >
+                    <div id="page6" class="page page-section" >
+                        <h2 class="text-heading-content">Giới thiệu chung về hợp tác quốc tế trường THPT chuyên Hà Nội - Amsterdam</h2>
+                        <h3 class="text-subheading-content">Từ khi thành lập, trường Hà Nội Amsterdam đã có nhiều hoạt động giao lưu và hợp tác quốc tế với các trường phổ thông, đại học và nhiều tổ chức trên thế giới.</h3>
+                        <p class="text-para-content">Suốt nhiều năm qua, nhà trường đã giữ được những mối quan hệ tốt đẹp với các trường đại học, cao đẳng và trung học tại các nước phát triển: Viện quốc gia INSA (Pháp), Đại học Connnecticut, Đại học Oregon, Đại học Carroll (Hoa Kỳ), Taylor's Culverhay (Anh), Đại học Bellereys (Úc), Đại học Nam Ninh (Trung Quốc), Trung học Nayang (Hàn Quốc), Trung học Jean de la Fontaine (Pháp), Trung học Anglo-Chinese (Singapore), Trường chuyên ngữ Anyang (Hàn Quốc).[3][11][49][50]</p>
+                        <p class="text-para-content">Hàng năm, các khối chuyên ngữ của trường Trung học phổ thông chuyên Hà Nội - Amsterdam thường tổ chức những buổi gặp gỡ giao lưu giữa các khoá trong khối với nhau hoặc với các tổ chức quốc tế. Các học sinh của các khối chuyên Pháp, chuyên Nga, chuyên Trung đã thực hiện nhiều hoạt động ngoại khóa với nhiều Đại sứ quán và đã đón tiếp nhiều học sinh từ các trường trung học phổ thông khác nhau trên thế giới. Trường Hà Nội - Amsterdam cũng là một trong những trường đầu tiên của Hà Nội chuẩn bị cho kế hoạch dạy Toán và các bộ môn khoa học bằng Tiếng Anh vào năm học 2011 - 2012.[3][51] Ngoài ra, trường còn cho tổ chức nhiều chương trình giao lưu với nước ngoài bao gồm: đào tạo và bồi dưỡng giáo viên ở nước ngoài; học tập các phương pháp đào tạo ở các nước phát triển như Anh, Singapore, Hàn Quốc và Đài Loan; thực hiện phương pháp trao đổi giáo viên, học sinh để giao lưu giữa các trường đại học của Hoa Kỳ, Hàn Quốc, Úc và Singapore; cho bạn bè quốc tế giới thiệu du học với học sinh trong trường (như hội thảo du học Anh Quốc).</p>
+                        <p class="text-para-content">Nhiều học sinh trường Hà Nội - Amsterdam đã được gửi đi tham dự nhiều hội nghị cấp quốc tế đại diện cho trường như Hội nghị về Quyền trẻ em ở Mỹ (tháng 5 năm 2002), Hội nghị Môi trường ở Nam Phi (tháng 7 năm 2002), Hội nghị Diễn đàn về Quyền trẻ em ở Hàn Quốc (tháng 9 năm 2003),[52] Nghị viện Thanh niên Thế giới tại Sydney (2000, 2004),[53] Hội thảo các nhà khoa học trẻ các quốc gia APEC (tháng 4 năm 2011).[54] Nhiều cuộc thi mang tính quốc tế như cuộc thi tìm hiểu ASEAN, cuộc thi "Cải thiện việc sử dụng và bảo vệ nguồn nước" cũng đã được nhiều học sinh tham gia.[55]</p>
+                    </div> 
+
+                    <div id="page7" class="page page-section" >
+                        <h2 class="text-heading-content">Chương trình gặp gỡ giữa tập đoàn FPT và Trường THPT Chuyên Hà Nội - Amsterdam: Cơ hội hợp tác giữa nhằm thúc đẩy sự phát triển về giáo dục và công nghệ</h2>
+                        <h3 class="text-subheading-content">Ngày 23/11 vừa qua đã diễn ra buổi gặp gỡ giữa thầy và trò trường THPT Hà Nội - Amsterdam với một trong những trường Đại học hàng đầu Việt Nam trong giai đoạn hiện nay - tập đoàn FPT. Cuộc trò chuyện đã đem lại những cơ hội hợp tác mang tính chiến lược về phát triển về con người và công nghệ và những kinh nghiệm rất đáng học hỏi trong lĩnh vực Giáo dục. Nhờ đó, buổi gặp mặt đã thu hút sự có mặt của gần 200 Amsers.</h3>
+                        <p class="text-para-content">Thầy và trò trường THPT Chuyên Hà Nội - Amsterdam vinh dự được chào đón và gặp gỡ ông Hoàng Nam Tiến - Thành viên Hội đồng sáng lập FPT, Phó chủ tịch Hội đồng Trường Đại học FPT, cựu học sinh trường THPT Chuyên Hà Nội - Amsterdam; ông Chu Quang Huy - Giám đốc nhân sự Tập đoàn FPT và các ông bà lãnh đạo, quản lý Tập đoàn FPT, các Công ty thành viên và Khối giáo dục FPT. Buổi gặp gỡ đã mở đầu bằng một clip về trường THPT Chuyên Hà Nội - Amsterdam với tinh thần “truyền thống và phát triển”; “kết nối và hợp tác”. Tiếp theo đó, Tập đoàn FPT đã mang đến tinh thần, phong cách và văn hóa mang đậm dấu ấn riêng trong clip ngắn, mang đến cho mọi người cái nhìn khởi đầu về Tập đoàn công nghệ hàng đầu Việt nam với những con người nhiệt huyết, đam mê và sáng tạo. </p>+
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-cooperate/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Tại buổi gặp mặt, Ông Hoàng Nam Tiến - Thành viên Hội đồng sáng lập FPT, Phó chủ tịch Hội đồng Trường Đại học FPT đã mang đến cho thầy trò trường THPT Chuyên Hà Nội - Amsterdam bài phát biểu về hệ thống giáo dục của một Tập đoàn công nghệ đứng đầu Việt Nam cũng như thể hiện mong muốn được đón tiếp các học sinh của trường tại trường Đại học FPT. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-cooperate/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Bên cạnh đó, buổi gặp gỡ cũng chính là cơ hội để hai bên – Tập đoàn FPT và Trường THPT chuyên Hà Nội - Amsterdam – có thể xây dựng mối quan hệ hợp tác nhằm thúc đẩy sự phát triển về giáo dục và công nghệ. Ông Chu Quang Huy - Giám đốc nhân sự Tập đoàn FPT đã có đôi lời trao đổi về cơ hội hợp tác đầy tiềm năng giữa hai bên trong cuộc gặp gỡ thân tình này.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-cooperate/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Đại diện khối Giáo dục FPT cũng đã có những trao đổi về các chương trình, hoạt động hợp tác Giáo dục giữa FPT và trường THPT Chuyên Hà Nội - Amsterdam. Cuối cùng, phần thú vị nhất có lẽ là màn tương tác giữa các Amsers và các Đại diện đến từ tập đoàn FPT. Các bạn học sinh trường THPT Chuyên Hà Nội - Amsterdam đã thể hiện sự hứng thú của mình với những câu hỏi gây sự hào hức và bất ngờ cho tất cả mọi người có mặt tại Hội trường. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-cooperate/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các Amser hào hứng giơ tay đặt câu hỏi cho các Đại diện từ tập đoạn FPT</p>
+                        <p class="text-para-content">Và đặc biệt hơn cả, tại buổi gặp mặt lần này, đại diện Tập đoàn FPT đã quyết định dành tặng các học sinh của trường THPT chuyên Hà Nội - Amsterdam một món quà giá trị và ý nghĩa, nhằm giúp các bạn học sinh tiếp tục nuôi dưỡng đam mê sáng tạo khoa học, giành thêm được nhiều giải thưởng và thành tựu hơn nữa trong tương lai. Món quà đặc biệt này là 02 con robot VEX V5 với tổng trị giá lên tới 140 triệu đồng.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-cooperate/img-5.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các bạn học sinh trong CLB GreenAms 6520 Robotics Team chụp ảnh cùng ông Hoàng Nam Tiến</p>
+                        <p class="text-para-content">Để đánh dấu cuộc gặp gỡ đặc biệt giữa hai bên trong buổi lễ này, trường THPT chuyên Hà Nội - Amsterdam và Tập đoàn FPT đã cùng trao tặng món quà lưu niệm và ghi lại những bức ảnh kỷ niệm ý nghĩa trên tinh thần kết nối và hợp tác.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-cooperate/img-6.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-cooperate/img-7.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Bức ảnh kỷ niệm của Tập đoàn FPT cùng thầy và trò trường Ams đánh dấu cho một buổi gặp mặt thành công</p>
+                        <h3 class="text-subheading-content">Hi vọng với những chia sẻ đầy tâm huyết của ông Hoàng Nam Tiến, ông Chu Quang Huy và các đại diện từ phía Tập đoàn FPT đã mang đến cho Trường THPT Chuyên Hà Nội - Amsterdam, hai bên sẽ tiếp tục có được những bước tiến vững chắc trong quan hệ và xây dựng được một lộ trình Trao đổi - Hợp tác - Phát triển thật sự hiệu quả để Trường THPT chuyên Hà Nội - Amsterdam sẽ đưa giáo dục công nghệ vào hoạt động chuyên môn của nhà trường nói chung và các hoạt động trong chiến lược phát triển STEM nói riêng được sâu rộng hơn. Và cũng hi vọng buổi gặp mặt thân tình này đã giúp các bạn học sinh có cái nhìn rộng mở hơn về công nghệ trong tương lai và nuôi dưỡng thêm niềm đam mê với khoa học!</h3>
+                    </div>
+
+                    <div id="page8" class="page page-section" >
+                        <h2 class="text-heading-content">Thủ tướng Hà Lan giao lưu với học sinh Trường THPT chuyên Hà Nội - Amsterdam</h2>
+                        <h3 class="text-subheading-content">Chiều 2.11, Thủ tướng Hà Lan Mark Rutte đã có cuộc gặp gỡ và giao lưu với các học sinh Trường THPT chuyên Hà Nội - Amsterdam.</h3>
+                        <p class="text-para-content">Đây là ngôi trường đóng vai trò đặc biệt trong lịch sử quan hệ Việt Nam - Hà Lan, nhất là hợp tác giáo dục hai nước. Vào những ngày tháng ác liệt nhất năm 1972, khi B52 dội bom hòng hủy diệt Hà Nội, nhân dân Amsterdam (Hà Lan) đã vô cùng lo lắng và mong muốn làm một điều gì đó cho Hà Nội nói riêng và Việt Nam nói chung.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://images2.thanhnien.vn/528068263637045248/2023/11/2/c69a4626-16989348466721141041145.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thủ tướng Hà Lan Mark Rutte tại buổi giao lưu</p>
+                        <p class="text-para-content">Thị trưởng khi đó là TS Samkaden đã hăng hái vận động nhân dân Amsterdam quyên góp để xây cho Hà Nội một ngôi trường cấp 3 đàng hoàng, to đẹp sau ngày chiến thắng. Kết quả của nghĩa cử đó là trường THPT mang tên Hà Nội - Amsterdam ra đời.</p>
+                        <p class="text-para-content">Tại buổi giao lưu, Thủ tướng Mark Rutte chia sẻ, mỗi lần ông tới Hà Nội đều có cảm giác đây là một thành phố xinh đẹp với biết bao tòa nhà cổ xưa.</p>
+                        <p class="text-para-content">"Tôi đã đạp xe cùng Thủ tướng Phạm Minh Chính qua những con phố Hà Nội với những tòa nhà cổ xinh đẹp, cảm nhận được sự thay đổi to lớn mà thành phố đang trải qua và tôi cũng cảm nhận được nguồn năng lượng ở nơi đây", Thủ tướng Hà Lan chia sẻ.</p>
+                        <p class="text-para-content">Thủ tướng Mark Rutte cũng chia sẻ rằng, trong chuyến thăm đầu tiên của ông đến Việt Nam vào năm 2014, trên đường từ Hà Nội đến Hải Phòng để thăm nhà máy đóng tàu Damen, ông đã được chứng kiến những cảnh đẹp của đất nước và con người Việt Nam.</p>
+                        <p class="text-para-content">"Chứng kiến những cảnh đẹp này, Đại sứ Hà Lan lúc đó đã nói với tôi rằng ông ấy đã làm việc trên khắp thế giới và đối với ông ấy, Việt Nam là nơi ông ấy yêu thích nhất để làm việc và sinh sống", Thủ tướng Hà Lan chia sẻ.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://images2.thanhnien.vn/528068263637045248/2023/11/2/c69a4666-16989349931981198113876.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các học sinh Trường THPT chuyên Hà Nội - Amsterdam lắng nghe những chia sẻ của Thủ tướng Hà Lan Mark Rutte</p>
+                        <p class="text-para-content">Sau phần phát biểu của Thủ tướng Mark Rutte, nhiều học sinh đã mạnh dạn giơ tay đặt câu hỏi. Trả lời câu hỏi về vai trò của thanh niên Hà Lan trong việc chuyển đổi năng lượng xanh và kinh nghiệm cho Việt Nam, ông Mark Rutte cho rằng, giới trẻ nhận thức rất rõ ràng về tình trạng biến đổi khí hậu đang diễn ra.</p>
+                        <p class="text-para-content">"Để thích ứng với biến đổi khí hậu trong thời gian ngắn, Việt Nam phải thực hiện các biện pháp như ở đồng bằng sông Cửu Long và ở những nơi khác để có thể chống lại biến đổi khí hậu về mặt thích ứng, cũng như giảm thiểu. Đối với những người trẻ tuổi, tôi nghĩ đây là những lĩnh vực tăng trưởng. Tôi hy vọng bằng cách nào đó nhiều người trong số các bạn sẽ thành lập công ty và nghĩ đến việc có thể làm việc trong lĩnh vực nghiên cứu và phát triển để thực sự giúp chúng ta tìm ra cách tiếp theo cho các phát minh nhằm chống lại biến đổi khí hậu", Thủ tướng Mark Rutte khẳng định.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://images2.thanhnien.vn/528068263637045248/2023/11/2/c69a4843-1698935051539221680584.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thủ tướng Mark Rutte chụp ảnh selfie cùng các học sinh</p>
+                        <p class="text-para-content">Trả lời câu hỏi của một học sinh về ý tưởng của việc thay thế sức lao động của con người bằng robot trong khi vẫn giảm được tỷ lệ thất nghiệp, Thủ tướng Mark Rutte cho rằng, robot không là vấn đề của thị trường lao động.</p>
+                        <p class="text-para-content">"Tôi nghĩ robot sẽ chỉ khiến bạn cạnh tranh hơn, tạo ra việc làm mới. Sau đó, bạn thấy rằng nhiều công việc mới được tạo ra, chẳng hạn như trong ngành dịch vụ, trong các ngành khác, những phát triển mới mà bạn không thể nhận ra, nơi robot không thể giúp bạn. Vì vậy, tôi sẽ không chống lại nó, việc có robot là đôi bên cùng có lợi, nhưng cũng có thể nói là đảm bảo rằng các lĩnh vực kinh tế truyền thống khác có thể phát triển thịnh vượng", Thủ tướng Hà Lan chia sẻ.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://images2.thanhnien.vn/528068263637045248/2023/11/2/c69a4905-16989352081392033695060.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thủ tướng Mark Rutte tô hình hoa sen và hoa tulip cách điệu, cũng là logo kỷ niệm 50 năm thiết lập quan hệ ngoại giao hai nước</p>
+                        <p class="text-para-content">Thủ tướng Mark Rutte cũng chia sẻ với các học sinh về hướng nghiệp và thực hiện ước mơ của bản thân. Ông cho rằng, các học sinh hãy làm theo trái tim của mình, có ý thức về bản thân và tài năng của mình ở đâu.</p>
+                        
+                    </div>
+
+                    <div id="page9" class="page page-section" >
+                        <h2 class="text-heading-content">Trung tâm Vũ trụ Việt Nam hợp tác với Trường THPT Chuyên Hà Nội – Amsterdam về đào tạo và phổ biến kiến thức lĩnh vực khoa học vũ trụ</h2>
+                        <h3 class="text-subheading-content">Ngày 6/6/2019 tại Hà Nội, Trung tâm Vũ trụ Việt Nam (Viện Hàn lâm Khoa học và Công nghệ Việt Nam) đã ký thỏa thuận hợp tác nhằm tăng cường và phát triển các hoạt động về đào tạo và phổ biến kiến thức trong lĩnh vực khoa học vũ trụ, thiên văn học, vật lí thiên văn và ứng dụng công nghệ vũ trụ với trường THPT Chuyên Hà Nội – Amsterdam.</h3>
+                        <p class="text-para-content">PGS.TS Phạm Anh Tuấn – Tổng Giám đốc Trung tâm Vũ trụ Việt Nam, TS Lê Thị Oanh – Hiệu trưởng Trường THPT Chuyên Hà Nội – Amsterdam cùng đại diện các phòng, ban liên quan của hai đơn vị đã tham dự Lễ kí kết.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://vnsc.org.vn/wp-content/uploads/2019/06/kyket.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Toàn cảnh buổi Lễ kí kết giữa Trung tâm Vũ trụ Việt Nam và Trường PTTH Chuyên Hà Nội – Amssterdam</p>
+                        <p class="text-para-content">Theo thỏa thuận, hai bên khuyến khích hợp tác học thuật trong các lĩnh vực cùng quan tâm, đặc biệt là khoa học vũ trụ, thiên văn học, vật lí thiên văn và ứng dụng công nghệ vũ trụ; Hợp tác xây dựng và tổ chức thực hiện các chương trình chung về phổ biến kiến thức khoa học và công nghệ vũ trụ cho cộng đồng.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://vnsc.org.vn/wp-content/uploads/2019/06/kyket1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Đại diện hai đơn vị kí kết thỏa thuận hợp tác về đào tạo và phổ biến kiến thức lĩnh vực khoa học vũ trụ.</p>
+                        <p class="text-para-content">Trước đó, Trung tâm Vũ trụ Việt Nam và Trường THPT Chuyên Hà Nội – Amsterdam đã có nhiều hoạt động hợp tác từ năm 2017, bắt đầu bằng việc Trung tâm tham gia tập huấn học sinh của Trường tham gia cuộc thi Olympic Thiên văn học và Vật lý thiên văn quốc tế (IOAA) năm 2017 tại Thái Lan với sự tham gia của 44 quốc gia. Đây là kì thi quốc tế có uy tín nhằm mục đích khuyến khích các tài năng trẻ về thiên văn học và vật lý thiên văn, kích thích tư duy sáng tạo, ứng dụng thực tế các quy luật vật lí trong nghiên cứu thiên văn, đem lại lợi ích cho khoa học và cuộc sống.</p>
+                        <p class="text-para-content">Trong cuộc thi này, Đội tuyển Việt Nam với các học sinh của Trường PTTH Hà Nội – Amsterdam đã xuất sắc giành được 2 huy chương bạc và 2 giải khuyến khích cho lần đầu tiên Việt Nam tham dự cuộc thi này.</p>
+                        <p class="text-para-content">Năm 2018, dưới sự hỗ trợ từ phía Trung tâm Vũ trụ Việt Nam, đội tuyển Olympic Thiên văn và Vật lí Thiên văn Việt Nam tiếp tục dành được nhiều thắng lợi với thành tích 4/5 học sinh đoạt huy chương bao gồm: 1 Huy chương vàng, 1 Huy chương bạc và 2 Huy chương đồng, các em đều là học sinh trường THPTT chuyên Hà Nội – Amsterdam.</p>
+                        <p class="text-para-content">Chuẩn bị cho cuộc thi được tổ chức vào Hungary vào tháng 8/2019, hai bên đang tích cực triển khai các hoạt động phối hợp cụ thể để hỗ trợ các em học sinh của trường.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://vnsc.org.vn/wp-content/uploads/2019/06/kyket2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Chụp ảnh lưu niệm tại Lễ kí kết ngày 6/6/2019.</p>
+                        <p class="text-para-content">Ngoài ra, nhằm tăng cường và phát triển các hoạt động về đào tạo và phổ biến kiến thức trong lĩnh vực khoa học vũ trụ, thiên văn học, vật lí thiên văn và ứng dụng công nghệ vũ trụ, hai bên đề xuất tiếp tục có những hoạt động hợp tác khác trong đào tạo và giảng dạy liên quan đến STEM, GLOBE (chương trình khoa học và giáo dục môi trường quốc tế nhằm đưa học sinh, giáo viên và nhà khoa học cùng nhau học tập về môi trường toàn cầu); Ngày hội khoa học và công nghệ vũ trụ SpaceDay (nhằm mục đích khơi gợi và khích lệ niềm đam mê nghiên cứu khoa học, công nghệ đối với học sinh).v.v và các lĩnh vực khác thông qua các hoạt động do hai đơn vị tổ chức. Đặc biệt, phối hợp tổ chức các khoá học ngắn hạn, các chương trình tham quan học tập cho giáo viên/ học sinh của Trường tại Đài thiên văn Hòa Lạc và Đài thiên văn Nha Trang thuộc Trung tâm.</p>
+                    </div>
+
+                    <div id="page10" class="page page-section" >
+                        <h2 class="text-heading-content">THƯ MỜI THAM DỰ "IDP VIỆT NAM - NGÀY TRẢI NGHIỆM DU HỌC QUỐC TẾ TẠI HÀ NỘI, 3/2024"</h2>
+                        <h3 class="text-subheading-content">Nhà trường cùng tổ chức Du học IDP kính mời Quý Cha Mẹ học sinh và các em học sinh quan tâm du học với học bổng từ 30% đến 100% tham gia sự kiện Ngày hội Du học Quốc tế 03/2024</h3>
+                        <h3 class="text-subheading-content">Thời gian & địa điểm:</h3>
+                        <p class="text-para-content">Hà Nội: 08:30 - 12:00 | Ngày 02/03/2024 | Lotte Hanoi, Tầng 6, 54 Liễu Giai, Quận Ba Đình</p>
+                        <p class="text-para-content">Các em học sinh đang muốn lên kế hoạch chuẩn bị du học ngay từ bây giờ để nắm bắt cơ hội du học học bổng và ở lại làm việc sau tốt nghiệp? Tháng 4/2024 là thời điểm tốt nhất để tìm hiểu, chuẩn bị hồ sơ du học với cơ hội học bổng cùng IDP.</p>
+                        <p class="text-para-content">Điều học sinh cần là có một chiến lược chuẩn bị tốt trong giai đoạn này. Để giúp các em tự tin vững bước, IDP gửi tới bạn lời mời tham dự "Ngày hội du học các nước tháng 3/2024" với cơ hội săn ngay học bổng 30-100% để có thêm thông tin về học bổng, gặp gỡ đại diện trường và giúp bạn quyết định cho chặng đường tiếp theo của mình.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/img-1-page10-cooperate.jpg" alt="" class="img-content-new">
+                        </div>
+                        <h3 class="text-subheading-content">NỘI DUNG SỰ KIỆN:</h3>
+                        <p class="text-para-content">Gặp trực tiếp đại diện hơn 100 trường hàng đầu của Úc, Mỹ, Canada, Anh, New Zealand.</p>
+                        <p class="text-para-content">Tìm hiểu các chương trình học bổng giá trị 30% - 100% học phí.</p>
+                        <p class="text-para-content">Tư vấn chọn trường, chọn khóa học, xin visa du học MIỄN PHÍ.</p>
+                        <p class="text-para-content">Hoàn 100% lệ phí thi IELTS</p>
+                        <p class="text-para-content">Trọn bộ ưu đãi "độc quyền" đến 8 triệu VNĐ</p>
+                        <p class="text-para-content">Hoạch định lộ trình du học phù hợp và Xử lý hồ sơ du học MIỄN PHÍ bởi chuyên viên của IDP</p>
+                        <p class="text-para-content">Quý phụ huynh và các em học sinh vui lòng đăng ký SỚM để giúp BTC chuẩn bị chào đón nhanh chóng và cập nhật thông tin về học bổng, thông tin tuyển sinh đến Quý phụ huynh và các em học sinh:</p>
+                        <a href="https://forms.office.com/pages/responsepage.aspx?id=ea3HwBPPOU-O66GCmqCWptSYeb_DWaZMnBGcDU3pyUVUM1pSVVVROFBISDk3VVZCU0hYR0w4MURBRiQlQCN0PWcu&route=shorturl">https://forms.office.com/r/9RDppkSZqM</a>
+                    </div>
+
+                    <div id="page11" class="page page-section" >
+                        <h2 class="text-heading-content">Chương trình Học bổng Hiệu trưởng đề cử cho học sinh ứng tuyển vào Đại học Hồng Công (Hong Kong University) 2024</h2>
+                        <h3 class="text-subheading-content">Tổng Lãnh sứ quán Việt Nam tại Hồng Công (HK) vừa có Công điện gửi 07 Trường về việc cấp 20 học bổng cho học sinh Việt Nam. Trường THPT Chuyên Hà Nội - Amsterdam nằm trong 07 trường được đề cử cấp học bổng cho học sinh năm 2024.</h3>
+                        <p class="text-para-content">Hồng Công (HK) là một trong các thành phố quốc tế tập trung nhiều truờng đại học hàng đầu nhất trên thể giới với 05 trường nằm trong Top 70 (theo bảng xếp hạng QS 2024). Từ năm 2021, HK chính thức mở visa cho sinh viên Việt Nam sau nhiều thập kỷ duy trì chính sách hạn chế. Nắm bắt cơ hội mới và khai thác thế mạnh này của HK, Tổng Lãnh sự quán (TLSQ) Việt Nam tại Hồng Công đã tích cực vận động các trường ưu tiên tuyển sinh, cấp học bổng cho học sinh, sinh viên Việt Nam.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://kenh14cdn.com/thumb_w/600/A0Ikfd9iFS0CFLv6dek7g7M8cccccc/Image/2015/06/33_01-d310c.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Khuôn viên chính của trường Đại học Hồng Công.</p>
+                        <p class="text-para-content">Sau quá trình làm việc, trao đổi, Đại học Hồng Công (Hong Kong University - HKU, xếp thứ 2 châu Á, 26 thế giới theo QS 2024) nhất trí lập Chương trình tuyển sinh và cấp học bổng bậc Đại học cho sinh viên Việt Nam mang tên Chương trình Học bổng Hiệu trưởng đề cử (Principal Nomination Scholarship Scheme - PNSS) với sự hỗ trợ, điều phối của TLSQ.</p>
+                        <p class="text-para-content">Trong năm đầu tiên (2024), HKU cấp 20 học bổng (gồm toàn bộ học phí, có thể có hỗ trợ chi phí ăn ở) cho học sinh thuộc 07 trường (THPT Chuyên Hà Nội - Amsterdam; THPT Chu Văn An, Hà Nội; THPT Nguyễn Siêu, Hà Nội; THPT Lê Hồng Phong, Nam Định; THPT Chuyên Phan Bội Châu, Nghệ An; THPT Chuyên Lê Hồng Phong, TP HCM; THPT Chuyên Trần Đại Nghĩa, TP HCM).</p>
+                        <p class="text-para-content">Chương trình sẽ triển khai theo cơ chế Hiệu trưởng mỗi trường đề cử tối đa 08 học sinh trường có thành tích xuất sắc:</p>
+                        <p class="text-para-content">- Thành tích học tập nổi bật</p>
+                        <p class="text-para-content">- Thành tích hoạt động ngoại khóa nổi bật</p>
+                        <p class="text-para-content">- Nằm trong 5% học sinh có điểm trung bình cao nhất.</p>
+                        <p class="text-para-content">- IELTS 6.5 trở lên</p>
+                        <p class="text-para-content">- Trong Kỳ thi tốt nghiệp THPT Quốc gia 2024, điểm trung bình đạt 8.0 trở lên, không môn nào dưới 6.5 (Vào hè năm 2024, khi kết quả được công bố, HS sẽ cập nhật thông tin này trên hệ thống của HKU, và dịch thuật công chứng bảng điểm, sau đó nộp lên hệ thống để làm bằng chứng).</p>
+                        <p class="text-para-content">- Ngoài ra, tuỳ vào từng chương trình, mỗi bạn nộp hồ sơ tới HKU sẽ có thêm một số yêu cầu khác</p>
+                        <h3 class="text-subheading-content">Các chương trình đào tạo của HKU:</h3>
+                        <p class="text-para-content">- Bachelor of Arts</p>
+                        <p class="text-para-content">- Bachelor of Business Administration</p>
+                        <p class="text-para-content">- Bachelor of Business Administration (Business Analytics)</p>
+                        <p class="text-para-content"> - Bachelor of Business Administration in Account Data Analytics/Bachelor of Business Administration in Accounting and Finance</p>
+                        <p class="text-para-content">- Bachelor of Economics/Bachelor of Economics and Finance</p>
+                        <p class="text-para-content">- Bachelor of Science in Marketing Analytics and Technology</p>
+                        <p class="text-para-content">- Bachelor of Engineering</p>
+                        <p class="text-para-content">- Bachelor of Engineering in Biomedical Engineering</p>
+                        <p class="text-para-content">- Bachelor of Engineering in Data Science and Engineering</p>
+                        <p class="text-para-content">- Bachelor of Engineering in Engineering Science</p>
+                        <p class="text-para-content">- Bachelor of Arts and Sciences in Financial Technology</p>
+                        <p class="text-para-content">- Bachelor of Law</p>
+                        <p class="text-para-content">- Bachelor of Science</p>
+                        <p class="text-para-content">- Bachelor of Arts and Sciences in Applied Artificial Intelligence</p>
+                        <p class="text-para-content">- Bachelor of Social Sciences</p>
+                        <p class="text-para-content">- Bachelor of Journalism</p>
+                        <p class="text-para-content">Các học sinh được nhà trường đề cử trong tháng 12/2023, sẽ được trường HKU hoàn tất sàng lọc vòng 1 và tham gia phỏng vấn được thực hiện bởi các khoa tương ứng trong tháng 1/2024. Kết quả tuyển chọn sẽ được công bố trong tháng 2/2024</p>
+                        <p class="text-para-content">HKU là trường có danh tiếng cao, tiêu chí tuyển sinh khắt khe, phức tạp. Vì vậy, Chương trình PNSS sẽ giúp loại bỏ nhiều rào cản, tạo thuận lợi rất lớn cho các ứng viên được đề cử.</p>
+                        <p class="text-para-content">Tổng Lãnh sự quán Hồng Công tại Việt Nam trân trọng đề nghị các học sinh và Cha Mẹ học sinh cần tìm hiểu thông tin kĩ, chỉ ứng tuyển theo PNSS khi đã xác định <u>chắc chắn sẽ theo học tại HKU nếu trúng tuyển</u> vì đây là các suất đã dành riêng cho 07 trường tại Việt Nam. Nếu ứng viên trúng tuyển nhưng bỏ suất sẽ làm mất cơ hội của học sinh khác thực sự có nhu cầu. Học sinh muốn thử sức hoặc chưa xác định rõ có thể đăng ký ứng tuyển vào HKU (hoặc các Đại học khác của HK) theo diện tự do, không ứng tuyển theo PNSS./p>
+                        <p class="text-para-content">Các học sinh trường THPT Chuyên Hà Nội - Amsterdam có nguyện vọng đăng ký tham gia tuyển chọn bằng cách điền form theo link sau và nộp hồ sơ bản cứng cho Thầy Cô chủ nhiệm lớp: </p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSflclgf60GD82T7r_y5rlokoq43b1Dop6fiMdH7xhyoPejKuA/closedform">https://forms.gle/hGYHuL475to2PeH19</a>
+                        <p class="text-para-content">Hạn cuối điền form: <b>18h00 thứ tư, ngày 20 tháng 12 năm 2023.</b></p>
+                        <p class="text-para-content">Hạn cuối GVCN nộp hồ sơ bản cứng lên Văn phòng nhà trường: <b>12h00 thứ năm, ngày 21 tháng 12 năm 2023.</b> </p>
+                        <p class="text-para-content">Sau khi nhà trường lựa chọn và thông báo cho 8 học sinh, các bạn HS sẽ cần thực hiện nộp đơn cho trường HKU theo <a href="https://hkuhk-my.sharepoint.com/:w:/g/personal/truongvu_hku_hk/ETaHTzpNf01CnBEd3T8YEGAB3izL9sqmAuXecfAQ9_OO_A?rtime=8ztrXUeN3Ug">hướng dẫn</a> và cung cấp application number (muộn nhất ngày 28/12/2023) cho Bí thư Đoàn trường tập hợp, để nhà trường nộp danh sách đề cử cho trường HKU trước 30/12/2023.</p>
+                        <p class="text-para-content">Trân trọng!</p>
+                    </div>
+
+                    <div id="page12" class="page page-section" >
+                        <h2 class="text-heading-content">Đại sứ quán Singapore đăng ký Học bổng ASEAN năm 2024 cho thí sinh Việt Nam</h2>
+                        <h3 class="text-subheading-content">Đại sứ quán Singapore tại Hà Nội thông báo về học bổng ASEAN (Association of Southeast Asian Nations) năm 2024 - chương trình học bổng được quản lý bởi Bộ Giáo dục Cộng hòa Singapore.</h3>
+                        <p class="text-para-content">Theo đó, học bổng ASEAN nhằm tạo cơ hội cho các bạn trẻ xuất sắc của các nước thuộc khối ASEAN mở rộng tầm nhìn và phát triển tiềm năng, trang bị kỹ năng lãnh đạo, giao tiếp... , đồng thời, chương trình này cũng giúp thúc đẩy thiện chí và tăng cường sự hiểu biết giữa những người trẻ tuổi đến từ các quốc gia khác nhau và Singapore.</p>
+                        <p class="text-para-content">Học bổng ASEAN dành cho thí sinh Việt Nam được cấp cho 4 năm học, bao gồm 2 năm phổ thông và 2 năm dự bị đại học tại các trường của Singapore cho đến khi đạt Chứng chỉ Giáo dục phổ thông bậc cao GCE “A” (General Certificate of Education Advanced Level) hoặc tương đương. Học bổng bao gồm hỗ trợ sinh hoạt phí, ký túc xá, trợ cấp ổn định ban đầu, vé máy bay khứ hồi hạng phổ thông, học phí, phí dự thi lấy Chứng chỉ GCE “O” và GCE “A” (một lần), bảo hiểm y tế và bảo hiểm tai nạn.</p>
+                        <p class="text-para-content">Ứng viên được khuyến khích dự tuyển khi đáp ứng các tiêu chí:</p>
+                        <p class="text-para-content">- Có quốc tịch Việt Nam;</p>
+                        <p class="text-para-content">- Ngày sinh trong khoảng thời gian từ 2/1/2007 đến 1/1/2010;</p>
+                        <p class="text-para-content">- Hiện đang là học sinh lớp 8, 9, hoặc 10;</p>
+                        <p class="text-para-content">- Thành thạo tiếng Anh; luôn đạt thành tích tốt trong các kỳ thi ở trường;</p>
+                        <p class="text-para-content">- Có thành tích tốt khi tham gia các hoạt động ngoại khóa.</p>
+                        <p class="text-para-content">Thí sinh đăng ký trực tuyến tại đường link của Bộ Giáo dục Singapore: <a href="https://www.moe.gov.sg/financial-matters/awards-scholarships/asean-scholarship/vietnam">https://go.gov.sg/moe-asean-scholarships-vietnam</a> trước ngày 26/4/2023.</p>
+                    </div>
+
+                    <div id="page13" class="page page-section" >
+                        <h2 class="text-heading-content">Bắt đầu nhận ứng tuyển học bổng Dr Goh Keng Swee (Singapore) năm 2023</h2>
+                        <h3 class="text-subheading-content">Ngày 15-12, Đại sứ quán Singapore tại Việt Nam cho biết, học bổng Dr Goh Keng Swee năm học 2023 đã bắt đầu nhận ứng tuyển. </h3>
+                        <p class="text-para-content">Học bổng Dr Goh Keng Swee là học bổng tư nhân do Hiệp hội Ngân hàng Singapore (ABS) quản lý. Quỹ học bổng Dr GKS được cộng đồng tài chính Singapore thành lập để tỏ lòng tôn kính nguyên Phó Thủ tướng Singapore Dr Goh Keng Swee.</p>
+                        <p class="text-para-content">Học bổng được trao cho những cá nhân xuất sắc là công dân/người có hộ chiếu của bất kỳ quốc gia nào trong số 15 nền kinh tế châu Á - Thái Bình Dương, trong đó có Việt Nam, mong muốn theo học chương trình đại học tại các trường đại học ở Singapore, như: Đại học Quốc gia Singapore (NUS), Đại học Công nghệ Nanyang (NTU), Đại học Quản lý Singapore (SMU) và Đại học Công nghệ và Thiết kế Singapore (SUTD). Công dân Singapore và thường trú nhân không đủ điều kiện để đăng ký học bổng Dr Goh Keng Swee.</p>
+                        <p class="text-para-content">Theo thông báo từ Đại sứ quán Singapore, ứng viên cần đáp ứng các yêu cầu tuyển sinh đại học cần thiết (bao gồm cả việc tham gia bất kỳ kỳ thi tuyển sinh đại học được yêu cầu nào); đăng ký xét tuyển vào NUS, NTU, SMU hoặc SUTD. Hầu hết các ngành học sẽ được xem xét cấp học bổng (ngoại trừ các khóa học chuyên ngành như y học). </p>
+                        <p class="text-para-content">Ứng viên cũng cần tuân thủ thời hạn và hướng dẫn nhập học của trường đại học; thể hiện phẩm chất lãnh đạo và có thành tích học tập, hoạt động ngoại khóa (CCA) tốt; đã thi SAT hoặc đã sắp xếp để thi SAT, với kết quả phải được gửi trước ngày 15-3-2023.</p>
+                        <p class="text-para-content">Về thời hạn và điều khoản, học bổng hỗ trợ tối đa 4 năm học đại học (bao gồm cả Bằng danh dự) và tài trợ: Học phí và các khoản phí bắt buộc khác; vé máy bay (đi Singapore và về Việt Nam sau khi học xong); trợ cấp duy trì hằng năm 6.500 SGD; trợ cấp ký túc xá dựa trên cơ sở học tập; trợ cấp định cư (khoản tiền 200 SGD, chi 1 lần, khi học viên đến Singapore). Học bổng sẽ được xem xét hằng năm và tùy thuộc vào thành tích, kết quả học tập đạt được.</p>
+                        <p class="text-para-content">Yêu cầu ràng buộc của học bổng là các ứng viên thành công sẽ được yêu cầu làm việc trong 3 năm sau khi hoàn thành nghiên cứu của họ tại một công ty được phê duyệt tại Singapore; hoặc một công ty có trụ sở tại Singapore được chấp thuận tại Việt Nam. Việc triển khai công việc của các ứng viên đạt được học bổng sẽ do Quỹ học bổng Dr Goh Keng Swee quyết định.</p>
+                        <p class="text-para-content">Đơn ứng tuyển học bổng Dr Goh Keng Swee cho năm học 2023 được mở từ ngày 15-12-2022 đến ngày 15-3-2023 trên trang web của Hiệp hội Ngân hàng Singapore: <a href="https://www.pscgateway.gov.sg/app/gks/account/uidsignin2/">http://www.pscgateway.gov.sg/app/gks/account/uidsignin.</a> </p>
+                        <p class="text-para-content">Những ứng viên lọt vào vòng tuyển chọn sẽ được yêu cầu thực hiện bài kiểm tra hồ sơ trực tuyến vào tháng 4-2023. Vòng phỏng vấn cuối cùng dự kiến tổ chức vào cuối tháng 5 và tháng 6-2023.</p>
+                        <p class="text-para-content">Ứng viên có thể tham khảo trang web của ABS tại <a href="https://abs.org.sg/dr-goh-keng-swee-scholarship?fbclid=IwAR0lgo8LFvnGjuh7bKvpBpLC6TFy_JobmIYwkGWJvIcMJ13lq7rCmgb2x6Y">https://abs.org.sg/dr-goh-keng-swee-scholarship</a> để biết thêm thông tin chi tiết. Nếu ứng viên có thắc mắc, xin vui lòng tham khảo Các câu hỏi thường gặp tại: <a href="https://abs.org.sg/docs/library/gkss-faqs.pdf?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExZWtmcEpxZEpqS29yR0ZFdAEevuBJ0vtQBdGFtZUJolfF8NXLCYj2YkAchl_bB5kWBgOQnolnLPKMmdANq58_aem_r69T5UdMmZifQb--qmK8DQ">http://abs.org.sg/docs/library/gkss-faqs.pdf</a> hoặc gửi email tới: GKS_Scholarships@abs.org.sg.”</p>
+                    </div>
+                </div>  
+                
+
+            </div>      
+
+
+
+            <div id="footer-container"></div>
+    
+    
+    
+    
+        </div>
+        
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Lấy giá trị "page" từ URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const currentPage = urlParams.get('page');
+                let targetLink = null;
+
+                // Xử lý phần sidebar
+                if (currentPage) {
+                    // Nếu có tham số "page" trong URL, tìm link tương ứng trong sidebar
+                    targetLink = document.querySelector(`.bar-list-link[data-page="${currentPage}"]`);
+                }
+
+                // Nếu không có hoặc không đúng, fallback về cái đầu tiên trong sidebar
+                if (!targetLink) {
+                    targetLink = document.querySelector('.bar-list-link');
+                }
+
+                // Đảm bảo là có tìm thấy phần tử targetLink
+                if (targetLink) {
+                    setActive(targetLink);
+                    const pageId = targetLink.getAttribute('data-page');
+                    const title = targetLink.textContent.trim();
+                    setTitleAndShowPage(pageId, title);
+                }
+
+                // Gắn click cho các link trong sidebar
+                const links = document.querySelectorAll('.bar-list-link');
+                links.forEach(link => {
+                    link.addEventListener('click', e => {
+                        e.preventDefault();
+                        setActive(link);
+                        const pageId = link.dataset.page;
+                        const title = link.textContent.trim();
+                        setTitleAndShowPage(pageId, title);
+                    });
+                });
+            });
+
+            // Hàm setActive
+            function setActive(element) {
+                document.querySelectorAll('.bar-list a').forEach(link => link.classList.remove('active'));
+                element.classList.add('active');
+            }
+
+            // Hàm setTitleAndShowPage
+            function setTitleAndShowPage(pageId, title) {
+                document.title = title;
+                history.replaceState(null, '', `?page=${pageId}`);
+
+                document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+                const target = document.getElementById(pageId);
+                if (target) {
+                    target.style.display = 'block';
+                }
+
+                // Ẩn hoặc hiện .content-detail tùy vào page
+                const detailSection = document.querySelector('.content-detail');
+                const pageNumber = parseInt(pageId.replace('page', ''));
+
+                if (pageNumber >= 1 && pageNumber <= 5) {
+                    detailSection.style.display = 'none';
+                } else {
+                    detailSection.style.display = 'block';  // Mặc định ẩn nếu không phải page1 đến page16
+                }
+            };
+
+        </script>
+        
+
+        <script src="/javascript/load-header.js"></script>
+        <script src="/javascript/load-footer.js"></script>
+</body>
+</html>

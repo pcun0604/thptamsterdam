@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức và sự kiện</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
+    <style>
+            
+        .bar-list a.active{
+            background-color: #3e769a;
+            color: #fff;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+
+        <div id="main">
+            <div id="header-container"></div>
+
+            <div class="row margin-t250 content-section">
+                <ul class="col col-20pt bar-list">
+                    <a style="display: none;" class="bar-list-link" data-page="page1" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page1','Tin tức và sự kiện' )">Tin tức và sự kiện</a>
+                    <li><a class="bar-list-link" data-page="page2" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page2','Tin Hoạt Động' )">Tin hoạt động</a></li>
+                    <li><a class="bar-list-link" data-page="page3" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page3', 'Nhân vật sự kiện')">Nhân vật sự kiện</a></li>
+                    <li><a class="bar-list-link" data-page="page4" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page4', 'Thông báo')" >Thông báo</a></li>
+                        
+
+                    <a style="display: none;" class="bar-list-link" data-page="page6" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page6','40 năm Hà Nội - Amsterdam: thương hiệu giáo dục mũi nhọn của Thủ đô và cả nước' )">40 năm Hà Nội - Amsterdam: thương hiệu giáo dục mũi nhọn của Thủ đô và cả nước</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page7" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page7','TRƯỜNG THPT CHUYÊN HÀ NỘI – AMSTERDAM TIẾP ĐÓN ĐOÀN ỦY BAN GIÁO DỤC QUỐC HỘI PHILIPPINES' )">TRƯỜNG THPT CHUYÊN HÀ NỘI – AMSTERDAM TIẾP ĐÓN ĐOÀN ỦY BAN GIÁO DỤC QUỐC HỘI PHILIPPINES</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page8" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page8','Chương trình giao lưu CLB Anh hùng và nhân chứng lịch sử tại trường THPT chuyên Hà Nội - Amsterdam' )">Chương trình giao lưu CLB Anh hùng và nhân chứng lịch sử tại trường THPT chuyên Hà Nội - Amsterdam</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page9" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page9','Trường THPT Chuyên Hà Nội -Amsterdam kết nghĩa với Trường THPT Chuyên Tuyên Quang' )">Trường THPT Chuyên Hà Nội -Amsterdam kết nghĩa với Trường THPT Chuyên Tuyên Quang</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page10" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page10','THPT chuyên Hà Nội - Amsterdam dẫn đầu cả nước về số thí sinh đoạt giải học sinh giỏi quốc gia 2024' )">THPT chuyên Hà Nội - Amsterdam dẫn đầu cả nước về số thí sinh đoạt giải học sinh giỏi quốc gia 2024</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page11" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page11','Trường THPT chuyên Hà Nội - Amsterdam có Phó Hiệu trưởng mới' )">Trường THPT chuyên Hà Nội - Amsterdam có Phó Hiệu trưởng mới</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page12" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page12','“VINUNI ONE-DAY EXPERIENCE” - Chương trình tham quan và học thử tại VinUniversity của khối 12' )">“VINUNI ONE-DAY EXPERIENCE” - Chương trình tham quan và học thử tại VinUniversity của khối 12</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page13" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page13','TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM TRI ÂN NGÀY THẦY THUỐC VIỆT NAM' )">TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM TRI ÂN NGÀY THẦY THUỐC VIỆT NAM</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page14" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page14','Đoàn viên trường THPT Chuyên Hà Nội - Amsterdam tham gia Ngày hội Xuân hồng - khởi động Tháng Thanh niên 2024' )">Đoàn viên trường THPT Chuyên Hà Nội - Amsterdam tham gia Ngày hội Xuân hồng - khởi động Tháng Thanh niên 2024</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page15" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page15','Festival Xuân 2024: Rạo rực Tết yêu thương' )">Festival Xuân 2024: Rạo rực Tết yêu thương</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page16" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page16','Thông tin đăng ký ứng tuyển vào Trường nội trú Anglo Chinese School 2024' )">Thông tin đăng ký ứng tuyển vào Trường nội trú Anglo Chinese School 2024</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page17" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page17','Thông báo về việc nghỉ Tết Nguyên đán Giáp Thìn năm 2024 của Ngành Giáo dục và Đào tạo Hà Nội' )">Thông báo về việc nghỉ Tết Nguyên đán Giáp Thìn năm 2024 của Ngành Giáo dục và Đào tạo Hà Nội</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page18" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page18','Thông báo về việc đăng ký dự tuyển học bổng đi học tại Liên bang Nga năm 2024' )">Thông báo về việc đăng ký dự tuyển học bổng đi học tại Liên bang Nga năm 2024</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page19" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page19','Thông báo học bổng Chính phủ du học Trung Quốc năm 2024' )">Thông báo học bổng Chính phủ du học Trung Quốc năm 2024</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page20" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page20','Thông báo về việc mời tham gia tư vấn kỹ thuật' )">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+
+                    
+
+
+                </ul>   
+
+                    <a style="display: none;" class="bar-list-link" data-page="page21" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page21','Thông báo về việc mời tham gia tư vấn kỹ thuật' )">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page22" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page22','Thông báo về việc mời tham gia tư vấn kỹ thuật' )">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page23" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page23','Thông báo về việc mời tham gia tư vấn kỹ thuật' )">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page24" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page24','Thông báo về việc mời tham gia tư vấn kỹ thuật' )">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page25" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page25','Thông báo về việc mời tham gia tư vấn kỹ thuật' )">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page26" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page26','Thông báo về việc mời tham gia tư vấn kỹ thuật' )">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page27" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page27','Thông báo về việc mời tham gia tư vấn kỹ thuật' )">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+
+                <div class="col col-80pt">
+                    <div id="page1" class="page page-section">
+                        
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page6" ><img  src="/assets/img/img-news/new-1.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page6">40 năm Hà Nội - Amsterdam: thương hiệu giáo dục mũi nhọn của Thủ đô và cả nước</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                29/03/2025
+                            </p>
+                            <p class="desc-introduce">Ra đời từ khát vọng hòa bình và tình hữu nghị, 40 năm qua, Trường THPT chuyên Hà Nội – Amsterdam đã khẳng định vị trí tiên phong đổi mới giáo dục, là lá cờ đầu trong đổi mới đất nước, gửi gắm tâm huyết về GD&ĐT của lãnh đạo Đảng, Nhà nước với sự nghiệp trồng người.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page7" ><img  src="/assets/img/img-news/new-2.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page7">TRƯỜNG THPT CHUYÊN HÀ NỘI – AMSTERDAM TIẾP ĐÓN ĐOÀN ỦY BAN GIÁO DỤC QUỐC HỘI PHILIPPINES</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                22/03/2024
+                            </p>
+                            <p class="desc-introduce">Chiều ngày 22/3, trường THPT chuyên Hà Nội – Amsterdam đã long trọng tổ chức buổi lễ tiếp đón Đoàn Ủy ban Giáo dục Quốc hội Philippines đến thăm nhà trường.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page8" ><img  src="/assets/img/img-news/new-3.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page8">Chương trình giao lưu CLB Anh hùng và nhân chứng lịch sử tại trường THPT chuyên Hà Nội - Amsterdam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                05/02/2024
+                            </p>
+                            <p class="desc-introduce">Trong không khí rộn ràng của những ngày Tết đến xuân về, học sinh trường THPT chuyên Hà Nội – Amsterdam đã có buổi giao lưu với các bác bộ đội trong CLB Anh hùng và nhân chứng lịch sử.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page9" ><img  src="/assets/img/img-news/new-4.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page9">Trường THPT Chuyên Hà Nội -Amsterdam kết nghĩa với Trường THPT Chuyên Tuyên Quang</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                27/02/2025
+                            </p>
+                            <p class="desc-introduce">Chiều 27-2, đoàn công tác của Trường THPT chuyên Hà Nội-Amsterdam đã đến thăm và làm việc với Trường THPT Chuyên Tuyên Quang, đồng thời ký biên bản kết nghĩa giữa 2 trường.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page10" ><img  src="/assets/img/img-news/new-5.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page10">THPT chuyên Hà Nội - Amsterdam dẫn đầu cả nước về số thí sinh đoạt giải học sinh giỏi quốc gia 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                29/01/2024
+                            </p>
+                            <p class="desc-introduce">THPT Chuyên Hà Nội - Amsterdam là trường trung học phổ thông dẫn đầu Hà Nội và cả nước về số học sinh đoạt giải tại Kỳ thi chọn học sinh giỏi Quốc gia THPT năm học 2023 - 2024.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page11" ><img  src="/assets/img/img-news/new-6.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page11">Trường THPT chuyên Hà Nội - Amsterdam có Phó Hiệu trưởng mới</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                17/01/2024
+                            </p>
+                            <p class="desc-introduce">Ngày 15/1, Giám đốc Sở Giáo dục và Đào tạo Trần Thế Cương công bố và trao Quyết định tiếp nhận và bổ nhiệm Tiến sĩ Hoàng Thu Hà - Hiệu trưởng Trường THPT Khoa học Giáo dục (Trường Đại học Giáo dục - Đại học Quốc gia Hà Nội) - nhận chức vụ Phó Hiệu trưởng Trường THPT Chuyên Hà Nội - Amsterdam</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page12" ><img  src="/assets/img/img-news/new-7.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page12">“VINUNI ONE-DAY EXPERIENCE” - Chương trình tham quan và học thử tại VinUniversity của khối 12</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                18/01/2024
+                            </p>
+                            <p class="desc-introduce">Vào sáng ngày 17/1 vừa qua, các bạn học sinh khối 12 trường THPT Chuyên Hà Nội  - Amsterdam đã có cơ hội đến tham quan, giao lưu và trải nghiệm chương trình học tại trường Đại học tư thục nổi tiếng VinUni nằm ở Khu đô thị Vinhomes Ocean Park.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page13" ><img  src="/assets/img/img-news/new-8.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page13">TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM TRI ÂN NGÀY THẦY THUỐC VIỆT NAM</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                27/02/2024
+                            </p>
+                            <p class="desc-introduce">Sáng nay, ngày 27/2/2024, đại diện Ban Giám hiệu, Ban Chấp hành Công đoàn Trường THPT Chuyên Hà Nội - Amsterdam đã tới chúc mừng phòng Y tế Nhà trường nhân dịp kỷ niệm 69 năm ngày Thầy thuốc Việt Nam (27/02/1955 - 27/02/2024).</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page14" ><img  src="/assets/img/img-news/new-9.png" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page14">Đoàn viên trường THPT Chuyên Hà Nội - Amsterdam tham gia Ngày hội Xuân hồng - khởi động Tháng Thanh niên 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                28/02/2024
+                            </p>
+                            <p class="desc-introduce">Sáng 28/02/2024, tại Viện Huyết học truyền máu Trung ương, Đoàn Thanh niên - Hội LHTN Việt Nam quận Cầu Giấy tổ chức thành công Ngày hội Xuân hồng - hoạt động đầu tiên của tuổi trẻ quận Cầu Giấy chào đón Tháng Thanh niên năm 2024. Tham dự và động viên Ngày hội có sự hiện diện của đ/c Nguyễn Văn Chiến - Phó Bí thư Thường trực Quận ủy, Chủ tịch HĐND quận, các đồng chí đại diện lãnh đạo các phòng, ngành, đoàn thể quận; các đồng chí đại diện lãnh đạo các cơ sở Đoàn, Ban Giám hiệu các trường trên địa bàn quận.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page15" ><img  src="/assets/img/img-news/new-10.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page15">Festival Xuân 2024: Rạo rực Tết yêu thương</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/02/2024
+                            </p>
+                            <p class="desc-introduce">Sáng ngày 1/2 vừa qua, được sự ủng hộ của Ban Giám hiệu Nhà trường cùng sự giúp đỡ từ các thầy cô giáo và các bậc phụ huynh, học sinh Trường THPT Chuyên Hà Nội - Amsterdam đã hoà mình trong không khí rộn ràng của Festival Xuân 2024 do học sinh khối THCS tổ chức. Tại đây, các học sinh được thoả sức sáng tạo trưng bày mâm ngũ quả, trang trí các gian hàng và dựng nên những tiết mục văn nghệ sôi động.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page2" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page6" ><img  src="/assets/img/img-news/new-1.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page6">40 năm Hà Nội - Amsterdam: thương hiệu giáo dục mũi nhọn của Thủ đô và cả nước</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                29/03/2025
+                            </p>
+                            <p class="desc-introduce">Ra đời từ khát vọng hòa bình và tình hữu nghị, 40 năm qua, Trường THPT chuyên Hà Nội – Amsterdam đã khẳng định vị trí tiên phong đổi mới giáo dục, là lá cờ đầu trong đổi mới đất nước, gửi gắm tâm huyết về GD&ĐT của lãnh đạo Đảng, Nhà nước với sự nghiệp trồng người.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page10" ><img  src="/assets/img/img-news/new-5.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page10">THPT chuyên Hà Nội - Amsterdam dẫn đầu cả nước về số thí sinh đoạt giải học sinh giỏi quốc gia 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                29/01/2024
+                            </p>
+                            <p class="desc-introduce">THPT Chuyên Hà Nội - Amsterdam là trường trung học phổ thông dẫn đầu Hà Nội và cả nước về số học sinh đoạt giải tại Kỳ thi chọn học sinh giỏi Quốc gia THPT năm học 2023 - 2024.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page12" ><img  src="/assets/img/img-news/new-7.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page12">“VINUNI ONE-DAY EXPERIENCE” - Chương trình tham quan và học thử tại VinUniversity của khối 12</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                18/01/2024
+                            </p>
+                            <p class="desc-introduce">Vào sáng ngày 17/1 vừa qua, các bạn học sinh khối 12 trường THPT Chuyên Hà Nội  - Amsterdam đã có cơ hội đến tham quan, giao lưu và trải nghiệm chương trình học tại trường Đại học tư thục nổi tiếng VinUni nằm ở Khu đô thị Vinhomes Ocean Park.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page14" ><img  src="/assets/img/img-news/new-9.png" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page14">Đoàn viên trường THPT Chuyên Hà Nội - Amsterdam tham gia Ngày hội Xuân hồng - khởi động Tháng Thanh niên 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                28/02/2024
+                            </p>
+                            <p class="desc-introduce">Sáng 28/02/2024, tại Viện Huyết học truyền máu Trung ương, Đoàn Thanh niên - Hội LHTN Việt Nam quận Cầu Giấy tổ chức thành công Ngày hội Xuân hồng - hoạt động đầu tiên của tuổi trẻ quận Cầu Giấy chào đón Tháng Thanh niên năm 2024. Tham dự và động viên Ngày hội có sự hiện diện của đ/c Nguyễn Văn Chiến - Phó Bí thư Thường trực Quận ủy, Chủ tịch HĐND quận, các đồng chí đại diện lãnh đạo các phòng, ngành, đoàn thể quận; các đồng chí đại diện lãnh đạo các cơ sở Đoàn, Ban Giám hiệu các trường trên địa bàn quận.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page8" ><img  src="/assets/img/img-news/new-3.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page8">Chương trình giao lưu CLB Anh hùng và nhân chứng lịch sử tại trường THPT chuyên Hà Nội - Amsterdam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                05/02/2024
+                            </p>
+                            <p class="desc-introduce">Trong không khí rộn ràng của những ngày Tết đến xuân về, học sinh trường THPT chuyên Hà Nội – Amsterdam đã có buổi giao lưu với các bác bộ đội trong CLB Anh hùng và nhân chứng lịch sử.</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div id="page3" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page7" ><img  src="/assets/img/img-news/new-2.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page7">TRƯỜNG THPT CHUYÊN HÀ NỘI – AMSTERDAM TIẾP ĐÓN ĐOÀN ỦY BAN GIÁO DỤC QUỐC HỘI PHILIPPINES</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                22/03/2024
+                            </p>
+                            <p class="desc-introduce">Chiều ngày 22/3, trường THPT chuyên Hà Nội – Amsterdam đã long trọng tổ chức buổi lễ tiếp đón Đoàn Ủy ban Giáo dục Quốc hội Philippines đến thăm nhà trường.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page9" ><img  src="/assets/img/img-news/new-4.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page9">Trường THPT Chuyên Hà Nội -Amsterdam kết nghĩa với Trường THPT Chuyên Tuyên Quang</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                27/02/2025
+                            </p>
+                            <p class="desc-introduce">Chiều 27-2, đoàn công tác của Trường THPT chuyên Hà Nội-Amsterdam đã đến thăm và làm việc với Trường THPT Chuyên Tuyên Quang, đồng thời ký biên bản kết nghĩa giữa 2 trường.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page11" ><img  src="/assets/img/img-news/new-6.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page11">Trường THPT chuyên Hà Nội - Amsterdam có Phó Hiệu trưởng mới</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                17/01/2024
+                            </p>
+                            <p class="desc-introduce">Ngày 15/1, Giám đốc Sở Giáo dục và Đào tạo Trần Thế Cương công bố và trao Quyết định tiếp nhận và bổ nhiệm Tiến sĩ Hoàng Thu Hà - Hiệu trưởng Trường THPT Khoa học Giáo dục (Trường Đại học Giáo dục - Đại học Quốc gia Hà Nội) - nhận chức vụ Phó Hiệu trưởng Trường THPT Chuyên Hà Nội - Amsterdam</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page13" ><img  src="/assets/img/img-news/new-8.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page13">TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM TRI ÂN NGÀY THẦY THUỐC VIỆT NAM</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                27/02/2024
+                            </p>
+                            <p class="desc-introduce">Sáng nay, ngày 27/2/2024, đại diện Ban Giám hiệu, Ban Chấp hành Công đoàn Trường THPT Chuyên Hà Nội - Amsterdam đã tới chúc mừng phòng Y tế Nhà trường nhân dịp kỷ niệm 69 năm ngày Thầy thuốc Việt Nam (27/02/1955 - 27/02/2024).</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page15" ><img  src="/assets/img/img-news/new-10.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page15">Festival Xuân 2024: Rạo rực Tết yêu thương</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/02/2024
+                            </p>
+                            <p class="desc-introduce">Sáng ngày 1/2 vừa qua, được sự ủng hộ của Ban Giám hiệu Nhà trường cùng sự giúp đỡ từ các thầy cô giáo và các bậc phụ huynh, học sinh Trường THPT Chuyên Hà Nội - Amsterdam đã hoà mình trong không khí rộn ràng của Festival Xuân 2024 do học sinh khối THCS tổ chức. Tại đây, các học sinh được thoả sức sáng tạo trưng bày mâm ngũ quả, trang trí các gian hàng và dựng nên những tiết mục văn nghệ sôi động.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="page4" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page16" ><img  src="/assets/img/img-news/new-11.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page16">Thông tin đăng ký ứng tuyển vào Trường nội trú Anglo Chinese School 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                26/02/2024
+                            </p>
+                            <p class="desc-introduce">Trường nội trú Anglo Chinese School (Anglo Chinese School (Independent)) dành cho các nam sinh được thành lập từ năm 1886 tại Singapore. Từ 2005, trường mở cửa đón nhận sinh viên quốc tế và trở thành trường quốc tế. Tháng 1 năm 2006, trường trung học Anglo Chinese School được công nhận là trường IB thế giới.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page17" ><img  src="/assets/img/img-news/new-12.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page17">Thông báo về việc nghỉ Tết Nguyên đán Giáp Thìn năm 2024 của Ngành Giáo dục và Đào tạo Hà Nội</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                10/01/2024
+                            </p>
+                            <p class="desc-introduce">Thực hiện Thông báo số 1125/TB-UBND ngày 27/11/2023 của UBND Thành phố về việc nghỉ Tết Âm lịch và nghỉ lễ Quốc khánh năm 2024; Công văn số 274/VP-KGVX ngày 08/01/2024 của UBND Thành phố về việc nghỉ Tết Âm lịch năm 2024 của Ngành Giáo dục và Đào tạo Hà Nội, Sở Giáo dục và Đào tạo Hà Nội đã ra Công văn số 71/SGDĐT-VP ngày 10/01/2024 thông báo tới các đơn vị, trường học trên địa bàn Thành phố lịch nghỉ Tết Nguyên đán Giáp Thìn năm 2024.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page18" ><img  src="/assets/img/img-news/new-13.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page18">Thông báo về việc đăng ký dự tuyển học bổng đi học tại Liên bang Nga năm 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                05/12/2023
+                            </p>
+                            <p class="desc-introduce">Năm học 2024 - 2025, Việt Nam đã được cấp chỉ tiêu tuyển sinh vào các chương trình giáo dục trung cấp nghề, giáo dục đại học và giáo dục chuyên nghiệp bổ sung trong các tổ chức giáo dục đại học của Liên bang Nga với số lượng 1000 chỉ tiêu do Chính phủ Liên bang Nga thiết lập.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page19" ><img  src="/assets/img/img-news/new-14.png" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page19">Thông báo học bổng Chính phủ du học Trung Quốc năm 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                25/11/2023
+                            </p>
+                            <p class="desc-introduce">Bộ Giáo dục và Đào tạo thông báo tuyển sinh đi học tại Trung Quốc năm 2024 diện Hiệp định với 77 chỉ tiêu học bổng cho công dân Việt Nam.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="events.html?page=page20" ><img  src="/assets/img/img-news/new-15.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="events.html?page=page20">Thông báo về việc mời tham gia tư vấn kỹ thuật</a>
+                            <p class="time-up-load">    
+                                <i class="time-icon ti-time"></i>
+                                18/08/2023
+                            </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col col-80pt content-detail " >
+                    <div id="page6" class="page page-section" >
+                        <h2 class="text-heading-content" >40 năm Hà Nội - Amsterdam: thương hiệu giáo dục mũi nhọn của Thủ đô và cả nước</h2>
+                        <h3 class="text-subheading-content">Ra đời từ khát vọng hòa bình và tình hữu nghị, 40 năm qua, Trường THPT chuyên Hà Nội – Amsterdam đã khẳng định vị trí tiên phong đổi mới giáo dục, là lá cờ đầu trong đổi mới đất nước, gửi gắm tâm huyết về GD&ĐT của lãnh đạo Đảng, Nhà nước với sự nghiệp trồng người.</h3>
+                        <p class="text-para-content">Ngày 29/3, Trường THPT chuyên Hà Nội – Amsterdam long trọng tổ chức lễ kỷ niệm 40 năm thành lập trường (1985 – 2025), đón nhận Huân chương Lao động hạng Nhất. Tổng Bí thư Tô Lâm đã gửi lẵng hoa chúc mừng thầy, trò nhà trường.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/dbieu-img.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các đại biểu tham dự buổi lễ.</p>
+                        <p class="text-para-content">Đến dự buổi lễ có Chủ nhiệm Ủy ban Văn hoá – Xã hội Quốc hội Nguyễn Đắc Vinh, Chủ nhiệm Ủy ban Công tác đại biểu Quốc hội Nguyễn Thanh Hải, Thứ trưởng Bộ GD&ĐT Nguyễn Thị Kim Chi, Phó Chủ tịch UBND TP Vũ Thu Hà cùng đại diện lãnh đạo các bộ, ban, ngành TƯ, TP Hà Nội; đại sứ quốc tế, nhiều thế hệ cán bộ quản lý, giáo viên, phụ huynh, học sinh nhà trường qua các thời kỳ.</p>
+                        <h3 class="text-subheading-content">Khẳng định vị thế dẫn đầu</h3>
+                        <p class="text-para-content">Phát biểu tại buổi lễ, nhà giáo Trần Thuỳ Dương - Hiệu trưởng Trường THPT chuyên Hà Nội – Amsterdam xúc động cho biết: lễ kỷ niệm là sự kiện đặc biệt, là niềm vui, niềm tự hào của các thế hệ thầy trò nhà trường.</p>
+                        <p class="text-para-content">Ra đời năm 1985, Trường THPT chuyên Hà Nội – Amsterdam là món quà Nhân dân Thủ đô Amsterdam – Hà Lan tặng Hà Nội sau những năm tháng chiến tranh, là kết tinh của tình hữu nghị Việt Nam - Hà Lan, biểu tượng của khát vọng hòa bình và phát triển.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://resource.kinhtedothi.vn/resources2025/1/users/163/ams-2-1743243263.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thừa ủy quyền Chủ tịch nước, Phó Chủ tịch UBND TP Hà Nội Vũ Thu Hà trao Huân chương Lao động hạng Nhất cho tập thể Trường THPT chuyên Hà Nội - Amsterdam</p>
+                        <p class="text-para-content">4 thập kỷ qua, nhà trường không ngừng nỗ lực nâng cao chất lượng giáo dục, gặt hái thành tựu đáng tự hào với hơn 1.300 giải quốc gia, khẳng định vị thế dẫn đầu trong giáo dục mũi nhọn, đào tạo nhân tài cho Thủ đô và đất nước; 280 giải quốc tế của các thế hệ học sinh, góp phần rạng danh trí tuệ Việt trên bản đồ giáo dục thế giới.</p>
+                        <p class="text-para-content">Từ bề dày truyền thống dạy và học, Trường THPT Hà Nội – Amsterdam đã bắt nhịp thời đại khoa học công nghệ, tạo bước phát triển vượt bậc. Trong giáo dục STEM, thầy và trò cùng nhau thắp sáng ngọn lửa đam mê khoa học, tinh thần chủ động, sáng tạo qua hoạt động sôi nổi của các CLB, từng bước đưa STEM thành ngôn ngữ chung kết nối học sinh nhiều khối chuyên, trang bị cho học sinh nền tảng khoa học vững chắc để trở thành công dân toàn cầu.</p>
+                        <p class="text-para-content">Bên cạnh chú trọng phát triển năng lực tri thức của học sinh, nhà trường kiên định thực hiện mục tiêu giáo dục toàn diện, tạo điều kiện để các thế hệ học sinh toả sáng; tìm thấy niềm đam mê, tự tin với các hoạt động ngoại khoá, khơi dậy nhiệt huyết tuổi trẻ, phát triển kỹ năng sống khi hưởng ứng phong trào của Đoàn Thanh niên, hoạt động thiện nguyện. Nhiều học sinh ưu tú đã tiếp tục rèn luyện để được đứng vào hàng ngũ của Đảng, trở thành đội ngũ thanh niên tiên phong.</p>
+                        <h3 class="text-subheading-content">Tiếp tục phát triển bền vững</h3>
+                        <p class="text-para-content">Chúc mừng thầy trò Trường THPT chuyên Hà Nội – Amsterdam nhân kỷ niệm 40 năm thành lập, Giám đốc Sở GD&ĐT Hà Nội Trần Thế Cương điểm lại nhiều thành tích nổi bật, vai trò dẫn dắt của ngành GD&ĐT Thủ đô thời gian qua và khẳng định, tạo nên thành quả xuất sắc đó, có sự đóng góp to lớn của Trường THPT chuyên Hà Nội – Amsterdam.</p>
+                        <p class="text-para-content">40 năm qua, thầy và trò nhà trường đã nỗ lực, vững bước đi lên, xây dựng Trường THPT chuyên Hà Nội - Amsterdam trở thành thương hiệu về giáo dục mũi nhọn của Thủ đô và cả nước. Trường được Bộ GD&ĐT, UBND TP, Sở GD&ĐT Hà Nội đánh giá, ghi nhận là đơn vị tiên phong trong các hoạt động đổi mới giáo dục.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://resource.kinhtedothi.vn/resources2025/1/users/163/ams-3-1743243264.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Đại diện lãnh đạo UBND TP Hà Nội tặng hoa, chúc mừng thành tích của Trường THPT chuyên Hà Nội - Amsterdam.</p>
+                        <p class="text-para-content">Những năm qua, cùng các trường chuyên của Hà Nội và các trường chuyên thuộc đại học, Trường THPT chuyên Hà Nội – Amsterdam luôn kiên trì, kiên định với phương châm đào tạo chuyên sâu, giáo dục toàn diện, tiên phong sáng tạo; không ngừng đổi mới, cập nhật tiến bộ của giáo dục quốc tế, khẳng định vị thế hàng đầu trên bản đồ giáo dục Việt Nam cũng như các nước trong khu vực…</p>
+                        <p class="text-para-content">Trường có nhiều học sinh giành giải thưởng tại các cuộc thi học sinh giỏi TP, quốc gia, quốc tế; nhiều giáo viên dạy giỏi hàng đầu của TP; đã đào tạo hàng nghìn công dân ưu tú cho đất nước; trong đó có nhiều người đảm nhận vị trí quan trọng tại các cơ quan Đảng, Nhà nước, TP…</p>
+                        <p class="text-para-content">Để Trường THPT chuyên Hà Nội – Amsterdam ngày càng phát triển bền vững, xứng đáng với vai trò, vị trí mũi nhọn, trọng điểm của cả nước, Giám đốc Sở GD&ĐT Hà Nội nhấn mạnh: thời gian tới, thầy cô và học sinh nhà trường cùng toàn ngành GD&ĐT Thủ đô đồng lòng, quyết tâm thực hiện chỉ đạo của Tổng Bí thư Tô Lâm, phấn đấu phát triển sự nghiệp GD&ĐT trong Kỷ nguyên mới - Kỷ nguyên vươn mình của dân tộc, đưa ngành GD&ĐT Thủ đô phát triển ngang tầm các nước phát triển với tinh thần tự chủ - tự tin - tự lực - tự cường- tự hào dân tộc.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://resource.kinhtedothi.vn/resources2025/1/users/163/ams-4-1743243264.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Hiệu trưởng Trường THPT chuyên Hà Nội - Amsterdam Trần Thùy Dương và đại diện học sinh cùng ngọn đuốc truyền thống.</p>
+                        <p class="text-para-content">Nhà trường tiếp tục tập trung xây dựng đội ngũ nhà giáo yêu nghề, giỏi chuyên môn, năng động sáng tạo; không ngừng nâng cao chất lượng giáo dục toàn diện; duy trì phát triển thương hiệu giáo dục mũi nhọn. Cùng với đó, trường tiếp tục quan tâm bồi dưỡng, phát triển đảng trong trường học, hưởng ứng tích cực phong trào nhà trường cùng chung tay phát triển - thầy cô cùng sẻ chia trách nhiệm; quản lý, khai thác, sử dụng hiệu quả cơ sở vật chất, tăng cường ứng dụng công nghệ thông tin, đẩy mạnh hợp tác quốc tế..., nhằm nâng cao chất lượng giảng dạy, nghiên cứu khoa học.</p>
+                        <p class="text-para-content">Giám đốc Sở GD&ĐT Hà Nội cũng mong thầy cô nhà trường phát huy truyền thống, không ngừng cố gắng rèn luyện; học sinh luôn nỗ lực thi đua học tập, đạt nhiều thành tích xuất sắc để trở thành chủ nhân tương lai đất nước, công dân toàn cầu - lực lượng nòng cốt xây dựng đất nước, Thủ đô giàu mạnh, phồn vinh.</p>
+                        <p class="text-para-content">Tại buổi lễ đã diễn ra nghi lễ trao đuốc ý nghĩa, trang trọng giữa Đại sứ đặc mệnh toàn quyền Vương quốc Hà Lan tại Việt Nam cho các thế hệ thầy trò nhà trường nhằm nối dài tinh thần đoàn kết, hữu nghị.</p>
+                        <p class="text-para-content">Đánh giá, ghi nhận, thành tích xuất sắc trong đào tạo thế hệ trẻ, Chủ tịch nước đã quyết định trao tặng tập thể Trường THPT chuyên Hà Nội – Amsterdam Huân chương Lao động hạng Nhất.</p>
+                    </div>
+
+                    <div id="page7" class="page page-section" >
+                        <h2 class="text-heading-content" >TRƯỜNG THPT CHUYÊN HÀ NỘI – AMSTERDAM TIẾP ĐÓN ĐOÀN ỦY BAN GIÁO DỤC QUỐC HỘI PHILIPPINES</h2>
+                        <h3 class="text-subheading-content">Chiều ngày 22/3, trường THPT chuyên Hà Nội – Amsterdam đã long trọng tổ chức buổi lễ tiếp đón Đoàn Ủy ban Giáo dục Quốc hội Philippines đến thăm nhà trường.</h3>
+                        <p class="text-para-content">Buổi gặp gỡ có sự góp mặt của những vị khách quý như Thượng nghị sĩ Sherwin T. Gatchalian, Đồng chủ tịch EDCOM II, Chủ tịch Uỷ ban Thượng viện về Giáo dục cơ bản; Hạ nghị sĩ Mark O. Go, Đồng chủ tịch EDCOM II, Chủ tịch Uỷ ban Hạ viện về Giáo dục Đại học và Giáo dục kỹ thuật; TS. Nguyễn Thị Tuyết Nga - Đại biểu Quốc hội chuyên trách, Uỷ ban Văn hoá, Giáo dục Quốc hội; Đại diện Bộ Giáo dục và Đào tạo, Sở Giáo dục và Đào tạo Hà Nội.</p>
+                        <p class="text-para-content">Chương trình đã được mở đầu với tiết mục văn nghệ ấn tượng: “Hello Vietnam” của đội văn nghệ trường THPT chuyên Hà Nội – Amsterdam như một lời chào đón nồng nhiệt của nhà trường với Đoàn đại biểu.</p>
+                        <p class="text-para-content">Thước phim ngắn giới thiệu tổng quan về nhà trường đã đem lại cho các vị khách một ấn tượng mạnh mẽ về môi trường giáo dục hiện đại, tiên tiến của ngôi trường luôn giữ vững vị thế dẫn đầu về chất lượng giáo dục, đào tạo của Thủ đô trong những năm qua.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thước phim giới thiệu tổng quan về trường THPT chuyên Hà Nội – Amsterdam</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-event/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="margin-tp10 margin-bt content-introduce-img">
+                            <img src="/assets/img/page7-event/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-event/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Đại diện các CLB chia sẻ về hoạt động, dự án của mình</p>
+                        <p class="text-para-content">Điểm nhấn của buổi gặp gỡ này là hoạt động triển lãm các Câu lạc bộ ngoại khóa – một dấu ấn đặc biệt của trường THPT chuyên Hà Nội – Amsterdam. Mười câu lạc bộ ở bốn lĩnh vực: học thuật, văn hóa nghệ thuật, thể thao, cộng đồng tham gia triển lãm đã đem đến những trải nghiệm đặc biệt cho các vị khách quý đến từ Philippines khi giới thiệu về những dự án thú vị, những hoạt động sôi nổi và bổ ích của tuổi trẻ trường Hà Nội – Amsterdam. Mỗi câu lạc bộ là một màu sắc, một cá tính riêng của học sinh nhà trường, nhưng đều thể hiện sự năng động, sáng tạo, tinh thần chủ động tìm tòi và tích cực vận dụng tri thức vào thực tiễn của các em. Những chia sẻ đầy tự tin, nhiệt huyết của các em học sinh về hoạt động của câu lạc bộ với những đại biểu, những chuyên gia giáo dục tại Philippines đã khẳng định sức hấp dẫn của môi trường học tập tại trường THPT chuyên Hà Nội – Amsterdam: nơi học sinh được học tập với niềm đam mê và thầy cô luôn tận tình truyền cảm hứng để các em phát huy mạnh mẽ năng lực sáng tạo của mình. </p>
+                        <p class="text-para-content">Hoạt động triển lãm dù chỉ diễn ra trong khoảng thời gian ngắn nhưng đã khiến các vị khách thích thú và ấn tượng với “hệ sinh thái” câu lạc bộ - môi trường giáo dục hướng nghiệp bổ ích của nhà trường. Điều này được thể hiện rõ qua phần phát biểu của Đại diện Đoàn Ủy ban Giáo dục Quốc hội Philippines sau khi tham quan triển lãm.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-event/img-5.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Chương trình đã khép lại trong bầu không khí thân tình với màn trao quà, chụp ảnh lưu niệm giữa thầy và trò trường THPT chuyên Hà Nội – Amsterdam với Đoàn Ủy ban Giáo dục Quốc hội Philippines.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-event/img-6.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Những bức ảnh lưu niệm của thầy và trò trường THPT chuyên Hà Nội – Amsterdam và Đoàn đại biểu Ban Giáo dục Quốc hội Philippines</p>
+                        <p class="text-para-content">Buổi giao lưu, gặp gỡ giữa thầy trò trường THPT chuyên Hà Nội – Amsterdam với Đoàn ủy ban Giáo dục Quốc hội Philippines đã thắt chặt thêm tinh thần hữu nghị giữa các quốc gia trong khu vực Đông Nam Á. Đồng thời, đây cũng là cơ hội để nhà trường chia sẻ về phương châm giáo dục, môi trường học tập của một trong những ngôi trường mũi nhọn trong công tác dạy và học ở Việt Nam, từ đó vừa khẳng định sự phát triển của nền giáo dục nước nhà, vừa học hỏi thêm kinh nghiệm từ những chia sẻ của bạn bè quốc tế.</p>
+                    </div>
+
+                    <div id="page8" class="page page-section" >
+                        <h2 class="text-heading-content" >Chương trình giao lưu CLB Anh hùng và nhân chứng lịch sử tại trường THPT chuyên Hà Nội - Amsterdam</h2>
+                        <h3 class="text-subheading-content">Trong không khí rộn ràng của những ngày Tết đến xuân về, học sinh trường THPT chuyên Hà Nội – Amsterdam đã có buổi giao lưu với các bác bộ đội trong CLB Anh hùng và nhân chứng lịch sử.</h3>
+                        <p class="text-para-content">Những câu chuyện lịch sử sống động, ý nghĩa được truyền tải qua giọng kể tự nhiên, hóm hỉnh của các bác bộ đội – những chứng nhân lịch sử, đã đem lại nhiều cung bậc cảm xúc cho các em học sinh.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page8-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Các em chăm chú lắng nghe trong niềm cảm động trước những năm tháng chiến đấu hào hùng để giành độc lập, đưa hòa bình về với đất nước của thế hệ cha ông. Từng câu chuyện về những chiến tích oanh liệt của quân dân ta, về hình ảnh người bộ đội không chỉ là những chiến sĩ anh dũng trên chiến trường còn là những nghệ sĩ tài hoa, những nhà trí thức tài ba đã khiến các em không ngừng vỗ tay vì ngưỡng mộ, tự hào.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page8-event/img-2.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Buổi sinh hoạt đã đưa các em đến gần hơn với lịch sử vẻ vang của dân tộc, hiểu rõ hơn về công lao của các thế hệ cha anh để thêm trân trọng sự hi sinh cao cả của những anh hùng dân tộc. Đó là cách để lịch sử vang âm giữa hiện tại, đánh thức tinh thần trách nhiệm của thế hệ trẻ trường THPT chuyên Hà Nội – Amsterdam đối với việc giữ gìn nền hòa bình mà cha ông đã tận hiến hết mình để bảo vệ, phát triển đất nước vững mạnh, phồn vinh.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page8-event/img-3.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các bác trong CLB Anh hùng và nhân chứng lịch sử chụp ảnh lưu niệm cùng thầy trò trường THPT chuyên Hà Nội - Amsterdam</p>
+                        <p class="text-para-content">Trong suốt buổi giao lưu, bên cạnh những câu chuyện lịch sử cảm động, các bác còn mang đến cho các em học sinh những tiết mục văn nghệ đặc sắc cùng tiết mục trình diễn nhạc cụ dân tộc. Những giai điệu tự hào đã nhận được sự hưởng ứng nhiệt tình từ các bạn học sinh, giúp các em thấm nhuần tinh thần dân tộc, niềm tự hào về truyền thống dựng nước và giữ nước hào hùng của đất nước.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page8-event/img-4.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Chương trình đã khép lại nhưng vẫn tạo nên những dư âm đáng nhớ trong các em học sinh trường THPT chuyên Hà Nội – Amsterdam. Đây là một buổi sinh hoạt hữu ích, một phương thức giáo dục sáng tạo nhằm góp phần bồi đắp nhận thức, nâng cao tinh thần trách nhiệm để thế hệ trẻ trường THPT chuyên Hà Nội - Amsterdam nói riêng. Những trải nghiệm đáng quý trong buổi chuyên đề đã giúp các em học sinh thêm quyết tâm phát huy truyền thống của thế hệ cha ông đã gây dựng. Từ đó các em càng vững lòng vượt qua gian khó, càng nỗ lực học tập và rèn luyện để đóng góp trí tuệ, công sức cho công cuộc xây dựng và bảo vệ Tổ quốc.</p>
+                    </div>
+                    
+                    <div id="page9" class="page page-section" >
+                        <h2 class="text-heading-content" >Trường THPT Chuyên Hà Nội -Amsterdam kết nghĩa với Trường THPT Chuyên Tuyên Quang</h2>
+                        <h3 class="text-subheading-content">Chiều 27-2, đoàn công tác của Trường THPT chuyên Hà Nội-Amsterdam đã đến thăm và làm việc với Trường THPT Chuyên Tuyên Quang, đồng thời ký biên bản kết nghĩa giữa 2 trường.</h3>
+                        <div class="content-introduce-img">
+                            <img src="https://baotuyenquang.com.vn/media/images/2025/02/img_20250227190901.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Trường THPT chuyên Hà Nội-Amsterdam ký Biên bản kết nghĩa với Trường THPT Chuyên Tuyên Quang</p>
+                        <p class="text-para-content">Tại buổi làm việc, lãnh đạo 2 trường đã ký kết biên bản kết nghĩa giữa 2 trường về các nội dung: Tăng cường giao lưu, chia sẻ kinh nghiệm trong dạy học, ôn tập, bồi dưỡng đội tuyển học sinh giỏi; tổ chức các chương trình, hoạt động về nguồn ý nghĩa nhằm tăng cường giáo dục đạo đức cách mạng trong thế hệ trẻ.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://baotuyenquang.com.vn/media/images/2025/02/233(1).jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các đại biểu cắt băng khánh thành công trình thư viện Trường THPT Đông Thọ.</p>
+                        <p class="text-para-content">Đồng thời thảo luận về các giải pháp nâng cao chất lượng công tác giảng dạy ôn tập, bồi dưỡng đội tuyển học sinh giỏi, phấn đấu nâng cao chất lượng, số lượng giải tại các kỳ thi chọn học sinh giỏi quốc gia THPT…</p>
+                        <p class="text-para-content">Trước đó, tại Trường THPT Đông Thọ (Sơn Dương), Trường THPT Chuyên Hà Nội - Amsterdam phối hợp với trường THPT Đông Thọ tổ chức Lễ khánh thành công trình nhà thư viện của nhà trường. Công trình nhà Thư viện của Trường THPT Đông Thọ do cán bộ, giáo viên, học sinh và phụ huynh Trường THPT Chuyên Hà Nội - Amsterdam tài trợ xây dựng, khởi công từ tháng 11 năm 2024. Công trình có diện tích 120 m2 với đầy đủ trang thiết bị, các loại sách tham khảo... với tổng trị giá hơn 600 triệu đồng.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://baotuyenquang.com.vn/media/images/2025/02/img_20250227122715.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Lãnh đạo Sở Giáo dục và Đào tạo, Trường THPT chuyên Hà Nội-Amsterdam cùng học sinh 2 trường tại thư viện mới.</p>
+                        <p class="text-para-content">Cũng trong dịp này, cán bộ, giáo viên và học sinh Trường THPT chuyên Hà Nội-Amsterdam đã tặng máy tính, sách, và đồ dùng học tập cho học sinh Trường THPT Đông Thọ.</p>
+                    </div>
+
+                    <div id="page10" class="page page-section" >
+                        <h2 class="text-heading-content" >THPT chuyên Hà Nội - Amsterdam dẫn đầu cả nước về số thí sinh đoạt giải học sinh giỏi quốc gia 2024</h2>
+                        <h3 class="text-subheading-content">THPT Chuyên Hà Nội - Amsterdam là trường trung học phổ thông dẫn đầu Hà Nội và cả nước về số học sinh đoạt giải tại Kỳ thi chọn học sinh giỏi Quốc gia THPT năm học 2023 - 2024.</h3>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page10-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Bảng thống kê số lượng giải HSG Quốc gia năm học 2023 - 2024 của đội tuyển thành phố Hà Nội</p>
+                        <p class="text-para-content">Trong tổng số hơn 3.300 học sinh cả nước đạt giải trong kỳ thi chọn học sinh giỏi quốc gia trung học phổ thông năm học 2023 - 2024, thành phố Hà Nội có 184 học sinh đạt giải: 14 giải Nhất, 61 giải Nhì, 54 giải Ba và 55 giải Khuyến khích.</p>
+                        <p class="text-para-content">Trong đó, học sinh Hà Nội - Amsterdam dẫn đầu với 105 giải: 11 giải Nhất, 46 giải Nhì, 29 giải Ba và 19 giải Khuyến khích.</p>
+                        <p class="text-para-content">Năm học 2022 - 2023, học sinh THPT chuyên Hà Nội - Amsterdam đạt 100 giải trong Kỳ thi HSG Quốc gia.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page10-event/img-2.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Giám đốc Sở Giáo dục và Đào tạo Hà Nội Trần Thế Cương tặng hoa chúc mừng học sinh đội tuyển tham dự Kỳ thi chọn Học sinh giỏi Quốc gia 2023 - 2024.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page10-event/img-3.png" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Số giải Học sinh giỏi Quốc gia của trường THPT chuyên Hà Nội - Amsterdam năm học 2023 - 2024</p>
+                        <p class="text-para-content">Trong số 11 giải Nhất của học sinh nhà trường, môn Tiếng Anh có 6 giải Nhất; môn Hóa học có 2 giải Nhất; các môn Toán học, Tin học và Tiếng Pháp - mỗi môn có 1 giải Nhất.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page10-event/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Đội tuyển Tiếng Anh thành phố Hà Nội năm học 2023 - 2024</p>
+                        <p class="text-para-content">Kỳ thi chọn học sinh giỏi quốc gia trung học phổ thông do Bộ Giáo dục và Đào tạo tổ chức vào ngày 5 và 6-1-2024 với sự tham gia của 5.813 học sinh, trong số này có 128 học sinh đến từ trường THPT chuyên Hà Nội - Amsterdam.</p>
+                        <p class="text-para-content">Trong số 105 học sinh nhà trường đạt giải, có 13 học sinh xuất sắc ở các đội tuyển Toán học (3), Vật lí (2), Hóa học (5), Sinh học (2), Tin học (1) được lựa chọn tham dự Kỳ thi chọn Đội tuyển Olympic Quốc tế 2024.</p>
+                    </div>
+
+                    <div id="page11" class="page page-section" >
+                        <h2 class="text-heading-content" >Trường THPT chuyên Hà Nội - Amsterdam có Phó Hiệu trưởng mới</h2>
+                        <h3 class="text-subheading-content">Ngày 15/1, Giám đốc Sở Giáo dục và Đào tạo Trần Thế Cương công bố và trao Quyết định tiếp nhận và bổ nhiệm Tiến sĩ Hoàng Thu Hà - Hiệu trưởng Trường THPT Khoa học Giáo dục (Trường Đại học Giáo dục - Đại học Quốc gia Hà Nội) - nhận chức vụ Phó Hiệu trưởng Trường THPT Chuyên Hà Nội - Amsterdam</h3>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page11-event/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Tân Phó Hiệu trưởng Trường THPT chuyên Hà Nội - Amsterdam Hoàng Thu Hà.</p>
+                        <p class="text-para-content">Tân phó hiệu trưởng trường chuyên hàng đầu Hà Nội từng có nhiều năm công tác tại Trường THPT Chuyên Đại học Khoa học tự nhiên. Cách đây gần 1 năm, vào tháng 4/2023, bà được bổ nhiệm vị trí Hiệu trưởng Trường THPT Khoa học Giáo dục.</p>
+                        <p class="text-para-content">Chúc mừng đồng chí Hoàng Thu Hà nhận nhiệm vụ mới, Giám đốc Sở GDĐT Trần Thế Cương tin tưởng, với quá trình công tác nhiều năm tại Trường THPT chuyên Khoa học tự nhiên và Trường THPT Khoa học Giáo dục, đồng chí sẽ phát huy kinh nghiệm đã tích luỹ, cùng tập thể Trường THPT Chuyên Hà Nội - Amsterdam hoàn thành tốt nhiệm vụ mới được giao.</p>
+                        <p class="text-para-content">Trân trọng cảm ơn sự quan tâm, giao nhiệm vụ của Giám đốc Sở, đồng chí Hoàng Thu Hà khẳng định sẽ tiếp thu đầy đủ ý kiến chỉ đạo, đoàn kết cùng tập thể đơn vị mới đến nhận công tác để hoàn thành nhiệm vụ được giao.</p>
+                        <p class="text-para-content">Sáng ngày 17/1, tại trường THPT chuyên Hà Nội - Amsterdam, Hội nghị công bố và trao Quyết định công tác cán bộ cho đồng chí Hoàng Thu Hà đã được tổ chức.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page11-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img"> Đại diện Sở Giáo dục và Đào tạo Hà Nội công bố Quyết định công tác cán bộ</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page11-event/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Đồng chí Trần Thùy Dương - Bí thư Đảng ủy, Hiệu trưởng trường THPT Chuyên Hà Nội - Amsterdam chúc mừng đồng chí Hoàng Thu Hà</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page11-event/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Đồng chí Hoàng Thu Hà phát biểu trong Hội nghị</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page11-event/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các đồng chí trong Ban Giám hiệu nhà trường tặng hoa chúc mừng đồng chí Hoàng Thu Hà - Tân Phó Hiệu trưởng trường THPT chuyên Hà Nội - Amsterdam</p>
+                    </div>
+
+                    <div id="page12" class="page page-section" >
+                        <h2 class="text-heading-content" >“VINUNI ONE-DAY EXPERIENCE” - Chương trình tham quan và học thử tại VinUniversity của khối 12</h2>
+                        <h3 class="text-subheading-content">Vào sáng ngày 17/1 vừa qua, các bạn học sinh khối 12 trường THPT Chuyên Hà Nội  - Amsterdam đã có cơ hội đến tham quan, giao lưu và trải nghiệm chương trình học tại trường Đại học tư thục nổi tiếng VinUni nằm ở Khu đô thị Vinhomes Ocean Park.</h3>
+                        <p class="text-para-content">“VinUni one-day experience” được tổ chức nhằm tạo cơ hội cho các học sinh niên khóa 2124 của trường THPT Chuyên Hà Nội - Amsterdam được trải nghiệm 1 ngày tại VinUni. Tại đây, các bạn học sinh cuối cấp có cơ hội tìm hiểu rõ hơn về trường, các ngành học, phong cách giảng dạy của các giáo sư, và giao lưu với các cựu Amsers hiện đang theo học tại VinUni.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các bạn học sinh tham quan và trải nghiệm tại VinUni</p>
+                        <p class="text-para-content">Mở đầu chương trình, các bạn học sinh được giao lưu cùng các giáo sư, các Vinunian-Amsers tại giảng đường TBL - Team-based-learning Classroom. Khác với các phòng học truyền thống, phòng học TBL không có những hàng ghế xếp theo thứ tự mà thay vào đó là những chiếc bàn tròn, tạo điều kiện cho học sinh được trao đổi với nhau. Điều này cũng tạo nên sự khác biệt trong phong cách giảng dạy của trường khi trường chú trọng nhiều vào sự thể hiện và tương tác giữa các học sinh.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các bạn học sinh tại phòng học TBL</p>
+                        <p class="text-para-content">Tại đây, các bạn học sinh được giao lưu với cô Liên - 1 cựu Amser và hiện là giảng viên Viện Khoa học và Giáo dục khai phóng. Cô rất gần gũi với các bạn học sinh và kể về những trải nghiệm của cô ở Ams, ở VinUni, qua đó truyền đạt những bài học quý giá tới các Amser 2124. Bên cạnh đó, thầy David Harrison - Phó hiệu trưởng Nhà trường cũng có mặt, cung cấp các thông tin cần thiết về trường cho các bạn học sinh.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thầy David Harrison - Phó hiệu trưởng phụ trách học thuật, Giảng viên Viện Khoa học và Giáo dục khai phóng</p>
+                        <p class="text-para-content">Tiếp tục chương trình là hoạt động trải nghiệm học thuật thông qua các lớp học thử tại VinUni. Có 4 lớp học thử tương ứng với 4 viện tại trường, bao gồm Viện Kinh doanh Quản trị, Viện Khoa học Sức khoẻ, Viện Kỹ thuật và Khoa học Máy tính, và Viện Khoa học và Giáo dục Khai phóng. Các bạn học sinh được chia thành 4 nhóm và tham gia lớp học thử theo ngành học bản thân quan tâm.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các bạn học sinh tham gia trải nghiệm học thử tại VinUni</p>
+                        <p class="text-para-content">Sau khi tham gia các lớp học thử tại VinUni, các Amsers cuối cấp đã có 10 phút để nghỉ giải lao và thưởng thức bánh, tiệc trà trước khi đến với hoạt động tiếp theo.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-5.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Kết thúc giờ giải lao, học sinh trường THPT Chuyên Hà Nội - Amsterdam đến với hoạt động cuối cùng của chương trình, đó là tham quan các phòng học, khu nghiên cứu, cơ sở vật chất trong trường. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-6.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các bạn học sinh tham quan các khu vực của VinUni</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-7.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-8.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-event/img-9.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Một số hình ảnh về cơ sở vật chất ở VinUni</p>
+                        <h3 style="font-style: italic;" class="text-subheading-content">Vậy là chương trình “VinUni one-day experience” đã kết thúc và để lại nhiều trải nghiệm đáng quý cho các bạn học sinh khối 12 trường THPT Chuyên Hà Nội - Amsterdam. Thay mặt Ban biên tập CLB Ams Wide Web, em xin cảm ơn VinUniversity và xin chúc VinUniversity sẽ ngày càng thành công trong tương lai!</h3>
+                    </div>
+
+                    <div id="page13" class="page page-section" >
+                        <h2 class="text-heading-content" >TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM TRI ÂN NGÀY THẦY THUỐC VIỆT NAM</h2>
+                        <h3 class="text-subheading-content">Sáng nay, ngày 27/2/2024, đại diện Ban Giám hiệu, Ban Chấp hành Công đoàn Trường THPT Chuyên Hà Nội - Amsterdam đã tới chúc mừng phòng Y tế Nhà trường nhân dịp kỷ niệm 69 năm ngày Thầy thuốc Việt Nam (27/02/1955 - 27/02/2024).</h3>
+                        <p class="text-para-content">Xưa nay, nghề thầy thuốc vẫn luôn là một nghề cao quý được xã hội coi trọng, là nghề cao đẹp với sứ mệnh thiêng liêng chăm sóc sức khỏe cho cộng đồng.</p>
+                        <p class="text-para-content">Trong cuộc sống hiện đại, sức khỏe học đường ngày càng được quan tâm. Sức khỏe thể chất và tâm thần của học sinh là yếu tố quyết định đến phát triển giáo dục toàn diện. Ở trường phổ thông, việc chăm sóc sức khỏe thể chất của cán bộ - giáo viên - nhân viên và học sinh toàn trường là trọng trách của phòng Y tế. Nhận thức rõ về vai trò của nghề, cán bộ phòng Y tế Trường THPT chuyên Hà Nội - Amsterdam luôn trách nhiệm, sát sao và hoàn thành tốt mọi công việc trong lĩnh vực của mình, đảm bảo các điều kiện học tập và sinh hoạt tại trường được an toàn, phù hợp với sự phát triển thể chất và tinh thần của học sinh theo lứa tuổi. Nhờ đó, các Cha Mẹ học sinh luôn yên tâm về mặt sức khỏe mỗi khi các con đến trường.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Đồng chí Dương Tú Anh - Đảng ủy viên, Phó hiệu trưởng cùng đồng chí Trương Nam Phương - Chủ tịch Công đoàn trường tặng hoa cho cán bộ phòng Y tế trường.</p>
+                        <p class="text-para-content">Với tấm lòng biết ơn đội ngũ nhân viên mặc áo trắng, hôm nay, đại diện Ban Giám hiệu và Ban Chấp hành Công đoàn Trường do đồng chí Dương Tú Anh - Phó Hiệu trưởng và đồng chí Trương Nam Phương - Chủ tịch Công đoàn dẫn đầu đã đến thăm và chúc mừng các cán bộ phòng Y tế. Các đồng chí đã gửi tặng phòng Y tế bó hoa tươi thắm, thể hiện lòng trân quý các đồng chí cán bộ y tế đã luôn lo lắng cho sức khỏe thầy và trò Nhà trường trong thời gian qua. Thay mặt phòng Y tế, đồng chí Nguyễn Thị Hồng Minh đã xúc động đón nhận tình cảm chân thành và sự quan tâm sát sao từ Nhà trường.</p>
+                        <p class="text-para-content">Nhân ngày kỷ niệm của nghề, xin kính chúc các đồng chí phòng Y tế luôn mạnh khỏe và tiếp tục sát cánh với Hội đồng Giáo dục Nhà trường trên những chặng đường tiếp theo.</p>
+                    </div>
+
+                    <div id="page14" class="page page-section" >
+                        <h2 class="text-heading-content" >Đoàn viên trường THPT Chuyên Hà Nội - Amsterdam tham gia Ngày hội Xuân hồng - khởi động Tháng Thanh niên 2024</h2>
+                        <h3 class="text-subheading-content">Sáng 28/02/2024, tại Viện Huyết học truyền máu Trung ương, Đoàn Thanh niên - Hội LHTN Việt Nam quận Cầu Giấy tổ chức thành công Ngày hội Xuân hồng - hoạt động đầu tiên của tuổi trẻ quận Cầu Giấy chào đón Tháng Thanh niên năm 2024. Tham dự và động viên Ngày hội có sự hiện diện của đ/c Nguyễn Văn Chiến - Phó Bí thư Thường trực Quận ủy, Chủ tịch HĐND quận, các đồng chí đại diện lãnh đạo các phòng, ngành, đoàn thể quận; các đồng chí đại diện lãnh đạo các cơ sở Đoàn, Ban Giám hiệu các trường trên địa bàn quận.</h3>
+                        <p class="text-para-content">Tháng Thanh niên năm 2024 với chủ đề “Tuổi trẻ Thủ đô xung kích, tình nguyện vì cuộc sống cộng đồng” là đợt sinh hoạt chính trị trong toàn Đoàn, là dịp để tuổi trẻ Cầu Giấy tiếp nối truyền thống tốt đẹp của thế hệ cha anh đi trước, phát huy tinh thần xung kích, tình nguyện của tuổi trẻ thế hệ mới, không ngừng nỗ lực vươn lên thi đua học tập và làm theo tấm gương đạo đức của Chủ tịch Hồ Chí Minh vĩ đại.</p>
+                        <p class="text-para-content">Toàn đoàn phấn đấu thực hiện thành công 12 chỉ tiêu trong Tháng Thanh niên, trong đó, phấn đấu mỗi cơ sở Đoàn, Đội thực hiện ít nhất: 01 công trình Thanh niên tình nguyện (cơ sở Đoàn); 01 công trình măng non (các Liên đội); 100% các cơ sở Đoàn tổ chức các hoạt động “Ngày thứ bảy tình nguyện”, hỗ trợ thủ tục hành chính cho nhân dân; tổ chức các hoạt động “Ngày chủ nhật xanh”, “Ngày chiến sĩ tình nguyện xây dựng văn minh đô thị”, các hoạt động tình nguyện vì cuộc sống cộng đồng, các hoạt động an sinh xã hội; quan tâm tổ chức Ngày đoàn viên năm 2024 gắn với các hoạt động văn hóa, thể thao, Lễ kết nạp Đoàn viên, Đội viên mới, giới thiệu Đoàn viên ưu tú cho Đảng xem xét, kết nạp; thành lập mới tổ chức Đoàn, Hội, chi hội, câu lạc bộ, tổ, đội, nhóm...</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Là một trong những hoạt động trọng tâm trong Tháng Thanh niên - “Ngày hội Xuân hồng”, hoạt động hiến máu tình nguyện do Đoàn Thanh niên quận Cầu Giấy tổ chức nhằm lan tỏa tinh thần tình nguyện nhân văn của tuổi trẻ, đồng thời bồi đắp truyền thống tương thân - tương ái đáng tự hào của dân tộc ta đến với cộng đồng, xã hội.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-event/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Với mục tiêu phấn đấu toàn quận thu được hơn 4.000 đơn vị máu đạt chuẩn, hoàn thành trước tháng 9/2024, Đoàn Thanh niên - Hội LHTN Việt Nam quận đẩy mạnh công tác tuyên truyền, vận động các cơ sở Đoàn, Hội, Đội, đoàn viên thanh niên tích cực tham gia hiến máu cứu người. Ngày hội Xuân hồng nhận được sự hưởng ứng tham gia của các đồng chí lãnh đạo các cơ sở Đoàn, Đội trực thuộc cùng hơn 400 đoàn viên, thanh niên toàn quận, kết quả thu được 350 đơn vị máu đạt chuẩn.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-event/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các Đoàn viên khối 12 của trường tích cực hưởng ứng, tham gia ngày hội hiến máu</p>
+                        <p class="text-para-content">Tham gia ngày hội Xuân hồng, hàng chục Đoàn viên học sinh lớp 12 đủ 18 tuổi đã thể hiện tinh thần tương thân tương ái, xung kích, tình nguyện và trách nhiệm với cộng đồng của Đoàn thanh niên trường THPT chuyên Hà Nội - Amsterdam.</p>
+                        <p class="text-para-content">Xin được tri ân nghĩa cử cao đẹp của các đồng chí! Mong rằng nghĩa cử cao đẹp này sẽ ngày càng được lan toả, nhân rộng trong cộng đồng để cuộc sống thêm tươi đẹp, ý nghĩa hơn, để những “giọt hồng yêu thương” được cho đi sẽ có nhiều “cuộc đời ở lại”.</p>
+                    </div>
+
+                    <div id="page15" class="page page-section" >
+                        <h2 class="text-heading-content" >Festival Xuân 2024: Rạo rực Tết yêu thương</h2>
+                        <h3 class="text-subheading-content">Sáng ngày 1/2 vừa qua, được sự ủng hộ của Ban Giám hiệu Nhà trường cùng sự giúp đỡ từ các thầy cô giáo và các bậc phụ huynh, học sinh Trường THPT Chuyên Hà Nội - Amsterdam đã hoà mình trong không khí rộn ràng của Festival Xuân 2024 do học sinh khối THCS tổ chức. Tại đây, các học sinh được thoả sức sáng tạo trưng bày mâm ngũ quả, trang trí các gian hàng và dựng nên những tiết mục văn nghệ sôi động.</h3>
+                        <p class="text-para-content">Là ngày hội truyền thống của khối THCS, Festival Xuân - Hội chợ Xuân nổi bật với những trải nghiệm độc đáo và khó quên, vừa làm sống dậy niềm vui, nhiệt huyết của học sinh mỗi mùa lễ hội, vừa tô đậm nét đẹp Tết cổ truyền trong con người đất Việt. Đặc biệt, năm nay, Trường THPT Chuyên Hà Nội - Amsterdam vinh dự đón tiếp đoàn đại biểu của Đại sứ quán Trung Quốc tại Việt Nam đến tham quan, từ đó thể hiện tài năng, tinh thần Amser tới bạn bè quốc tế.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Gặp gỡ và chào mừng những vị khách đặc biệt tại Festival Xuân 2024</p>
+                        <p class="text-para-content">Mở đầu và kéo dài xuyên suốt Hội chợ là những giai điệu rộn ràng, những điệu nhảy đặc sắc cùng những vở diễn ý nghĩa đến từ đại diện từng tập thể lớp khối THCS. Mỗi lớp thể hiện bản sắc, cá tính riêng, kết hợp tạo nên lễ hội Tết nhộn nhịp.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-2.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <div class="margin-tp10 margin-bt content-introduce-img">
+                            <img src="/assets/img/page15-event/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="margin-tp10 margin-bt content-introduce-img">
+                            <img src="/assets/img/page15-event/img-4.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-5.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Những tiết mục nghệ thuật truyền thống xen lẫn hiện đại của các Amser</p>
+                        <p class="text-para-content">Trên nền nhạc sống động còn là các gian hàng sặc sỡ, thu hút đông đảo sự tham gia của các bạn học sinh với những món hàng đặc trưng ngày Tết. Bên cạnh các món ăn hấp dẫn, nhiều gian hàng còn bày biện những phụ kiện xinh xắn, những trò chơi thú vị và thậm chí cả nghệ thuật viết thư pháp tinh tế.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-6.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Những món hàng mang đậm văn hóa dân tộc</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-7.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Sản phẩm khéo tay của các Amser</p>
+                        <p class="text-para-content">Bên cạnh đó, khối THPT cũng khẳng định sự hoạt bát, sôi nổi của mình qua phần thi trang trí mâm ngũ quả và cắm hoa. Các không gian trang trí, lấy cảm hứng từ khung cảnh Tết xưa, không những tôn lên vẻ đẹp văn hóa truyền thống mà còn phản ánh nhiệt huyết, sức trẻ tươi mới và sự đón chờ trong tâm hồn mỗi học trò.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-8.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Cô giáo Nguyễn Thị Thu Ngân bên sản phẩm của khối Địa</p>
+                        <p class="text-para-content">Có lẽ, điểm nhấn của sự kiện chính là trò chơi Rung chuông vàng, nơi các bạn học sinh trổ tài với những kiến thức xã hội phong phú về lễ hội Tết truyền thống. Nối tiếp thành công năm ngoái, thí sinh Bùi Đăng Phát - 9 Manchester một lần nữa giành ngôi vị vô địch cuộc thi với màn thể hiện hết sức thuyết phục. Theo đó là giải Nhì và giải Ba lần lượt thuộc về các đại diện lớp 6B và 8B với phần chơi xuất sắc không kém.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-9.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Trò chơi Rung chuông vàng nhận được nhiều sự quan tâm</p>
+                        <p class="text-para-content">Cuối cùng, ca khúc “Như hoa mùa xuân” do bạn Đinh Linh Đan - 8E trình bày đã bế mạc Hội chợ trong sự nhẹ nhàng, trong trẻo mà vang vọng của sắc xuân năm mới. Tính tới đây, các học sinh đã trải qua một học kỳ với những trang vàng thành tích về cả học tập và ngoại khoá, đóng góp vào sự phát triển không ngừng nghỉ của Trường THPT Chuyên Hà Nội - Amsterdam. Phần trao thưởng như để vinh danh những cố gắng, nỗ lực của học sinh trong công cuộc chuẩn bị cho Festival Xuân 2024 đầy ý nghĩa.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-10.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Giai điệu ngân nga “Như hoa mùa xuân”</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-11.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các đại diện vinh dự nhận giải thưởng Rung chuông vàng</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-12.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Trao giải Trang trí Gian hàng và Mâm ngũ quả khối THCS</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-event/img-13.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các tập thể lớp đón nhận phần quà lưu niệm của Ban Tổ chức</p>
+                        <p class="text-para-content">Như vậy, không chỉ là một Hội chợ thông thường, Festival Xuân 2024 là nơi các học sinh tìm tòi và trau dồi những giá trị tốt đẹp, bày tỏ niềm tự hào về truyền thống văn hóa dân tộc. Mỗi năm một khác, Hội chợ Xuân khắc ghi trong từng học sinh những kỷ niệm đẹp về mái trường, thầy cô và bạn bè thân yêu, để lại những dư vị ngậm ngùi mỗi dịp xuân về.</p>
+                        <h3 style="font-style: italic;" class="text-subheading-content">Nhân Tết Giáp Thìn đang tới gần, Ban Biên tập Câu lạc bộ Ams Wide Web xin kính chúc các thầy cô một năm mới thật mạnh khoẻ, hạnh phúc. Đồng thời, chúc các bạn học sinh sẽ gặt hái được nhiều thành công, vun đắp niềm tin và tiếp tục khám phá những ước mơ còn dang dở qua mùa Tết sắp tới.</h3>
+                    </div>
+
+                    <div id="page16" class="page page-section" >
+                        <h2 class="text-heading-content" >Thông tin đăng ký ứng tuyển vào Trường nội trú Anglo Chinese School 2024</h2>
+                        <h3 class="text-subheading-content">Trường nội trú Anglo Chinese School (Anglo Chinese School (Independent)) dành cho các nam sinh được thành lập từ năm 1886 tại Singapore. Từ 2005, trường mở cửa đón nhận sinh viên quốc tế và trở thành trường quốc tế. Tháng 1 năm 2006, trường trung học Anglo Chinese School được công nhận là trường IB thế giới.</h3>
+                        <p class="text-para-content">Với mục đích tăng cường quan hệ và mạng lưới hợp tác trong khu vực ASEAN, hàng năm trường nam sinh Anglo-Chinese School (Independent) tìm kiếm và trao tặng học bổng A*Star cho những học sinh có kết quả học tập tốt tại trường THCS và có nguyện vọng theo học tại Singapore. </p>
+                        <p class="text-para-content">Để nhận được học bổng, học sinh phải tham dự một cuộc thi tuyển chọn gồm thi viết và phỏng vấn trực tiếp. Những em đạt tiêu chuẩn trong bài thi viết sẽ được mời tham dự vòng phỏng vấn.</p>
+                        <p class="text-para-content">Các bài kiểm tra tuyển chọn sẽ được tiến hành tại một số thành phố khác nhau ở Việt Nam vào tháng 6 (dự kiến) đảm bảo các biện pháp phòng ngừa Covid-19 (nếu có). Ngày phỏng vấn tuyển chọn dự kiến sẽ được tổ chức vào tháng 8 năm 2024. Hiện nay, trường ACS đang làm việc chi tiết với ban tổ chức Học bổng ASEAN và sẽ gửi thông tin chi tiết tới các Thầy Cô giáo và học sinh trường THPT chuyên Hà Nội - Amsterdam.</p>
+                        <p class="text-para-content">Trong thời gian chờ đợi, các em có nguyện vọng tìm hiểu về Học bổng dành cho các nam sinh có năm sinh từ 2008 đến 2010 có thể đăng ký tại liên kết: <a href="https://go.gov.sg/acsi-sbsay2025">https://go.gov.sg/acsi-sbsay2025</a> </p>
+                        <p class="text-para-content">Sau khi học sinh đã đăng ký thông tin trên hệ thống, các em sẽ nhận được email do hệ thống gửi trước ngày 5/4/2024 hướng dẫn nộp đơn trực tuyến trước ngày 22/4/2024.</p>
+                        <p class="text-para-content">Nếu học sinh có bất kỳ thắc mắc nào về Học bổng dành cho trường nam sinh Anglo-Chinese School (Independent) AY2024, các em có thể liên hệ với cô Nancy Cheng theo địa chỉ nancychenkk@acsindep.edu.sg.</p>
+                    </div>
+
+                    <div id="page17" class="page page-section" >
+                        <h2 class="text-heading-content" >Thông báo về việc nghỉ Tết Nguyên đán Giáp Thìn năm 2024 của Ngành Giáo dục và Đào tạo Hà Nội</h2>
+                        <h3 class="text-subheading-content">Thực hiện Thông báo số 1125/TB-UBND ngày 27/11/2023 của UBND Thành phố về việc nghỉ Tết Âm lịch và nghỉ lễ Quốc khánh năm 2024; Công văn số 274/VP-KGVX ngày 08/01/2024 của UBND Thành phố về việc nghỉ Tết Âm lịch năm 2024 của Ngành Giáo dục và Đào tạo Hà Nội, Sở Giáo dục và Đào tạo Hà Nội đã ra Công văn số 71/SGDĐT-VP ngày 10/01/2024 thông báo tới các đơn vị, trường học trên địa bàn Thành phố lịch nghỉ Tết Nguyên đán Giáp Thìn năm 2024.</h3>
+                        <h3 class="text-subheading-content">Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh và các em học sinh theo dõi:</h3>
+                        <h3 class="text-subheading-content"><a href="https://admin.hanoi.edu.vn//data/doc/2024/hanoi/vanphong/2024_1/10/71-sgd-vp_101202419.pdf">>> CV 71/SGDĐT-VP về việc nghỉ Tết Nguyên đán Giáp Thìn năm 2024 của ngành Giáo dục và Đào tạo Hà Nội</a></h3>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page17-event/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page17-event/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                    </div>
+
+                    <div id="page18" class="page page-section" >
+                        <h2 class="text-heading-content" >Thông báo về việc đăng ký dự tuyển học bổng đi học tại Liên bang Nga năm 2024</h2>
+                        <h3 class="text-subheading-content">Năm học 2024 - 2025, Việt Nam đã được cấp chỉ tiêu tuyển sinh vào các chương trình giáo dục trung cấp nghề, giáo dục đại học và giáo dục chuyên nghiệp bổ sung trong các tổ chức giáo dục đại học của Liên bang Nga với số lượng 1000 chỉ tiêu do Chính phủ Liên bang Nga thiết lập.</h3>
+                        <p class="text-para-content">Căn cứ Văn bản số 096 ngày 25/8/2023 của Cơ quan đại diện Cơ quan Hợp tác Liên bang Nga tại Việt Nam (Trung tâm Khoa học và Văn hóa Nga tại Hà Nội) thông báo về quy trình tuyển chọn công dân Việt Nam đi học theo chỉ tiêu học bổng của phía Nga cấp cho phía Việt Nam năm 2024, Cục Hợp tác quốc tế - Bộ Giáo dục và Đào tạo Việt Nam thông báo cho các ứng viên có nguyện vọng dự tuyển đi học tại Liên bang Nga diện Hiệp định năm 2024 như sau:</p>
+                        <p class="text-para-content">Ứng viên có nguyện vọng đi học tại Liên bang Nga năm 2024 cần thực hiện đăng ký trên cổng hệ thống thông tin <a href="http://education-in-russia.com/">http://education-in-russia.com/</a> đến ngày 15/12/2023.</p>
+                        <p class="text-para-content">Ứng viên phải điền thật chính xác vào tờ khai (Анкета), cung cấp ảnh, scan hộ chiếu, scan kết quả học tập (hoặc giấy chứng nhận về thời gian học tập) và gửi tờ khai đã hoàn chỉnh ở trạng thái “để xác minh”.</p>
+                        <p class="text-para-content">Đề nghị ứng viên tiếp tục theo dõi các trang web của Bộ Giáo dục và Đào tạo Việt Nam và Cục Hợp tác quốc tế để đăng ký học bổng với Liên bang Nga diện Hiệp định năm 2024. </p>
+                        <h3 style="font-style: italic;" class="text-subheading-content">Lưu ý:</h3>
+                        <p style="font-style: italic;" class="text-para-content"> - Ứng viên không đăng ký dự tuyển trên trang web của Nga: Education in Russia (<a href="https://education-in-russia.com">https://education-in-russia.com</a>) đến ngày 15/12/2023 sẽ không đảm bảo điều kiện cần để đăng ký học bổng Hiệp định với Liên bang Nga năm 2024.</p>
+                        <p style="font-style: italic;" class="text-para-content">- Ứng viên xem hướng dẫn đăng ký trên trên cổng hệ thống thông tin của phía Nga tại phụ lục đính kèm.</p>
+                        <p class="text-para-content">Trân trọng,</p>
+                    </div>
+
+                    <div id="page19" class="page page-section" >
+                        <h2 class="text-heading-content" >Thông báo học bổng Chính phủ du học Trung Quốc năm 2024</h2>
+                        <h3 class="text-subheading-content">Bộ Giáo dục và Đào tạo thông báo tuyển sinh đi học tại Trung Quốc năm 2024 diện Hiệp định với 77 chỉ tiêu học bổng cho công dân Việt Nam.</h3>
+                        <div class="content-introduce-img">
+                            <img src="https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2023/11/24/hinh-anh-dang-hoc-dai-hoc-co-di-du-hoc-duoc-khong-1-17008172299541556632941.png" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Bộ Giáo dục và Đào tạo cho biết, Chính phủ Trung Quốc cấp 77 chỉ tiêu học bổng cho công dân Việt Nam đi đào tạo đại học, thạc sĩ, tiến sĩ tại Trung Quốc.</p>
+                        <p class="text-para-content">Thời gian đào tạo: Chương trình tiến sĩ từ 03 đến 05 năm học; Chương trình thạc sĩ từ 02 đến 04 năm học; Chương trình đại học từ 04 đến 05 năm học.</p>
+                        <p class="text-para-content">Về chế độ học bổng, Chính phủ Trung Quốc miễn học phí cho quá trình học tập, bố trí chỗ ở, cấp bảo hiểm y tế, tài liệu học tập và học bổng hằng tháng theo mức quy định của Chính phủ Trung Quốc. Chính phủ Việt Nam cấp vé máy bay một lượt đi và một lượt về, lệ phí làm hộ chiếu, visa, phí đi đường và cấp bù sinh hoạt phí theo quy định hiện hành căn cứ trên mức hỗ trợ của phía Trung Quốc dành cho du học sinh Việt Nam.</p>
+                        <h3 class="text-subheading-content">Đối tượng và điều kiện cụ thể</h3>
+                        <p class="text-para-content">Đối với học bổng tiến sĩ: Đối tượng là người có trình độ thạc sĩ, đang công tác tại các cơ quan nhà nước, các cơ sở giáo dục (biên chế hoặc hợp đồng 12 tháng trở lên có đóng bảo hiểm xã hội), không quá 40 tuổi, có thời gian công tác tối thiểu 12 tháng kể từ khi có hợp đồng lao động đầu tiên sau khi tốt nghiệp đại học, thạc sĩ, tính đến ngày hết hạn nộp hồ sơ dự tuyển theo thông báo này; hiện không đang theo học chương trình nghiên cứu sinh trong hoặc ngoài nước. Học viên tốt nghiệp thạc sĩ trong năm 2023 với kết quả học tập đạt từ 8,0 trở lên, không quá 35 tuổi, chưa có quyết định tuyển dụng hoặc hợp đồng làm việc, hợp đồng lao động, có cam kết sau khi hoàn thành khóa học sẽ về nước làm việc theo yêu cầu của Nhà nước.</p>
+                        <p class="text-para-content">Đối với học bổng thạc sĩ: Người tốt nghiệp đại học, đang công tác tại các cơ quan nhà nước, các cơ sở giáo dục, không quá 35 tuổi, có thời gian công tác tối thiểu 12 tháng kể từ khi có hợp đồng lao động đầu tiên tính đến ngày hết hạn nộp hồ sơ dự tuyển theo Thông báo này; Sinh viên tốt nghiệp đại học trong năm 2023 với kết quả học tập đạt loại giỏi trở lên, chưa có quyết định tuyển dụng hoặc hợp đồng làm việc, hợp đồng lao động, có cam kết sau khi hoàn thành khóa học sẽ về nước làm việc theo yêu cầu của Nhà nước.</p>
+                        <p class="text-para-content">Đối với học bổng đại học: Học sinh đang học lớp 12 đã đoạt giải tại các kỳ thi quốc tế, quốc gia, có kết quả học tập ở bậc THPT đến hết học kỳ I năm học 2023-2024 đạt từ 7,0 trở lên; Sinh viên năm thứ nhất của các đại học, học viện, trường đại học Việt Nam (hệ chính quy tập trung) có kết quả 03 năm học THPT và học kỳ I năm thứ nhất đại học đạt từ 7,0 trở lên.</p>
+                        <p class="text-para-content">Thí sinh nộp hồ sơ trực tuyến (online) đồng thời tại 02 địa chỉ sau:</p>
+                        <p class="text-para-content">Hồ sơ tiếng Việt: Ứng viên phải quét (scan) lưu lại toàn bộ hồ sơ sang các files định dạng PDF (mỗi loại tài liệu quét thành 01 file riêng dung lượng không quá 1 MB) để đăng ký trực tuyến tại <a href="https://tuyensinh.vied.vn/">https://tuyensinh.vied.vn/</a> trước ngày 16/01/2024.</p>
+                        <p class="text-para-content">Hồ sơ tiếng Trung/tiếng Anh: Ứng viên phải đăng ký hồ sơ tiếng Anh/tiếng Trung trên website: <a href="www.campuschina.org">www.campuschina.org</a> trước ngày 15/02/2024.</p>
+                        <p class="text-para-content">Nộp hồ sơ giấy: Ứng viên chuyển 01 bộ hồ sơ giấy tiếng Việt và 02 bộ hồ sơ giấy tiếng Trung/tiếng Anh bằng thư chuyển phát nhanh bảo đảm tới Cục Hợp tác quốc tế - Bộ Giáo dục và Đào tạo, 35 Đại Cồ Việt, Quận Hai Bà Trưng, Hà Nội trước ngày 16/01/2024.</p>
+                        <p class="text-para-content">Ứng viên do Bộ Giáo dục và Đào tạo đề cử được Chính phủ Trung Quốc duyệt cấp học bổng mới thuộc diện trúng tuyển và sẽ được Bộ Giáo dục và Đào tạo (Cục Hợp tác quốc tế) thông báo, hướng dẫn và giải quyết thủ tục liên quan tiếp theo để đi học tại Trung Quốc trong tháng 9/2024.</p>
+                    </div>
+                    <div id="page20" class="page page-section" >
+                        <h2 class="text-heading-content" >Thông báo về việc mời tham gia tư vấn kỹ thuật</h2>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page17-event/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                    </div>
+
+                    <div id="page21" class="page page-section" >
+                        <h2 class="text-heading-content">Thầy trò trường chuyên Hà Nội - Amsterdam đón năm học mới</h2>
+                        <h3 class="text-subheading-content">Hòa chung với bầu không khí sôi nổi, tươi vui của lễ khai giảng năm học 2024-2025, thầy trò Trường THPT chuyên Hà Nội - Amsterdam có buổi khởi đầu cho năm học mới đáng nhớ.</h3>
+                        <p class="text-para-content">Sáng 5/9, sau hồi trống khai trường giòn giã, thầy trò Trường THPT chuyên Hà Nội - Amsterdam đã chính thức bước vào ngày đầu tiên của năm học mới 2024-2025.</p>
+                        <p class="text-para-content">Trường THPT chuyên Hà Nội-Amsterdam là ngôi trường giàu truyền thống dạy tốt, học tốt. Cùng sự nỗ lực của thầy cô, các thế hệ học trò Trường THPT chuyên Hà Nội-Amsterdam luôn khẳng định năng lực của bản thân qua các cuộc thi trong nước và quốc tế.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/882e08b85f76f828a167-4335.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Hiệu trưởng Trường THPT chuyên Hà Nội-Amsterdam Trần Thùy Dương đánh hồi trống khai trường</p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/fc9459180ed6a988f0c7-5911.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Bộ trưởng Thông tin và Truyền thông Nguyễn Mạnh Hùng chúc mừng thày trò nhà trường nhân dịp năm học mới.</p>
+                        <p class="text-para-content">Trong năm học vừa qua, học sinh Trường THPT chuyên Hà Nội-Amsterdam đã đạt 105 giải ở các bộ môn tại Kỳ thi chọn học sinh giỏi quốc gia THPT, thành tích dẫn đầu Hà Nội và cả nước.</p>
+                        <p class="text-para-content">Nhiều học sinh của Trường là đại diện ưu tú làm rạng danh trí tuệ Việt Nam bằng những tấm huy chương trên đấu trường tri thức quốc tế như: Olympic Thiên văn và Vật lý thiên văn, Olympic Vật lý Bắc Âu, Olympic Hóa học quốc tế Mendeleev, Olympic Trí tuệ nhân tạo quốc tế,…</p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/1500-1948.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Học sinh khối lớp 10
+                        </p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/b4502a277ee9d9b780f8-2109.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Vui tươi đón năm học mới.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/c30434566098c7c69e89-5849.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Vui tươi đón năm học mới.
+                        </p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/0090f4fda033076d5e22-1-9708.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Học sinh Trường THPT chuyên Hà Nội-Amsterdam.</p>
+                        <p class="text-para-content">Không chỉ miệt mài trau dồi tri thức, năng lực nghiên cứu khoa học, các học sinh trường chuyên còn rất năng động trong các hoạt động thể thao, văn hóa-nghệ thuật, nhiệt huyết trong các phong trào của Đoàn thanh niên, trân trọng lịch sử, tích cực bồi dưỡng nhận thức và đạo đức cách mạng.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/65e9f489a04707195e56-1-6737.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Hiệu trưởng Trường THPT chuyên Hà Nội-Amsterdam Trần Thùy Dương cho biết, năm học 2024-2025, với quyết tâm nâng cao chất lượng đào tạo các lĩnh vực khoa học, công nghệ, kỹ thuật, nhà trường sẽ tiếp tục trang bị hệ thống cơ sở vật chất tiên tiến, hiện đại, xây dựng đội ngũ giáo viên trình độ chuyên môn cao, luôn nỗ lực cập nhật những xu hướng, công nghệ mới trong dạy học, đa dạng hóa các hoạt động trải nghiệm công nghệ thông tin, trí tuệ nhân tạo.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/f76a8129d5e772b92bf6-9235.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Hiệu trưởng Trường THPT chuyên Hà Nội-Amsterdam Trần Thùy Dương.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/76531e1f4ad1ed8fb4c0-7197.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">“Đó là những yếu tố then chốt nhằm phát triển tư duy sáng tạo, khơi gợi tinh thần đam mê khoa học, công nghệ, bồi dưỡng năng lực nghiên cứu khoa học, kĩ thuật của học sinh” - Hiệu trưởng Trần Thùy Dương nói tại buổi lễ khai giảng.</p>
+                        <p class="text-para-content">Bên cạnh việc khuyến khích, định hướng những học sinh có tố chất thử sức tại các sân chơi tri thức thuộc lĩnh vực STEM, trí tuệ nhân tạo, nhà trường sẽ triển khai những hoạt động giáo dục nhằm lan tỏa tình yêu khoa học và niềm đam mê công nghệ thông tin tới toàn thể học sinh trong nhà trường để khơi gợi tinh thần tự học tập, tự nghiên cứu của các em.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://image.nhandan.vn/w2000/Uploaded/2025/pile/2024_09_05/3ac3ce4899863ed86797-3361.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Hiệu trưởng mong các học sinh của mình luôn chăm chỉ, nỗ lực trau dồi tri thức và thể chất, rèn luyện kỹ năng sống, để trở thành những công dân ưu tú trong tương lai. "Thầy và trò chúng ta sẽ cùng nhau bước vào một năm học mới tràn đầy niềm tin tưởng và sự quyết tâm cao độ để tiếp tục vun đắp thêm cho lịch sử vẻ vang của trường THPT chuyên Hà Nội - Amsterdam" - Hiệu trưởng nhắn nhủ</p>
+                    </div>
+                </div>  
+                
+            </div>
+
+
+
+            <div id="footer-container"></div>
+    
+    
+    
+    
+        </div>
+       
+
+        <script>
+            function setActive(element) {
+                document.querySelectorAll('.bar-list a').forEach(link => link.classList.remove('active'));
+                element.classList.add('active');
+            }
+        
+            function setTitleAndShowPage(pageId, title) {
+                document.title = title;
+                history.replaceState(null, '', `?page=${pageId}`);
+                
+                document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+                const target = document.getElementById(pageId);
+                if (target) {
+                    target.style.display = 'block';
+                }
+
+                // Ẩn hoặc hiện .content-detail tùy vào page
+                const detailSection = document.querySelector('.content-detail');
+                if (pageId === 'page1' || pageId === 'page2' || pageId === 'page3' || pageId === 'page4') {
+                    detailSection.style.display = 'none';
+                } else {
+                    detailSection.style.display = 'block';
+                }
+        
+            }
+
+            
+            document.addEventListener('DOMContentLoaded', () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const pageFromURL = urlParams.get('page');
+                let targetLink = null;
+        
+                if (pageFromURL) {
+                    targetLink = document.querySelector(`.bar-list-link[data-page="${pageFromURL}"]`);
+                }
+        
+                // Nếu không có hoặc không đúng, fallback về cái đầu tiên
+                if (!targetLink) {
+                    targetLink = document.querySelector('.bar-list-link');
+                }
+        
+                if (targetLink) {
+                    setActive(targetLink);
+                    const pageId = targetLink.getAttribute('data-page');
+                    const title = targetLink.textContent.trim();
+                    setTitleAndShowPage(pageId, title);
+                }
+        
+                // Gắn click cho các link trong sidebar
+                const links = document.querySelectorAll('.bar-list-link');
+                links.forEach(link => {
+                    link.addEventListener('click', e => {
+                        e.preventDefault();
+                        setActive(link);
+                        const pageId = link.dataset.page;
+                        const title = link.textContent.trim();
+                        setTitleAndShowPage(pageId, title);
+                    });
+                });
+            });
+        </script>
+        
+
+        <script src="/javascript/load-header.js"></script>
+        <script src="/javascript/load-footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển sinh</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
+    <style>
+            
+        .bar-list a.active{
+            background-color: #3e769a;
+            color: #fff;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+
+        <div id="main">
+            <div id="header-container"></div>
+
+            <div class="row margin-t250 content-section">
+                <ul class="col col-20pt bar-list">
+                    <a style="display: none;" class="bar-list-link" data-page="page1" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page1','Tuyển sinh' )">Tuyển sinh</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page2" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page2','Tuyển sinh' )">Tuyển sinh</a>
+                        <li><p  class="text-bar-list">Thông tin tuyển sinh</p></li>
+                            <li><a class="bar-list-link magrgin-l10px" data-page="page3"  href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page3', 'Kì thi THPT quốc gia')" >Kì thi THPT quốc gia</a></li>
+                            <li><a class="bar-list-link magrgin-l10px" data-page="page4"  href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page4', 'Tuyển sinh lớp 10')">Tuyển sinh lớp 10</a></li>
+                            <li><a class="bar-list-link magrgin-l10px" data-page="page5"  href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page5', 'Tuyển sinh lớp 6')">Tuyển sinh lớp 6</a></li>
+                            <li><a class="bar-list-link magrgin-l10px" data-page="page6"  href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page6', 'Tuyển sinh đại học, cao đẳng')">Tuyển sinh đại học, cao đẳng</a></li>
+
+                            <a style="display: none;" class="bar-list-link" data-page="page7" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page7', 'Năm 2024, chỉ tiêu tuyển sinh vào các trường CAND tăng')">Năm 2024, chỉ tiêu tuyển sinh vào các trường CAND tăng</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page8" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page8', 'Thi tốt nghiệp THPT 2023: Những tình huống thí sinh vi phạm bị xử lý')">Thi tốt nghiệp THPT 2023: Những tình huống thí sinh vi phạm bị xử lý</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page9" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page9', 'Hướng dẫn ôn thi tốt nghiệp THPT 2023 trên truyền hình Hà Nội')">Hướng dẫn ôn thi tốt nghiệp THPT 2023 trên truyền hình Hà Nội</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page10" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page10', 'Hướng dẫn tổ chức Kỳ thi Tốt nghiệp THPT 2023')">Hướng dẫn tổ chức Kỳ thi Tốt nghiệp THPT 2023</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page11" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page11', 'THÔNG BÁO VỀ KỲ THI THPT QUỐC GIA TẠI ĐIỂM THI THPT CHUYÊN HÀ NỘI - AMSTERDAM')">THÔNG BÁO VỀ KỲ THI THPT QUỐC GIA TẠI ĐIỂM THI THPT CHUYÊN HÀ NỘI - AMSTERDAM</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page12" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page12', 'Trường THPT chuyên Hà Nội Amsterdam sắp mở thêm lớp chuyên mới')">Trường THPT chuyên Hà Nội Amsterdam sắp mở thêm lớp chuyên mới</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page13" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page13', 'Xác định chỉ tiêu tuyển sinh vào lớp 10 năm học 2024 - 2025 và báo cáo tình hình cơ sở vật chất, trang thiết bị')">Xác định chỉ tiêu tuyển sinh vào lớp 10 năm học 2024 - 2025 và báo cáo tình hình cơ sở vật chất, trang thiết bị</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page14" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page14', 'Hà Nội công bố điểm chuẩn trúng tuyển bổ sung vào lớp 10 chuyên năm học 2023-2024')">Hà Nội công bố điểm chuẩn trúng tuyển bổ sung vào lớp 10 chuyên năm học 2023-2024</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page15" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page15', 'HƯỚNG DẪN NỘP HỒ SƠ VÀO LỚP 10 TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM NĂM HỌC 2023 – 2024')">HƯỚNG DẪN NỘP HỒ SƠ VÀO LỚP 10 TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM NĂM HỌC 2023 – 2024</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page16" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page16', 'Hà Nội công bố điểm chuẩn vào lớp 10 các trường THPT chuyên')">Hà Nội công bố điểm chuẩn vào lớp 10 các trường THPT chuyên</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page17" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page17', 'Hà Nội chính thức dừng tuyển sinh lớp 6 trường Amsterdam từ năm học 2024-2025')">Hà Nội chính thức dừng tuyển sinh lớp 6 trường Amsterdam từ năm học 2024-2025</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page18" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page18', 'Kết quả phúc khảo bài kiểm tra tuyển sinh lớp 6 năm học 2023 - 2024')">Kết quả phúc khảo bài kiểm tra tuyển sinh lớp 6 năm học 2023 - 2024</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page19" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page19', 'Lịch nhận hồ sơ và điểm chuẩn trúng tuyển bổ sung vào lớp 6 Trường Trung học phổ thông chuyên Hà Nội – Amsterdam')">Lịch nhận hồ sơ và điểm chuẩn trúng tuyển bổ sung vào lớp 6 Trường Trung học phổ thông chuyên Hà Nội – Amsterdam</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page20" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page20', 'Mẫu đơn xin phúc khảo bài kiểm tra tuyển sinh vào lớp 6 năm học 2023 - 2024')">Mẫu đơn xin phúc khảo bài kiểm tra tuyển sinh vào lớp 6 năm học 2023 - 2024</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page21" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page21', 'Điểm trúng tuyển vào lớp 6 Trường THPT chuyên Hà Nội - Amsterdam năm học 2023-2024')">Điểm trúng tuyển vào lớp 6 Trường THPT chuyên Hà Nội - Amsterdam năm học 2023-2024</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page22" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page22', 'Thông báo tuyển sinh chính quy năm 2023 của Trường Đại học Sân khấu - Điện ảnh Hà Nội')">Thông báo tuyển sinh chính quy năm 2023 của Trường Đại học Sân khấu - Điện ảnh Hà Nội</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page23" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page23', 'Ra mắt ngành mới đầy hứa hẹn của ULIS: Văn hóa & Truyền thông xuyên quốc gia')">Ra mắt ngành mới đầy hứa hẹn của ULIS: Văn hóa & Truyền thông xuyên quốc gia</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page24" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page24', 'HỌC VIỆN NGOẠI GIAO TỔ CHỨC NGÀY HỘI TƯ VẤN TUYỂN SINH CHƯƠNG TRÌNH LIÊN KẾT 2023')">HỌC VIỆN NGOẠI GIAO TỔ CHỨC NGÀY HỘI TƯ VẤN TUYỂN SINH CHƯƠNG TRÌNH LIÊN KẾT 2023</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page25" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page25', 'ĐH Bách Khoa Hà Nội giữ nguyên phương thức tuyển sinh, tăng tổng chỉ tiêu')">ĐH Bách Khoa Hà Nội giữ nguyên phương thức tuyển sinh, tăng tổng chỉ tiêu</a>
+                            <a style="display: none;" class="bar-list-link" data-page="page26" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page26', 'Đại học Y Hà Nội tổ chức tư vấn hướng nghiệp online trước tuyển sinh năm 2021')">Đại học Y Hà Nội tổ chức tư vấn hướng nghiệp online trước tuyển sinh năm 2021</a>
+
+                </ul>   
+
+                <div class="col col-80pt">
+                    <div id="page1" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page12" ><img  src="https://media.vietnamplus.vn/images/a8a065741144e9a45b13148945811c8ad2c3175880ab66504c7055429be1ceef1f66140c0b3f71815d4c8048478de0da2cf8387e6f20efa97ce054cdc22484fe46abc3f389a5b58f884ebf9a9fa8e80ecdb57feb901aea868e56e8a402356a73/truong-thpt-chuyen-ha-noi-amsterdam-783.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page12">Trường THPT chuyên Hà Nội Amsterdam sắp mở thêm lớp chuyên mới</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                08/04/2025
+                            </p>
+                            <p class="desc-introduce">Thông tin về tuyển sinh lớp 10 chuyên năm học 2025-2026, ngày 8-4, Sở GD-ĐT Hà Nội cho biết sẽ có nhiều điều chỉnh về cơ cấu lớp chuyên trong 4 trường chuyên trên địa bàn thành phố.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page14" ><img  src="http://hn-ams.edu.vn/sites/default/files/imagecache/145x120/img_4587.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page14">Hà Nội công bố điểm chuẩn trúng tuyển bổ sung vào lớp 10 chuyên năm học 2023-2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                08/04/2025
+                            </p>
+                            <p class="desc-introduce">Hôm nay (10/7), Sở GD&ĐT Hà Nội công bố điểm chuẩn trúng tuyển bổ sung vào lớp 10 chuyên, chương trình song ngữ tiếng Pháp, chương trình thí điểm song bằng tú tài năm học 2023 - 2024. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh cùng theo dõi</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page7" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/ac31884a_ad9a_47a2_888f_d06dfe0-17101461118822023.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page7">Năm 2024, chỉ tiêu tuyển sinh vào các trường CAND tăng</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                14/03/2024
+                            </p>
+                            <p class="desc-introduce">Năm 2024, các học viện, trường CAND được giao tuyển 2.150 chỉ tiêu đào tạo trình độ đại học chính quy tuyển mới, tăng nhẹ so với 2.000 chỉ tiêu của năm 2023.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page13" ><img  src="https://media.vietnamplus.vn/images/a8a065741144e9a45b13148945811c8ad2c3175880ab66504c7055429be1ceef1f66140c0b3f71815d4c8048478de0da2cf8387e6f20efa97ce054cdc22484fe46abc3f389a5b58f884ebf9a9fa8e80ecdb57feb901aea868e56e8a402356a73/truong-thpt-chuyen-ha-noi-amsterdam-783.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page13">Xác định chỉ tiêu tuyển sinh vào lớp 10 năm học 2024 - 2025 và báo cáo tình hình cơ sở vật chất, trang thiết bị</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                25/01/2024
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page8" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/thitotnghiep-167763812952720816003852023.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page8">Thi tốt nghiệp THPT 2023: Những tình huống thí sinh vi phạm bị xử lý</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                23/06/2023
+                            </p>
+                            <p class="desc-introduce">Chỉ còn ít ngày nữa, hơn 1 triệu thí sinh trên toàn quốc sẽ bước vào kỳ thi Tốt nghiệp THPT 2023. Các em cần lưu ý về trách nhiệm của thí sinh và các tình huống vi phạm sẽ bị xử lý.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page9" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/phat_song_chg_trinh_on_thi_thpt_2023.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page9">Hướng dẫn ôn thi tốt nghiệp THPT 2023 trên truyền hình Hà Nội</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                17/04/2023
+                            </p>
+                            <p class="desc-introduce">Để hỗ trợ học sinh lớp 12 trên địa bàn thành phố củng cố, hệ thống lại các kiến thức trọng tâm trong Chương trình lớp 12 thuộc các môn Ngữ văn, Toán, Tiếng Anh và nâng cao kỹ năng làm bài thi trong quá trình ôn tập chuẩn bị cho Kỳ thi tốt nghiệp THPT năm 2023, Sở Giáo dục và Đào tạo phối hợp cùng Đài PT-TH Hà Nội tổ chức phát sóng các tiết dạy hướng dẫn ôn thi trên sóng truyền hình. </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page10" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/9bff5968-df99-4f99-9a40-206021a2d501.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page10">Hướng dẫn tổ chức Kỳ thi Tốt nghiệp THPT 2023</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                13/04/2023
+                            </p>
+                            <p class="desc-introduce">Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các em học sinh theo dõi</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page11" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/truongchuyenamhnamsterdam.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page11">THÔNG BÁO VỀ KỲ THI THPT QUỐC GIA TẠI ĐIỂM THI THPT CHUYÊN HÀ NỘI - AMSTERDAM</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/07/2021
+                            </p>
+                            <p class="desc-introduce">Theo kế hoạch, Kỳ thi tốt nghiệp Trung học phổ thông (THPT) năm 2021 sẽ diễn ra ngày 6-8/7/2021. Cha Mẹ học sinh và các học sinh tham gia thi tại điểm trường THPT chuyên Hà Nội - Amsterdam theo dõi các Thông báo sau đây</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page15" ><img  src="http://hn-ams.edu.vn/sites/default/files/imagecache/145x120/692d88f8-72d6-4670-a86d-c7768b61be75.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page15">HƯỚNG DẪN NỘP HỒ SƠ VÀO LỚP 10 TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM NĂM HỌC 2023 – 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                04/07/2023
+                            </p>
+                            <p class="desc-introduce">Các học sinh đủ điều kiện trúng tuyển vào lớp 10 trường THPT chuyên Hà Nội - Amsterdam thực hiện nhập học theo các bước:</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page16" ><img  src="http://hn-ams.edu.vn/sites/default/files/imagecache/145x120/tb_ts.png" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page16">Hà Nội công bố điểm chuẩn vào lớp 10 các trường THPT chuyên</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                01/07/2023
+                            </p>
+                            <p class="desc-introduce">Ngày 1/7/2023, Sở Giáo dục và đào tạo Hà Nội đã duyệt điểm chuẩn vào lớp 10 chuyên, lớp 10 chương trình song ngữ tiếng Pháp, lớp 10 chương trình thí điểm song bằng trường THPT chuyên năm học 2023 - 2024. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh theo dõi tại đây</p>
+                            </div>
+                        </div>
+                        <div class="turn-page">
+                            <div class="button-page"><a href="enrollment.html?page=page1">1</a></div>
+                            <div class="button-page"><a href="enrollment.html?page=page2">2</a></div>
+                        </div>
+                    </div>
+
+                    <div id="page2" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page17" ><img  src="https://media.vietnamplus.vn/images/46ea39680b31a6ffa6089dd59705fafbc8f1b202a5d3042d9cb72a938df66e1009782366691e872ae19d9b65a1e6f2d60be5d48037fb3b5af0bf88d2cff8b204cdb57feb901aea868e56e8a402356a73/on-thi-lop-10-11-6333.jpg.webp" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page17">Hà Nội chính thức dừng tuyển sinh lớp 6 trường Amsterdam từ năm học 2024-2025</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/04/2024
+                            </p>
+                            <p class="desc-introduce">Trường Trung học phổ thông chuyên Hà Nội - Amsterdam sẽ chính thức dừng tuyển sinh học sinh lớp 6 từ năm học 2024-2025 theo chỉ đạo của Ủy ban Nhân dân thành phố.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page18" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/img_6142.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page18">Kết quả phúc khảo bài kiểm tra tuyển sinh lớp 6 năm học 2023 - 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                28/07/2023
+                            </p>
+                            <p class="desc-introduce">Mời các em học sinh, các Cha Mẹ học sinh cùng theo dõi:</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page19" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/img_4602.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page19">Lịch nhận hồ sơ và điểm chuẩn trúng tuyển bổ sung vào lớp 6 Trường Trung học phổ thông chuyên Hà Nội – Amsterdam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                10/07/2023
+                            </p>
+                            <p class="desc-introduce">Ngày 10-7, Sở Giáo dục và Đào tạo Hà Nội đã công bố Quyết định số 1212/QĐ-SGDĐT phê duyệt điểm chuẩn trúng tuyển bổ sung vào lớp 6 Trường Trung học phổ thông chuyên Hà Nội - Amsterdam năm học 2023 - 2024.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page20" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/img_4169_0.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page20">Mẫu đơn xin phúc khảo bài kiểm tra tuyển sinh vào lớp 6 năm học 2023 - 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/07/2023
+                            </p>
+                            <p class="desc-introduce">Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các em học sinh theo dõi</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page21" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/hs_lop_6_ams_2_0.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page21">Điểm trúng tuyển vào lớp 6 Trường THPT chuyên Hà Nội - Amsterdam năm học 2023-2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                01/07/2023
+                            </p>
+                            <p class="desc-introduce">Thứ bảy ngày 01/7/2023, Sở Giáo dục và Đào tạo Hà Nội đã ra Quyết định số 1170/QĐ-SGDĐT về điểm chuẩn trúng tuyển vào lớp 6 trường THPT chuyên Hà Nội - Ámterdam là 20,85 điểm. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh cùng theo dõi</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page22" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/dh_sk_da.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page22">Thông báo tuyển sinh chính quy năm 2023 của Trường Đại học Sân khấu - Điện ảnh Hà Nội</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                23/05/2023
+                            </p>
+                            <p class="desc-introduce">Ngày 23/5/2023, Trường THPT chuyên Hà Nội - Amsterdam nhận được Thông báo số 293/TB-SKĐAHN ngày 16/5/2023 của Trường Đại học Sân khấu - Điện ảnh Hà Nội về việc thông báo tuyển sinh chính quy năm 2023 (tệp đính kèm theo). </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page23" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/vhtt_ulis.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page23">Ra mắt ngành mới đầy hứa hẹn của ULIS: Văn hóa & Truyền thông xuyên quốc gia</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                20/04/2023
+                            </p>
+                            <p class="desc-introduce">ĐHNN - ĐHQGHN trân trọng kính mời các Thầy Cô giáo, các Cha Mẹ học sinh và các em học sinh tham gia trải nghiệm chương trình đào tạo mới vào ngày Thứ Bảy 22.4.2023 (8:00 – 16:00) tại Hội trường Tầng 1, Tòa nhà Sunwah, Trường ĐH Ngoại ngữ ĐHQGHN 144 Xuân Thủy.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page24" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/dav_lkdt.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page24">HỌC VIỆN NGOẠI GIAO TỔ CHỨC NGÀY HỘI TƯ VẤN TUYỂN SINH CHƯƠNG TRÌNH LIÊN KẾT 2023</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                22/03/2023
+                            </p>
+                            <p class="desc-introduce">Ngày hội Joint Training Program Open House là chương trình do Ban Đào tạo Học viện Ngoại giao phối hợp với các cơ quan chuyên ngành tổ chức, nhằm mang tới cho các bạn học sinh THPT cơ hội trải nghiệm thú vị, một bước tiến gần hơn đến các chương trình liên kết tại Học viện Ngoại giao.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page25" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/dh_bk.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page25">ĐH Bách Khoa Hà Nội giữ nguyên phương thức tuyển sinh, tăng tổng chỉ tiêu</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                27/03/2022
+                            </p>
+                            <p class="desc-introduce">Cũng tại chương trình Tư vấn tuyển sinh & Hướng nghiệp “Chọn chuẩn trường – đi chuẩn đường”, đại diện Đại học Bách Khoa Hà Nội cũng chia sẻ thêm nhiều thông tin thú vị.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page26" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/dh_y_hn.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page26">Đại học Y Hà Nội tổ chức tư vấn hướng nghiệp online trước tuyển sinh năm 2021</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                20/03/2021
+                            </p>
+                            <p class="desc-introduce">Nhằm cung cấp thông tin hướng nghiệp cho học sinh trước khi quyết định lựa chọn Trường Đại học - Vào 14h ngày 25 tháng 3 năm 2021 tại Trường Đại học Y Hà Nội sẽ tổ chức chương trình Tư vấn hướng nghiệp trực tuyến với sự góp mặt của các giảng viên – tư vấn đến từ các Khoa/ Phòng/ Bộ môn của Trường Đại học Y Hà Nội.</p>
+                            </div>
+                        </div>
+                        <div class="turn-page">
+                            <div class="button-page"><a href="enrollment.html?page=page1">1</a></div>
+                            <div class="button-page"><a href="enrollment.html?page=page2">2</a></div>
+                        </div>
+
+                    </div>
+
+                    <div id="page3" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page7" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/ac31884a_ad9a_47a2_888f_d06dfe0-17101461118822023.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page7">Năm 2024, chỉ tiêu tuyển sinh vào các trường CAND tăng</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                14/03/2024
+                            </p>
+                            <p class="desc-introduce">Năm 2024, các học viện, trường CAND được giao tuyển 2.150 chỉ tiêu đào tạo trình độ đại học chính quy tuyển mới, tăng nhẹ so với 2.000 chỉ tiêu của năm 2023.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page8" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/thitotnghiep-167763812952720816003852023.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page8">Thi tốt nghiệp THPT 2023: Những tình huống thí sinh vi phạm bị xử lý</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                23/06/2023
+                            </p>
+                            <p class="desc-introduce">Chỉ còn ít ngày nữa, hơn 1 triệu thí sinh trên toàn quốc sẽ bước vào kỳ thi Tốt nghiệp THPT 2023. Các em cần lưu ý về trách nhiệm của thí sinh và các tình huống vi phạm sẽ bị xử lý.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page9" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/phat_song_chg_trinh_on_thi_thpt_2023.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page9">Hướng dẫn ôn thi tốt nghiệp THPT 2023 trên truyền hình Hà Nội</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                17/04/2023
+                            </p>
+                            <p class="desc-introduce">Để hỗ trợ học sinh lớp 12 trên địa bàn thành phố củng cố, hệ thống lại các kiến thức trọng tâm trong Chương trình lớp 12 thuộc các môn Ngữ văn, Toán, Tiếng Anh và nâng cao kỹ năng làm bài thi trong quá trình ôn tập chuẩn bị cho Kỳ thi tốt nghiệp THPT năm 2023, Sở Giáo dục và Đào tạo phối hợp cùng Đài PT-TH Hà Nội tổ chức phát sóng các tiết dạy hướng dẫn ôn thi trên sóng truyền hình. </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page10" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/9bff5968-df99-4f99-9a40-206021a2d501.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page10">Hướng dẫn tổ chức Kỳ thi Tốt nghiệp THPT 2023</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                13/04/2023
+                            </p>
+                            <p class="desc-introduce">Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các em học sinh theo dõi</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page11" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/truongchuyenamhnamsterdam.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page11">THÔNG BÁO VỀ KỲ THI THPT QUỐC GIA TẠI ĐIỂM THI THPT CHUYÊN HÀ NỘI - AMSTERDAM</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/07/2021
+                            </p>
+                            <p class="desc-introduce">Theo kế hoạch, Kỳ thi tốt nghiệp Trung học phổ thông (THPT) năm 2021 sẽ diễn ra ngày 6-8/7/2021. Cha Mẹ học sinh và các học sinh tham gia thi tại điểm trường THPT chuyên Hà Nội - Amsterdam theo dõi các Thông báo sau đây</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="page4" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page12" ><img  src="https://media.vietnamplus.vn/images/a8a065741144e9a45b13148945811c8ad2c3175880ab66504c7055429be1ceef1f66140c0b3f71815d4c8048478de0da2cf8387e6f20efa97ce054cdc22484fe46abc3f389a5b58f884ebf9a9fa8e80ecdb57feb901aea868e56e8a402356a73/truong-thpt-chuyen-ha-noi-amsterdam-783.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page12">Trường THPT chuyên Hà Nội Amsterdam sắp mở thêm lớp chuyên mới</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                08/04/2025
+                            </p>
+                            <p class="desc-introduce">Thông tin về tuyển sinh lớp 10 chuyên năm học 2025-2026, ngày 8-4, Sở GD-ĐT Hà Nội cho biết sẽ có nhiều điều chỉnh về cơ cấu lớp chuyên trong 4 trường chuyên trên địa bàn thành phố.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page13" ><img  src="https://media.vietnamplus.vn/images/a8a065741144e9a45b13148945811c8ad2c3175880ab66504c7055429be1ceef1f66140c0b3f71815d4c8048478de0da2cf8387e6f20efa97ce054cdc22484fe46abc3f389a5b58f884ebf9a9fa8e80ecdb57feb901aea868e56e8a402356a73/truong-thpt-chuyen-ha-noi-amsterdam-783.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page13">Xác định chỉ tiêu tuyển sinh vào lớp 10 năm học 2024 - 2025 và báo cáo tình hình cơ sở vật chất, trang thiết bị</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                25/01/2024
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page14" ><img  src="http://hn-ams.edu.vn/sites/default/files/imagecache/145x120/img_4587.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page14">Hà Nội công bố điểm chuẩn trúng tuyển bổ sung vào lớp 10 chuyên năm học 2023-2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                08/04/2025
+                            </p>
+                            <p class="desc-introduce">Hôm nay (10/7), Sở GD&ĐT Hà Nội công bố điểm chuẩn trúng tuyển bổ sung vào lớp 10 chuyên, chương trình song ngữ tiếng Pháp, chương trình thí điểm song bằng tú tài năm học 2023 - 2024. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh cùng theo dõi</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page15" ><img  src="http://hn-ams.edu.vn/sites/default/files/imagecache/145x120/692d88f8-72d6-4670-a86d-c7768b61be75.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page15">HƯỚNG DẪN NỘP HỒ SƠ VÀO LỚP 10 TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM NĂM HỌC 2023 – 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                04/07/2023
+                            </p>
+                            <p class="desc-introduce">Các học sinh đủ điều kiện trúng tuyển vào lớp 10 trường THPT chuyên Hà Nội - Amsterdam thực hiện nhập học theo các bước:</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page16" ><img  src="http://hn-ams.edu.vn/sites/default/files/imagecache/145x120/tb_ts.png" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page16">Hà Nội công bố điểm chuẩn vào lớp 10 các trường THPT chuyên</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                01/07/2023
+                            </p>
+                            <p class="desc-introduce">Ngày 1/7/2023, Sở Giáo dục và đào tạo Hà Nội đã duyệt điểm chuẩn vào lớp 10 chuyên, lớp 10 chương trình song ngữ tiếng Pháp, lớp 10 chương trình thí điểm song bằng trường THPT chuyên năm học 2023 - 2024. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh theo dõi tại đây</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page5" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page17" ><img  src="https://media.vietnamplus.vn/images/46ea39680b31a6ffa6089dd59705fafbc8f1b202a5d3042d9cb72a938df66e1009782366691e872ae19d9b65a1e6f2d60be5d48037fb3b5af0bf88d2cff8b204cdb57feb901aea868e56e8a402356a73/on-thi-lop-10-11-6333.jpg.webp" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page17">Hà Nội chính thức dừng tuyển sinh lớp 6 trường Amsterdam từ năm học 2024-2025</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/04/2024
+                            </p>
+                            <p class="desc-introduce">Trường Trung học phổ thông chuyên Hà Nội - Amsterdam sẽ chính thức dừng tuyển sinh học sinh lớp 6 từ năm học 2024-2025 theo chỉ đạo của Ủy ban Nhân dân thành phố.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page18" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/img_6142.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page18">Kết quả phúc khảo bài kiểm tra tuyển sinh lớp 6 năm học 2023 - 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                28/07/2023
+                            </p>
+                            <p class="desc-introduce">Mời các em học sinh, các Cha Mẹ học sinh cùng theo dõi:</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page19" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/img_4602.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page19">Lịch nhận hồ sơ và điểm chuẩn trúng tuyển bổ sung vào lớp 6 Trường Trung học phổ thông chuyên Hà Nội – Amsterdam</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                10/07/2023
+                            </p>
+                            <p class="desc-introduce">Ngày 10-7, Sở Giáo dục và Đào tạo Hà Nội đã công bố Quyết định số 1212/QĐ-SGDĐT phê duyệt điểm chuẩn trúng tuyển bổ sung vào lớp 6 Trường Trung học phổ thông chuyên Hà Nội - Amsterdam năm học 2023 - 2024.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page20" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/img_4169_0.jpeg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page20">Mẫu đơn xin phúc khảo bài kiểm tra tuyển sinh vào lớp 6 năm học 2023 - 2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                02/07/2023
+                            </p>
+                            <p class="desc-introduce">Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các em học sinh theo dõi</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page21" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/hs_lop_6_ams_2_0.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page21">Điểm trúng tuyển vào lớp 6 Trường THPT chuyên Hà Nội - Amsterdam năm học 2023-2024</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                01/07/2023
+                            </p>
+                            <p class="desc-introduce">Thứ bảy ngày 01/7/2023, Sở Giáo dục và Đào tạo Hà Nội đã ra Quyết định số 1170/QĐ-SGDĐT về điểm chuẩn trúng tuyển vào lớp 6 trường THPT chuyên Hà Nội - Ámterdam là 20,85 điểm. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh cùng theo dõi</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="page6" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page22" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/dh_sk_da.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page22">Thông báo tuyển sinh chính quy năm 2023 của Trường Đại học Sân khấu - Điện ảnh Hà Nội</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                23/05/2023
+                            </p>
+                            <p class="desc-introduce">Ngày 23/5/2023, Trường THPT chuyên Hà Nội - Amsterdam nhận được Thông báo số 293/TB-SKĐAHN ngày 16/5/2023 của Trường Đại học Sân khấu - Điện ảnh Hà Nội về việc thông báo tuyển sinh chính quy năm 2023 (tệp đính kèm theo). </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page23" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/vhtt_ulis.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page23">Ra mắt ngành mới đầy hứa hẹn của ULIS: Văn hóa & Truyền thông xuyên quốc gia</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                20/04/2023
+                            </p>
+                            <p class="desc-introduce">ĐHNN - ĐHQGHN trân trọng kính mời các Thầy Cô giáo, các Cha Mẹ học sinh và các em học sinh tham gia trải nghiệm chương trình đào tạo mới vào ngày Thứ Bảy 22.4.2023 (8:00 – 16:00) tại Hội trường Tầng 1, Tòa nhà Sunwah, Trường ĐH Ngoại ngữ ĐHQGHN 144 Xuân Thủy.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page24" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/dav_lkdt.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page24">HỌC VIỆN NGOẠI GIAO TỔ CHỨC NGÀY HỘI TƯ VẤN TUYỂN SINH CHƯƠNG TRÌNH LIÊN KẾT 2023</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                22/03/2023
+                            </p>
+                            <p class="desc-introduce">Ngày hội Joint Training Program Open House là chương trình do Ban Đào tạo Học viện Ngoại giao phối hợp với các cơ quan chuyên ngành tổ chức, nhằm mang tới cho các bạn học sinh THPT cơ hội trải nghiệm thú vị, một bước tiến gần hơn đến các chương trình liên kết tại Học viện Ngoại giao.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page25" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/dh_bk.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page25">ĐH Bách Khoa Hà Nội giữ nguyên phương thức tuyển sinh, tăng tổng chỉ tiêu</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                27/03/2022
+                            </p>
+                            <p class="desc-introduce">Cũng tại chương trình Tư vấn tuyển sinh & Hướng nghiệp “Chọn chuẩn trường – đi chuẩn đường”, đại diện Đại học Bách Khoa Hà Nội cũng chia sẻ thêm nhiều thông tin thú vị.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="enrollment.html?page=page26" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/dh_y_hn.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="enrollment.html?page=page26">Đại học Y Hà Nội tổ chức tư vấn hướng nghiệp online trước tuyển sinh năm 2021</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                20/03/2021
+                            </p>
+                            <p class="desc-introduce">Nhằm cung cấp thông tin hướng nghiệp cho học sinh trước khi quyết định lựa chọn Trường Đại học - Vào 14h ngày 25 tháng 3 năm 2021 tại Trường Đại học Y Hà Nội sẽ tổ chức chương trình Tư vấn hướng nghiệp trực tuyến với sự góp mặt của các giảng viên – tư vấn đến từ các Khoa/ Phòng/ Bộ môn của Trường Đại học Y Hà Nội.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col col-80pt content-detail " >
+                    <div id="page7" class="page page-section" >
+                        <h2 class="text-heading-content">Năm 2024, chỉ tiêu tuyển sinh vào các trường CAND tăng</h2>
+                        <h3 class="text-subheading-content">Năm 2024, các học viện, trường CAND được giao tuyển 2.150 chỉ tiêu đào tạo trình độ đại học chính quy tuyển mới, tăng nhẹ so với 2.000 chỉ tiêu của năm 2023.</h3>
+                        <p class="text-para-content">Bộ trưởng Bộ Công an đã ký quyết định số 872/QĐ-BCA phân bổ chỉ tiêu tuyển sinh tuyển mới năm 2024 với 2.150 chỉ tiêu đào tạo đại học chính quy tuyển mới từ nguồn học sinh tốt nghiệp THPT và chiến sĩ nghĩa vụ, tăng 150 chỉ tiêu so với năm 2023.</p>
+                        <p class="text-para-content">Cụ thể: </p>
+                        <p class="text-para-content">- Học viện ANND: Tuyển sinh 510 chỉ tiêu (290 chỉ tiêu nhóm ngành Nghiệp vụ An ninh; 120 chỉ tiêu ngành An ninh mạng và phòng chống tội phạm công nghệ cao và 50 chỉ tiêu Y khoa gửi đi đào tạo tại Học viện Quân Y).</p>
+                        <p class="text-para-content">- Học viện CSND: Tuyển sinh 530 chỉ tiêu ngành Nghiệp vụ Cảnh sát.</p>
+                        <p class="text-para-content">- Học viện Chính trị CAND: Tuyển sinh 100 chỉ tiêu ngành Xây dựng Đảng và chính quyền Nhà nước.</p>
+                        <p class="text-para-content">- Trường Đại học ANND: Tuyển sinh 260 chỉ tiêu nhóm ngành Nghiệp vụ an ninh.</p>
+                        <p class="text-para-content">- Trường Đại học CSND: Tuyển sinh 420 chỉ tiêu ngành Nghiệp vụ Cảnh sát.</p>
+                        <p class="text-para-content">- Trường Đại học PCCC: Tuyển sinh 140 chỉ tiêu chuyên ngành PCCC&CNCH.</p>
+                        <p class="text-para-content">- Trường Đại học Kỹ thuật-Hậu cần CAND: Tuyển sinh 140 chỉ tiêu ngành Kỹ thuật-Hậu cần.</p>
+                        <p class="text-para-content">- Học viện Quốc tế: Tuyển sinh 50 chỉ tiêu ngành ngôn ngữ Anh và ngôn ngữ Trung Quốc.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://img.cand.com.vn/resize/800x800/NewFiles/Images/2024/03/11/AC31884A_AD9A_47A2_888F_D06DFE0-1710146111882.jpeg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Năm 2024, tuyển sinh CAND sẽ tiếp tục giữ ổn định với 3 phương thức xét tuyển.</p>
+                        <p class="text-para-content">Theo Dự thảo hướng dẫn tuyển sinh CAND năm 2024, công tác tuyển sinh vào các học viện, trường CAND vẫn tiếp tục bám sát chủ trương lãnh đạo, chỉ đạo của lãnh đạo Bộ Công an, bao quát các nội dung liên quan đến công tác tuyển sinh trong CAND, phù hợp với quy định hiện hành của Bộ Giáo dục và Đào tạo, Bộ Lao động - Thương binh và Xã hội về tuyển sinh.</p>
+                        <p class="text-para-content">Về cơ bản, hướng dẫn tuyển sinh CAND năm 2024 vẫn giữ ổn định như năm 2023. Theo đó, tiếp tục giữ nguyên 3 phương thức xét tuyển đối với tuyển sinh đại học chính quy tuyển mới.</p>
+                        <p class="text-para-content"><b>Phương thức 1: </b>Tuyển thẳng theo quy chế tuyển sinh hiện hành của Bộ Giáo dục và Đào tạo và quy định của Bộ Công an;</p>
+                        <p class="text-para-content"><b>Phương thức 2: </b>Xét tuyển thẳng kết hợp chứng chỉ ngoại ngữ quốc tế với kết quả học tập THPT</p>
+                        <p class="text-para-content"><b>Phương thức 3: </b>Kết hợp kết quả thi tốt nghiệp THPT năm 2024 với kết quả Bài thi đánh giá của Bộ Công an.</p>
+                        <p class="text-para-content">Công thức tính điểm xét tuyển vẫn áp dụng cách tính tổng điểm của 3 môn thuộc tổ hợp xét tuyển (chiếm tỉ lệ 40%) và điểm bài thi đánh giá của Bộ Công an được quy về thang điểm 30 (chiếm tỉ lệ 60%).</p>
+                        <p class="text-para-content">Năm ngoái, điểm chuẩn các trường công an dao động 14,01-24,94. Ngành Xây dựng Đảng và chính quyền Nhà nước của Học viện Chính trị Công an Nhân dân có điểm chuẩn cao nhất.</p>
+                        <p class="text-para-content">Công thức tính điểm xét tuyển đại học của Bộ công an như sau:</p>
+                        <p class="text-para-content">Điểm xét tuyển =Tổng điểm ba môn thi tốt nghiệp *2/5 + Điểm thi đánh giá *3/5 + Điểm ưu tiên theo quy định của Bộ Giáo dục và Đào tạo + Điểm thưởng cho học sinh giỏi cấp quốc gia.</p>
+                    </div>
+
+                    <div id="page8" class="page page-section" >
+                        <h2 class="text-heading-content">Thi tốt nghiệp THPT 2023: Những tình huống thí sinh vi phạm bị xử lý</h2>
+                        <h3 class="text-subheading-content">Chỉ còn ít ngày nữa, hơn 1 triệu thí sinh trên toàn quốc sẽ bước vào kỳ thi Tốt nghiệp THPT 2023. Các em cần lưu ý về trách nhiệm của thí sinh và các tình huống vi phạm sẽ bị xử lý.</h3>
+                        <h3 class="text-subheading-content"><a href="https://drive.google.com/file/d/1r5kQbQMAgGD0pR3KCmbyFausNVhNp3rp/view">>> Điều 14. Trách nhiệm của thí sinh</a></h3>
+                        <h3 class="text-subheading-content"><a href="https://drive.google.com/file/d/14ActDRYr__HKRMiXM7HG4UPUgvYNch3e/view">>> Điều 54. Xử lý thí sinh vi phạm</a></h3>
+                        <p class="text-para-content">Bà Nguyễn Thị Thúy Bạch, Phó Trưởng phòng Quản lý thi và Kiểm định chất lượng (Sở GD&ĐT Hà Nội) lưu ý cán bộ tham gia công tác tổ chức thi, cán bộ coi thi nhắc nhở nhiều lần về quyền lợi, trách nhiệm của thí sinh trước giờ thi. Kỳ thi diễn ra từ ngày 28-29/6; trước đó 1 ngày, các em đến điểm thi để nghe phổ biến quy chế, trong đó phải đặc biệt nhấn mạnh trách nhiệm của thí sinh và xử lý vi phạm.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://icdn.24h.com.vn/upload/2-2023/images/2023-06-23/1687488620-thi-tot-nghiep-2022-3746-width645height429.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thí sinh cần lưu ý các tình huống bị xử lý trước ngày thi. ảnh: Hoàng Mạnh Thắng</p>
+                        <p class="text-para-content">Điều 54 Quy chế thi Tốt nghiệp quy định, mọi vi phạm quy chế thi đều bị lập biên bản, xử lý kỷ luật. Thí sinh vi phạm lỗi 1 lần, nhìn bài hoặc trao đổi bài với thí sinh khác, sẽ bị xử lý khiển trách. Thí sinh bị khiển trách trong bài thi nào sẽ bị trừ 25% tổng số điểm bài thi đó.</p>
+                        <p class="text-para-content">Thí sinh sẽ bị xử lý cảnh cáo nếu vi phạm một lần các lỗi như đã bị khiển trách một lần trong giờ thi bài thi đó vẫn tiếp tục vi phạm; trao đổi bài làm hoặc giấy nháp với thí sinh khác, chép bài hoặc để thí sinh khác chép bài của mình. Lỗi này sẽ bị trừ 50% số điểm bài thi.</p>
+                        <p class="text-para-content">Thí sinh sẽ bị đình chỉ thi nếu vi phạm một trong các lỗi như: đã bị xử lý bằng hình thức cảnh cáo một lần nhưng trong giờ thi bài thi đó vẫn tiếp tục vi phạm quy chế thi ở mức khiển trách hoặc cảnh cáo; mang vật dụng trái phép vào phòng thi/phòng chờ hoặc khi di chuyển giữa phòng thi và phòng chờ; đưa đề thi ra ngoài phòng thi hoặc nhận bài giải từ ngoài vào phòng thi; viết, vẽ vào tờ giấy làm bài thi của mình những nội dung không liên quan đến bài thi; có hành động gây gổ, đe dọa những người có trách nhiệm trong kỳ thi hay đe dọa thí sinh khác; không tuân thủ hướng dẫn của cán bộ giám sát hoặc người quản lý phòng chờ khi di chuyển trong khu vực thi và trong thời gian ở phòng chờ.</p>
+                        <p class="text-para-content">Thí sinh bị đình chỉ thi phải nộp bài thi, đề thi, giấy nháp và ra khỏi phòng thi. Thí sinh bị đình chỉ thi năm nào sẽ bị hủy kết quả toàn bộ các bài thi/môn thi trong kỳ thi năm đó.</p>
+                        <p class="text-para-content">Bà Bạch cho biết, kỳ thi tuyển sinh lớp 10 của Hà Nội có tới 6 thí sinh vi phạm quy chế thi, mang điện thoại vào phòng thi và bị lập biên bản rất đáng tiếc. Do đó, trước khi vào phòng thi, thí sinh phải gửi toàn bộ đồ đạc, vật dụng cá nhân ở cách phòng thi 25 mét. “Trước khi phát đề thi, cán bộ coi thi cũng được yêu cầu nhắc nhở nhiều lần thí sinh kiểm tra lại một lần nữa, tránh trường hợp có thí sinh quên điện thoại trong túi quần áo”, bà Bạch nói.</p>
+                        <h3 class="text-subheading-content">Chặn lộ lọt đề thi</h3>
+                        <p class="text-para-content">Theo Thượng tá Ngô Xuân Hải, Phó Trưởng phòng An ninh chính trị nội bộ, Công an TP Hà Nội, đề của kỳ thi tốt nghiệp THPT thuộc danh mục bí mật Nhà nước độ “Tối mật”. Cần phải coi trọng việc phòng ngừa, muốn vậy trước kỳ thi phải nhấn mạnh để thí sinh hiểu rõ việc làm lộ đề thi để lại hậu quả rất lớn.</p>
+                        <p class="text-para-content">Theo ông Hải, các thiết bị gian lận thi công nghệ cao ngày càng tinh vi, dễ dàng cất giấu trong người hoặc ngụy trang để công khai tại vị trí thí sinh ngồi như: bút, hộp bút, máy tính, cúc áo, mắt kính… Các thiết bị này sẽ lắp kèm sim và tai nghe hạt đậu, có gắn camera siêu nhỏ ngụy trang để chụp hoặc quay đề chuyển ra ngoài. Tuy nhiên, thí sinh gian lận sẽ có các biểu hiện bất thường như để tóc xõa, mặc áo dài tay, hay úp tay vào tai, tìm cách chụp đề… nên cán bộ coi thi theo dõi sẽ phát hiện ra.</p>
+                        <p class="text-para-content">Kỳ thi cũng có quy định cho phép thí sinh mang những vật dụng hỗ trợ sức khỏe như máy trợ thính. Thí sinh được lưu ý, trường hợp đặc biệt phải báo cáo với điểm thi để lực lượng an ninh phối hợp kiểm tra thiết bị trước khi được phép đưa vào phòng thi.</p>
+                        <p class="text-para-content">Giám đốc Sở GD&ĐT Hà Nội Trần Thế Cương cho biết, trong ngày thi, đúng 7 giờ 30 phút đã phát đề thi và sau 5 phút sẽ có hiệu lệnh tính giờ làm bài, thí sinh phải đến điểm thi trước đó 1 giờ để làm các thủ tục cần thiết. Sát ngày thi, phụ huynh lưu ý nhắc nhở thí sinh ăn ngủ đúng giờ giấc, đồng hành với con tránh tình trạng nhầm đường, đi muộn.</p>
+                        <p class="text-para-content">Lãnh đạo Sở GD&ĐT Hà Nội yêu cầu tuyệt đối không được chủ quan, lơ là, đặc biệt, thời tiết năm nay cực đoan, khi nắng gắt, khi mưa to bất ngờ nên phải có phương án ứng phó, không bị động.</p>
+                        <p class="text-para-content">Thứ trưởng Bộ GD&ĐT Phạm Ngọc Thưởng nói rằng, kỳ thi có quy mô lớn, phải có sự phối hợp của nhiều bộ, ngành, thậm chí cả hệ thống chính trị, hướng tới mục tiêu chung là vì học sinh. Đối với công tác kiểm tra, giám sát, lấy phát hiện, ngăn ngừa, phòng ngừa là chính để bảo vệ cán bộ, học sinh và mọi khâu của kỳ thi đều phải có kiểm tra, giám sát.</p>
+                    </div>
+
+                    <div id="page9" class="page page-section" >
+                        <h2 class="text-heading-content">Hướng dẫn ôn thi tốt nghiệp THPT 2023 trên truyền hình Hà Nội</h2>
+                        <h3 class="text-subheading-content">Để hỗ trợ học sinh lớp 12 trên địa bàn thành phố củng cố, hệ thống lại các kiến thức trọng tâm trong Chương trình lớp 12 thuộc các môn Ngữ văn, Toán, Tiếng Anh và nâng cao kỹ năng làm bài thi trong quá trình ôn tập chuẩn bị cho Kỳ thi tốt nghiệp THPT năm 2023, Sở Giáo dục và Đào tạo phối hợp cùng Đài PT-TH Hà Nội tổ chức phát sóng các tiết dạy hướng dẫn ôn thi trên sóng truyền hình. </h3>
+                        <p class="text-para-content">Chương trình được bắt đầu từ ngày 21/4/2023 đến ngày 11/6/2023 trên Kênh 2 - Đài Phát thanh - Truyền hình Hà Nội</p>
+                        <p class="text-para-content">+ 20h00 thứ Sáu hàng tuần: môn Ngữ văn</p>
+                        <p class="text-para-content">+ 20h00 thứ Bảy hàng tuần: môn Toán</p>
+                        <p class="text-para-content">+ 20h00 Chủ Nhật hàng tuần: môn Tiếng Anh</p>
+                        <p class="text-para-content">Ngoài ra, các em học sinh có thể theo dõi trực tuyến hoặc xem lại trên App Hanoi On và trang thông tin điện tử hanoionline.vn</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/img1-page9-enrollment.jpg" alt="" class="img-content-new">
+                        </div>
+                    </div>
+
+                    <div id="page10" class="page page-section" >
+                        <h2 class="text-heading-content">Hướng dẫn tổ chức Kỳ thi Tốt nghiệp THPT 2023</h2>
+                        <h3 class="text-subheading-content">Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các em học sinh theo dõi</h3>
+                        <h3 class="text-subheading-content"><a href="https://drive.google.com/file/d/1ZgJvO5yHKC7HdtWu3R1aRe0lklj0zRGl/view">>> Công văn số 1102/SGDĐT-QLT về việc hướng dẫn tổ chức Kỳ thi Tốt nghiệp THPT 2023;</a></h3>
+                    </div>
+
+                    <div id="page11" class="page page-section" >
+                        <h2 class="text-heading-content">THÔNG BÁO VỀ KỲ THI THPT QUỐC GIA TẠI ĐIỂM THI THPT CHUYÊN HÀ NỘI - AMSTERDAM</h2>
+                        <h3 class="text-subheading-content">Theo kế hoạch, Kỳ thi tốt nghiệp Trung học phổ thông (THPT) năm 2021 sẽ diễn ra ngày 6-8/7/2021. Cha Mẹ học sinh và các học sinh tham gia thi tại điểm trường THPT chuyên Hà Nội - Amsterdam theo dõi các Thông báo sau đây</h3>
+                        <p class="text-para-content">1. Lịch thi</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page11-enrollment/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">2. Sơ đồ Kỳ thi THPT Quốc gia 2021 tại Điểm thi THPT chuyên Hà Nội - Amsterdam</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page11-enrollment/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">3. Thực hiện Chỉ đạo của Sở Giáo dục và Đào tạo Hà Nội, Phòng Giáo dục và Đào tạo quận Cầu Giấy bố trí điểm chờ cho Cha Mẹ học sinh ngày 07,08/7/2021 như sau:</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page11-enrollment/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Theo đó, phụ huynh học sinh tham gia thi tại điểm trường THPT chuyên Hà Nội - Amsterdam sẽ có thể chờ đón thí sinh tại trường mầm non Hoa Sen số 3 Nguyễn Xuân Linh.</p>
+                        <p class="text-para-content">4. Những điều lưu ý đối với gia đình thí sinh:</p>
+                        <p class="text-para-content">- Nghiêm chỉnh chấp hành các quy định về công tác phòng, chống dịch, không tập trung tại cổng trường, không vào trong khu vực thi, phụ huynh đưa thí sinh đến điểm thi đứng cách điểm thi tối thiểu 50m, sau đó nhanh chóng rời khỏi điểm thi.</p>
+                        <p class="text-para-content">- Chuẩn bị một số đồ dùng cá nhân cho thí sinh như khẩu trang, bình nước uống cá nhân, khăn giấy/vải. Hỗ trợ thí sinh khai báo y tế trực tuyến (trước 6/7) và chủ động theo dõi thân nhiệt, sức khoẻ của thí sinh trước khi đến Điểm thi.</p>
+                        <p class="text-para-content">Chúc các bạn học sinh luôn mạnh khoẻ, bình tĩnh, tự tin, giành kết quả cao nhất trong Kỳ thi THPT Quốc Gia 2021!</p>
+                        <p class="text-para-content">Trân trọng.</p>
+                    </div>
+
+                    <div id="page12" class="page page-section" >
+                        <h2 class="text-heading-content">Trường THPT chuyên Hà Nội Amsterdam sắp mở thêm lớp chuyên mới</h2>
+                        <h3 class="text-subheading-content">Thông tin về tuyển sinh lớp 10 chuyên năm học 2025-2026, ngày 8-4, Sở GD-ĐT Hà Nội cho biết sẽ có nhiều điều chỉnh về cơ cấu lớp chuyên trong 4 trường chuyên trên địa bàn thành phố.</h3>
+                        <div class="content-introduce-img">
+                            <img src="https://media.vietnamplus.vn/images/a8a065741144e9a45b13148945811c8ad2c3175880ab66504c7055429be1ceef1f66140c0b3f71815d4c8048478de0da2cf8387e6f20efa97ce054cdc22484fe46abc3f389a5b58f884ebf9a9fa8e80ecdb57feb901aea868e56e8a402356a73/truong-thpt-chuyen-ha-noi-amsterdam-783.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Một giờ học của cô và trò Trường Trung học Phổ thông Chuyên Hà Nội-Amsterdam. (Ảnh: Thanh Tùng/TTXVN)</p>
+                        <p class="text-para-content">Một trong những điểm mới thí sinh dự thi lớp 10 công lập của Hà Nội năm học 2025-2026 cần lưu ý là một số điều chỉnh về cơ cấu môn chuyên trong 4 trường THPT chuyên trên địa bàn thành phố.</p>
+                        <p class="text-para-content">Năm 2025, thí sinh dự thi môn chuyên vẫn được đăng ký tối đa 2 trên 4 trường chuyên, chọn 1 môn chuyên/buổi thi.</p>
+                        <p class="text-para-content">Trong số 4 trường THPT chuyên tuyển sinh năm học 2025-2026, Trường THPT chuyên Hà Nội - Amsterdam sẽ mở thêm 1 lớp chuyên mới trong khi Trường THPT chuyên Sơn Tây sẽ bỏ đi 1 lớp chuyên.</p>
+                        <p class="text-para-content">Theo ông Nghiêm Văn Bình - Phó Trưởng phòng Quản lý thi và Kiểm định chất lượng giáo dục, Sở GD-ĐT Hà Nội, Trường THPT chuyên Hà Nội - Amsterdam sẽ mở thêm lớp chuyên tiếng Nhật, nâng tổng số môn chuyên lên 13 gồm: chuyên Ngữ văn, chuyên Lịch sử, chuyên Địa lý, chuyên Toán, chuyên Tin học, chuyên Hóa học, chuyên Vật lý, chuyên Sinh học, chuyên tiếng Anh, chuyên tiếng Pháp, chuyên tiếng Nga, chuyên tiếng Trung và chuyên tiếng Nhật.</p>
+                        <p class="text-para-content">Đặc biệt, Trường THPT chuyên Chu Văn An cũng mở thêm 3 lớp chuyên ngoại ngữ là chuyên tiếng Nhật, chuyên tiếng Hàn, chuyên tiếng Trung. Năm học trước, trường này chỉ có chuyên tiếng Anh và chuyên tiếng Pháp.</p>
+                        <p class="text-para-content">Trường THPT chuyên Nguyễn Huệ giữ nguyên số lượng lớp chuyên hiện tại. Riêng Trường THPT chuyên Sơn Tây bỏ lớp chuyên tiếng Pháp, chỉ giữ lại một ngoại ngữ chuyên duy nhất là tiếng Anh.</p>
+                        <p class="text-para-content">Như vậy, Hà Nội có 2 trường đào tạo chuyên tiếng Trung, chuyên tiếng Nhật là trường THPT chuyên Hà Nội Amsterdam và Chu Văn An; 3 trường đào tạo chuyên tiếng Pháp là trường THPT chuyên Hà Nội Amsterdam, Chu Văn An và Nguyễn Huệ; 2 cơ sở đào tạo chuyên tiếng Nga là trường THPT chuyên Hà Nội Amsterdam, Nguyễn Huệ; 1 cơ sở duy nhất đào tạo chuyên tiếng Hàn là THPT chuyên Chu Văn An.</p>
+                        <p class="text-para-content">Năm 2025, số lượng học sinh lớp 9 sẽ tốt nghiệp THCS vào khoảng 127.000 em. Kỳ thi vào lớp 10 công lập của Hà Nội diễn ra vào ngày 6-9/6, trong đó ngày 9/6 là ngày dành cho thí sinh đăng ký thi chuyên.</p>
+                    </div>
+
+                    <div id="page13" class="page page-section" >
+                        <h2 class="text-heading-content">Xác định chỉ tiêu tuyển sinh vào lớp 10 năm học 2024 - 2025 và báo cáo tình hình cơ sở vật chất, trang thiết bị</h2>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-enrollment/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-enrollment/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-enrollment/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-enrollment/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        
+                    </div>
+
+                    <div id="page14" class="page page-section" >
+                        <h2 class="text-heading-content">Hà Nội công bố điểm chuẩn trúng tuyển bổ sung vào lớp 10 chuyên năm học 2023-2024</h2>
+                        <h3 class="text-subheading-content">Hôm nay (10/7), Sở GD&ĐT Hà Nội công bố điểm chuẩn trúng tuyển bổ sung vào lớp 10 chuyên, chương trình song ngữ tiếng Pháp, chương trình thí điểm song bằng tú tài năm học 2023 - 2024. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh cùng theo dõi</h3>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-enrollment/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Kính mời Cha Mẹ học sinh và học sinh xem chi tiết Hướng dẫn nộp hồ sơ vào lớp 10 bổ sung:</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-enrollment/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                    </div>
+
+                    <div id="page15" class="page page-section" >
+                        <h2 class="text-heading-content">HƯỚNG DẪN NỘP HỒ SƠ VÀO LỚP 10 TRƯỜNG THPT CHUYÊN HÀ NỘI - AMSTERDAM NĂM HỌC 2023 – 2024</h2>
+                        <h3 class="text-subheading-content">Các học sinh đủ điều kiện trúng tuyển vào lớp 10 trường THPT chuyên Hà Nội - Amsterdam thực hiện nhập học theo các bước:</h3>
+                        <p class="text-para-content"><b>Bước 1.</b> Thực hiện thủ tục xác nhận nhập học trực tuyến trên cổng <a href="http://tsdaucap.hanoi.gov.vn">http://tsdaucap.hanoi.gov.vn</a> từ 13h30 ngày 05/7/2023 đến ngày 07/7/2023 theo quy định.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-enrollment/img-1.png" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content"><b>Bước 2.</b>Nộp hồ sơ nhập học trực tiếp theo thông báo sau:</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page15-enrollment/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                    </div>
+
+                    <div id="page16" class="page page-section" >
+                        <h2 class="text-heading-content">Hà Nội công bố điểm chuẩn vào lớp 10 các trường THPT chuyên</h2>
+                        <h3 class="text-subheading-content">Ngày 1/7/2023, Sở Giáo dục và đào tạo Hà Nội đã duyệt điểm chuẩn vào lớp 10 chuyên, lớp 10 chương trình song ngữ tiếng Pháp, lớp 10 chương trình thí điểm song bằng trường THPT chuyên năm học 2023 - 2024. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh theo dõi <a href="https://drive.google.com/file/d/1SCZ0FGxCwxdJsk_FGHCTabKqzF58dK9X/view">tại đây</a></h3>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page16-enrollment/img1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page16-enrollment/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        
+                    </div>
+
+                    <div id="page17" class="page page-section" >
+                        <h2 class="text-heading-content">Hà Nội chính thức dừng tuyển sinh lớp 6 trường Amsterdam từ năm học 2024-2025</h2>
+                        <h3 class="text-subheading-content">Trường Trung học phổ thông chuyên Hà Nội - Amsterdam sẽ chính thức dừng tuyển sinh học sinh lớp 6 từ năm học 2024-2025 theo chỉ đạo của Ủy ban Nhân dân thành phố.</h3>
+                        <div class="content-introduce-img">
+                            <img src="https://media.vietnamplus.vn/images/46ea39680b31a6ffa6089dd59705fafbc8f1b202a5d3042d9cb72a938df66e1009782366691e872ae19d9b65a1e6f2d60be5d48037fb3b5af0bf88d2cff8b204cdb57feb901aea868e56e8a402356a73/on-thi-lop-10-11-6333.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">(Ảnh minh họa: TTXVN)</p>
+                        <p class="text-para-content">Trao đổi với phóng viên VietnamPlus chiều nay, 2/4, lãnh đạo Sở Giáo dục và Đào tạo Hà Nội cho biết Trường Trung học phổ thông chuyên Hà Nội - Amsterdam sẽ chính thức dừng tuyển sinh học sinh lớp 6 từ năm học 2024-2025 theo chỉ đạo của Ủy ban Nhân dân thành phố.</p>
+                        <p class="text-para-content">Trước đó, Bộ Giáo dục và Đào tạo đã có công văn số 801/BGDĐT - GDTrH ngày 28-2-2024 đề nghị Hà Nội thực hiện đúng quy định tại Thông tư số 05/2023/TT-BGDĐT ban hành quy chế tổ chức và hoạt động của trường Trung học phổ thông chuyên, chỉ tổ chức lớp chuyên trong trường trung học phổ thông chuyên.</p>
+                        <p class="text-para-content">Các lớp không chuyên đã được tuyển sinh và tổ chức trong trường Trung học phổ thông chuyên tiếp tục thực hiện theo quy định cho đến khi học hết lớp 12. Việc tuyển sinh vào các lớp không chuyên của trường Trung học phổ thông chuyên quy định tại Thông tư số 06/2012/TT-BGDĐT và Thông tư số 12/2014/TT-BGDĐT được thực hiện đến hết năm học 2023-2024.</p>
+                        <p class="text-para-content">Hệ trung học cơ sở của Trường Trung học phổ thông chuyên Hà Nội - Amsterdam đã duy trì được gần 30 năm qua, đáp ứng nhu cầu của học sinh, phụ huynh Thủ đô về môi trường giáo dục chất lượng cao. Hàng năm, trường chỉ tuyển khoảng 200 chỉ tiêu nhưng luôn có khoảng 3.000 học sinh đăng ký dự tuyển, là nơi quy tụ những học sinh xuất sắc nhất Thủ đô.</p>
+                        <p class="text-para-content">Theo đánh giá của Sở Giáo dục và Đào tạo Hà Nội, hệ trung học cơ sở của trường đã hoàn thành xuất sắc nhiệm vụ là hệ tạo nguồn chủ yếu cho các lớp chuyên trung học phổ thông chuyên đạt thành tích xuất sắc trong các kỳ thi học sinh giỏi quốc gia và quốc tế./.</p>
+                    </div>
+
+                    <div id="page18" class="page page-section" >
+                        <h2 class="text-heading-content">Kết quả phúc khảo bài kiểm tra tuyển sinh lớp 6 năm học 2023 - 2024</h2>
+                        <p class="text-para-content">Mời các em học sinh, các Cha Mẹ học sinh cùng theo dõi:</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-5.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-6.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Học sinh trúng tuyển sau phúc khảo liên hệ với cô Hằng văn phòng (trước 16h00 ngày 29/7/2023) theo sđt: 0916150585 để được hướng dẫn nhập học. Trân trọng!</p>
+                    </div>
+
+                    <div id="page19" class="page page-section" >
+                        <h2 class="text-heading-content">Lịch nhận hồ sơ và điểm chuẩn trúng tuyển bổ sung vào lớp 6 Trường Trung học phổ thông chuyên Hà Nội – Amsterdam</h2>
+                        <h3 class="text-subheading-content">Ngày 10-7, Sở Giáo dục và Đào tạo Hà Nội đã công bố Quyết định số 1212/QĐ-SGDĐT phê duyệt điểm chuẩn trúng tuyển bổ sung vào lớp 6 Trường Trung học phổ thông chuyên Hà Nội - Amsterdam năm học 2023 - 2024.</h3>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-7.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Kính mời Cha Mẹ học sinh và học sinh xem chi tiết Hướng dẫn nộp hồ sơ vào lớp 6 bổ sung:</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-8.jpg" alt="" class="img-content-new">
+                        </div>
+                    </div>
+
+                    <div id="page20" class="page page-section" >
+                        <h2 class="text-heading-content">Mẫu đơn xin phúc khảo bài kiểm tra tuyển sinh vào lớp 6 năm học 2023 - 2024</h2>
+                        <h3 class="text-subheading-content">Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các em học sinh theo dõi</h3>
+                        <h3 class="text-subheading-content"><a href="https://docs.google.com/file/d/11y3qyqwRu00vDXHxtrkqxUhyASVA9GXP/edit?filetype=msword&pli=1">1. Mẫu đơn xin phúc khảo bài kiểm tra tuyển sinh vào lớp 6 năm học 2023 - 2024</a></h3>
+                        <p class="text-para-content"><b>2. Thời gian</b> nộp đơn xin phúc khảo: từ ngày 03/7/2023 đến ngày 06/07/2023.</p>
+                        <p class="text-para-content">+ Buổi sáng: Từ 08h00 đến 11h00</p>
+                        <p class="text-para-content">+ Buổi chiều: Từ 14h00 đến 16h30</p>
+                        <p class="text-para-content"><b>3. Địa điểm:</b> Văn phòng nhà trường, tầng 2 nhà Hiệu bộ</p>
+                    </div>
+
+                    <div id="page21" class="page page-section" >
+                        <h2 class="text-heading-content">Điểm trúng tuyển vào lớp 6 Trường THPT chuyên Hà Nội - Amsterdam năm học 2023-2024</h2>
+                        <h3 class="text-subheading-content">Thứ bảy ngày 01/7/2023, Sở Giáo dục và Đào tạo Hà Nội đã ra Quyết định số 1170/QĐ-SGDĐT về điểm chuẩn trúng tuyển vào lớp 6 trường THPT chuyên Hà Nội - Ámterdam là 20,85 điểm. Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các học sinh cùng theo dõi</h3>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-9.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page18-enrollment/img-10.jpg" alt="" class="img-content-new">
+                        </div>
+                        
+                    </div>
+
+                    <div id="page22" class="page page-section" >
+                        <h2 class="text-heading-content">Thông báo tuyển sinh chính quy năm 2023 của Trường Đại học Sân khấu - Điện ảnh Hà Nội</h2>
+                        <h3 class="text-subheading-content">Ngày 23/5/2023, Trường THPT chuyên Hà Nội - Amsterdam nhận được Thông báo số 293/TB-SKĐAHN ngày 16/5/2023 của Trường Đại học Sân khấu - Điện ảnh Hà Nội về việc thông báo tuyển sinh chính quy năm 2023 (tệp đính kèm theo). </h3>
+                        <h3 class="text-subheading-content">Kính mời các Thầy Cô giáo, các Cha Mẹ học sinh, các em học sinh cùng theo dõi</h3>
+                        <div class="content-introduce-img">
+                            <img src="http://skda.edu.vn/wp-content/uploads/Thong-bao-tuyen-sinh-DHCQ-2023-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="http://skda.edu.vn/wp-content/uploads/Thong-bao-tuyen-sinh-DHCQ-2023-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="http://skda.edu.vn/wp-content/uploads/Thong-bao-tuyen-sinh-DHCQ-2023-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="http://skda.edu.vn/wp-content/uploads/Thong-bao-tuyen-sinh-DHCQ-2023-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="http://skda.edu.vn/wp-content/uploads/Thong-bao-tuyen-sinh-DHCQ-2023-5.jpg" alt="" class="img-content-new">
+                        </div>
+
+                    </div>
+
+                    <div id="page23" class="page page-section" >
+                        <h2 class="text-heading-content">Ra mắt ngành mới đầy hứa hẹn của ULIS: Văn hóa & Truyền thông xuyên quốc gia</h2>
+                        <h3 class="text-subheading-content">ĐHNN - ĐHQGHN trân trọng kính mời các Thầy Cô giáo, các Cha Mẹ học sinh và các em học sinh tham gia trải nghiệm chương trình đào tạo mới vào ngày Thứ Bảy 22.4.2023 (8:00 – 16:00) tại Hội trường Tầng 1, Tòa nhà Sunwah, Trường ĐH Ngoại ngữ ĐHQGHN 144 Xuân Thủy.</h3>
+                        <p class="text-para-content">Link đăng ký tham dự: <a href="https://docs.google.com/forms/d/e/1FAIpQLScKnu-AXQe5DxkZ2xZHX_Tl3QB9RqNY9YfTu6SJzgEI58H_TA/viewform">TẠI ĐÂY</a></p>
+                        <div class="content-introduce-img">
+                            <img src="https://flce.ulis.vnu.edu.vn/files/uploads/VHTTXQG-FBCover-1024x385.png" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Trường Đại học Ngoại ngữ xin trân trọng giới thiệu chương trình cử nhân Văn hóa và Truyền thông Xuyên quốc gia (Transnational Cultural and Media Studies), bắt đầu tuyển sinh từ năm 2023 với 50 chỉ tiêu. Chương trình là sự kết hợp thế mạnh truyền thống của Trường về ngôn ngữ-văn hóa với hai lĩnh vực đang phát triển mạnh mẽ là báo chí-truyền thông và khoa học phát triển.</p>
+                        <p class="text-para-content">Xây dựng theo triết lý giáo dục khai phóng, chương trình giúp người học phát triển tri thức liên ngành, tư duy phê bình, bản sắc cá nhân và khả năng thiết lập những mối quan hệ nhân văn trong đời sống và công việc.</p>
+                        <p class="text-para-content">Thông tin chi tiết về chương trình đào tạo có tại <a href="https://drive.google.com/file/d/1uyf_w_K-VtYBaXGPoP1wnCm-p8A38Z_Q/view">Booklet</a> “Giới thiệu ngành đào tạo Văn hóa & Truyền thông Xuyên quốc gia”.</p>
+                        <h3 class="text-subheading-content">Lịch trình buổi trải nghiệm:</h3>
+                        <p class="text-para-content">(Các quý phụ huynh và các em có thể chọn tham dự một phần hoặc toàn bộ chương trình.)</p>
+                        <p class="text-para-content"> 8:00- 8:30: Đón tiếp đại biểu</p>
+                        <p class="text-para-content">8:30-9:00: Giới thiệu chương trình</p>
+                        <p class="text-para-content">9:00-9:30: Hỏi đáp & tiệc trà</p>
+                        <p class="text-para-content">9:45-11:30: Bài giảng mở</p>
+                        <p class="text-para-content">9:45-10:15: Bản đồ & giới thiệu môn Địa lý đại cương</p>
+                        <p class="text-para-content">10:20-10:50: Một bài học trong môn Truyền thông thị giác</p>
+                        <p class="text-para-content">10:55- 11:30: Một bài học trong môn Toàn cầu hóa</p>
+                        <p class="text-para-content">Ăn trưa (tự do)</p>
+                        <p class="text-para-content">13:00-13:45: Tour thăm trường</p>
+                        <p class="text-para-content">14:00-16:00: Bảo vệ khóa luận thực hành</p>
+                        <h3 class="text-subheading-content">Các nguồn đưa tin về CTĐT mới</h3>
+                        <p class="text-para-content"><a href="https://vov2.vov.vn/giao-duc-dao-tao/nam-2023-dai-hoc-quoc-gia-ha-noi-tuyen-15600-sinh-vien-40676.vov2">VOV2</a></p>
+                        <p class="text-para-content"><a href="https://kinhtedothi.vn/nam-2023-dh-quoc-gia-ha-noi-tang-1-600-chi-tieu-va-4-nganh-hoc-moi.html">Báo Kinh tế Đô thị</a></p>
+                        <p class="text-para-content"><a href="https://www.vnu.edu.vn/ttsk/?C2091/N32613/Cu-nhan-Van-hoa-va-Truyen-thong-xuyen-quoc-gia-%E2%80%93-mot-nganh-dao-tao-phi-bien-gioi.htm">VNU</a></p>
+                        <p class="text-para-content"><a href="https://ulis.vnu.edu.vn/van-hoa-va-truyen-thong-xuyen-quoc-gia-co-hoi-tiep-can-moi-truong-lam-viec-quoc-te/">ULIS</a></p>
+                        <p class="text-para-content"><a href="https://flce.ulis.vnu.edu.vn/tai-sao-nen-chon-chuong-trinh-cu-nhan-van-hoa-va-truyen-thong-xuyen-quoc-gia-tai-dai-hoc-ngoai-ngu-dhqghn/">Khoa NN&VH CNNTA</a></p>
+                        <h3 class="text-subheading-content">Thông tin liên hệ</h3>
+                        <p class="text-para-content">KHOA NGÔN NGỮ & VĂN HOÁ CÁC NƯỚC NÓI TIẾNG ANH</p>
+                        <p class="text-para-content">Phòng 501-504 Tầng 5 nhà B2, Điện thoại: 02466808713</p>
+                        <p class="text-para-content">Email: <a href="flce.ulis@gmail.com">flce.ulis@gmail.com</a></p>
+                        <p class="text-para-content">Website: flce.ulis.vnu.edu.vn</p>
+                        <p class="text-para-content">Bộ môn Quốc tế học: <a href="https://www.facebook.com/internationalstudiesulis">FANPAGE</a></p>
+
+
+
+                    </div>
+
+                    <div id="page24" class="page page-section" >
+                        <h2 class="text-heading-content">HỌC VIỆN NGOẠI GIAO TỔ CHỨC NGÀY HỘI TƯ VẤN TUYỂN SINH CHƯƠNG TRÌNH LIÊN KẾT 2023</h2>
+                        <h3 class="text-subheading-content">Ngày hội Joint Training Program Open House là chương trình do Ban Đào tạo Học viện Ngoại giao phối hợp với các cơ quan chuyên ngành tổ chức, nhằm mang tới cho các bạn học sinh THPT cơ hội trải nghiệm thú vị, một bước tiến gần hơn đến các chương trình liên kết tại Học viện Ngoại giao.</h3>
+                        <p class="text-para-content">Từ năm học 2023 - 2024, Học viện Ngoại giao triển khai 03 Chương trình liên kết với các Cơ sở giáo dục liên kết có truyền thống đào tạo lâu đời, uy tín, được xếp loại cao trên thế giới:</p>
+                        <p class="text-para-content">i/ Ngành Quan hệ quốc tế, nghành Khoa học Chính trị, ngành Truyền thông với Đại học Victoria Wellington, New Zealand</p>
+                        <p class="text-para-content">ii/ Ngành Kinh doanh quốc tế, ngành Truyền thông với Đại học Monash, Úc</p>
+                        <p class="text-para-content">iii/ Ngành Truyền thông với Đại học Macquarie, Úc</p>
+                        <p class="text-para-content">Nhằm cung cấp thông tin về chương trình đào tạo, tuyển sinh, chuyển tiếp và học bổng, Học viện Ngoại giao tổ chức ngày hội <b>Joint Training Program Open House 2023</b>. Thông tin cụ thể như sau:</p>
+                        <p style="margin-left: 30px;" class="text-para-content">Thời gian: 8h00-12h30, Chủ nhật, ngày 26/03/2023</p>
+                        <p style="margin-left: 30px;" class="text-para-content">Địa điểm: Phòng Hội thảo Geneva, tòa nhà D, Học viện Ngoại giao, số 69 Chùa Láng, Đống Đa, Hà Nội</p>
+                        <p style="margin-left: 30px;" class="text-para-content">Link đăng ký tham gia: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYQLwYHlhTD_CKIUbd-p0FkJqNMXgHeGpGve4objfFycZZGw/closedform">https://forms.gle/Nk9fYXKEtMCsDxdA7</a></p>
+                        <p style="margin-left: 30px;" class="text-para-content">Facebook: <a href="https://www.facebook.com/dav.openhouse">https://www.facebook.com/dav.openhouse</a></p>
+                        <p class="text-para-content">Đến với JTP OPEN HOUSE, các bạn học sinh đăng ký sẽ được:</p>
+                        <p class="text-para-content">- Nhận được các thông tin cập nhật và đáng tin cậy từ Đại diện Đại sứ Quán Úc và Cơ quản giáo dục thuộc chính phủ New Zealand đến chia sẻ tại Hội thảo Chính sách và cơ hội du học tại Úc và New Zealand;</p>
+                        <p class="text-para-content">- Tư vấn trực tiếp và được giải đáp các thắc mắc liên quan tới về tuyển sinh các Chương trình liên kết năm 2023 của Học viện Ngoại giao;</p>
+                        <p class="text-para-content">- Tham quan, trải nghiệm một ngày học tập và làm việc của sinh viên liên kết Học viện Ngoại giao;</p>
+                        <p class="text-para-content">- Tham gia các hoạt động văn nghệ, trò chơi giao lưu với sinh viên Học viện Ngoại giao</p>
+                        <p class="text-para-content">Học viện Ngoại giao kính mời các Cha Mẹ học sinh và các bạn học sinh quan tâm chương trình. </p>
+                    </div>
+
+                    <div id="page25" class="page page-section" >
+                        <h2 class="text-heading-content">ĐH Bách Khoa Hà Nội giữ nguyên phương thức tuyển sinh, tăng tổng chỉ tiêu</h2>
+                        <h3 class="text-subheading-content">Cũng tại chương trình Tư vấn tuyển sinh & Hướng nghiệp “Chọn chuẩn trường – đi chuẩn đường”, đại diện Đại học Bách Khoa Hà Nội cũng chia sẻ thêm nhiều thông tin thú vị.</h3>
+                        <h3 class="text-subheading-content">Phương thức tuyển giữ nguyên, tăng tổng chỉ tiêu</h3>
+                        <p class="text-para-content">Có mặt ở buổi tư vấn do Cổng Tư vấn Tuyển sinh và Hướng nghiệp của HOCMAI tổ chức miễn phí cho học sinh THPT, PGS Vũ Duy Hải, Phó Trưởng phòng Tuyển sinh ĐH Bách Khoa Hà Nội (BK HN) cho biết phương thức tuyển sinh năm nay về cơ bản vẫn giữ nguyên theo cách tuyển sinh của năm 2021. Theo đó, trường vẫn giữ nguyên 2 phương thức tuyển chính là xét tuyển tài năng, năng lực và xét tuyển qua điểm thi. Trong đó, ở phần xét tuyển tài năng thì ngoài xét tuyển cho thí sinh đạt giải học sinh giỏi quốc gia, quốc tế, BK HN còn xét tuyển các thí sinh có chứng chỉ quốc tế: SAT – Scholastic Assessment Test; ACT – American College Testing; IB – International Baccalaureate; A-Level – Cambridge International Examinations A-Level; ATAR – Australian Tertiary Admission Rank. Ngoài ra, số lượng chỉ tiêu dành cho xét tuyển tài năng cũng được nâng lên 20% tổng chỉ tiêu so với 15% như năm ngoái.</p>
+                        <p class="text-para-content">Tổng chỉ tiêu tuyển sinh năm nay của BK HN là 7.790 sinh viên, tăng gần 500 chỉ tiêu so với năm ngoái. Chương trình đào tạo và các nhóm ngành của trường không có nhiều thay đổi so với năm ngoái, một ngành mới dự kiến sẽ thu hút nhiều thí sinh là ngành Kỹ thuật Y sinh. Đây là ngành xuất phát từ nhu cầu mới của xã hội, sau biến cố đại dịch COVID-19. Các nhà nghiên cứu y sinh cho thấy sự quan trọng của mình trong đời sống hiện đại. Các nghiên cứu, bổ sung, trợ giúp y tế của nhân lực ngành đòi hỏi việc đào tạo bài bản để đáp ứng nhu cầu cấp thiết của xã hội.</p>
+                        <h3 class="text-subheading-content">Yêu thích ngành nào thì đó là ngành “hot”</h3>
+                        <p class="text-para-content">Một trong những băn khoăn lớn nhất của cả thí sinh lẫn phụ huynh, mỗi kỳ tuyển sinh đại học là ngành nào đang “hot” nhất, ngành nào sẽ dễ kiếm việc làm khi học xong. Giải đáp điều ấy, cô Phạm Thị Hằng, cán bộ phòng tuyển sinh BK HN nói “Bách khoa Hà Nội đào tạo nhiều ngành, bám sát thực tế, ngành hot là CNTT, tự động hóa, Kỹ thuật ô tô, kinh tế, logistics cung ứng. Nhu cầu ra trường có việc làm tốt khiến nhiều phụ huynh và thí sinh quan tâm ngành hot nhưng thực ra, điều quan trọng nhất phải dựa trên năng lực và sự yêu thích của thí sinh. Một công việc hay ngành học không yêu thích có thể khiến các năm học và thời gian làm việc bị phí hoài”.</p>
+                        <p class="text-para-content">Lý giải thêm ý kiến này, PGS Vũ Duy Hải cho biết trường đã nghiên cứu kỹ về nhu cầu việc làm, nguồn lao động để mở thêm ngành. Tất cả các ngành đang đào tạo đều có sức nóng về nhu cầu lao động qua quá trình sau điều tra khảo sát, nghiên cứu, thăm dò ý kiến doanh nghiệp, định lượng rõ ràng về nhu cầu việc làm, không có bất cứ ngành học nào mà thị trường lao động ở thời gian tương lai gần không cần mà được mở. Thầy Hải cho biết thêm có đến 98,6% sinh viên Bách Khoa HN có việc sau 6 tháng ra trường.</p>
+                        <p class="text-para-content">Bạn Lê Ngọc Hải, sinh viên năm cuối Khoa Kỹ thuật điều khiển-tự động hóa, BK Hà Nội có mặt trong chương trình cho biết khi chọn ngành thì gia đình có gợi ý qua một ngành khác, nhưng Hải kiên quyết theo ngành này. Nếu được chọn lại, vẫn chọn lại ngành này, vì nhìn suốt 5 năm học đã học được nhiều, từ kiến thức, kỹ năng mềm, quan hệ, vẫn duy trì sự yêu thích với ngành học.</p>
+                        <p class="text-para-content">Thầy Hải đúc kết “Vì nhu cầu thị trường lao động luôn có, nên các ưu tiên khi chọn ngành đầu tiên là sở thích, phải trả lời được việc mình muốn làm gì, trở thành gì. Sau đó, nên xét đến năng lực để chọn ngành phù hợp hoặc thay đổi bản thân, như các ngành học đòi hỏi sự tỉ mỉ, nghiêm cẩn, kiên nhẫn như Tự động hóa, nếu không có các đức tính đó thì cần rèn luyện hoặc tìm các ngành khác phù hợp hơn. Cuối cùng là nên tìm hiểu kỹ về tài chính, mức học phí, các yêu cầu tài chính có thể có trong 4-5 năm học để xem xét điều kiện bản thân và gia đình có thể đủ khả năng tài chính để duy trì hay không. Với niềm đam mê, các điều kiện như năng lực hay tài chính có thể được khắc phục, vì thế đó phải là ưu tiên lựa chọn hàng đầu.</p>
+                        <h3 class="text-subheading-content">Hát hay là một lợi thế</h3>
+                        <p class="text-para-content">Ngoài đào tạo, Bách Khoa HN còn có nhiều hoạt động ngoại khóa, kỹ năng mềm để các bạn có thể kết nối doanh nghiệp, xã hội, làm bệ phóng cho các sinh viên có thể bay cao. Điều đó có thể cho thấy các kỹ năng mềm, khả năng tham gia các hoạt động lợi ích xã hội, ý muốn cống hiến cho cộng đồng luôn được đánh giá cao ở các tân sinh viên.</p>
+                        <p class="text-para-content">Khi một thí sinh hỏi hồ sơ để xét tuyển năng lực, ngoài các giải thưởng học tập cấp tỉnh thì còn có thể bao gồm gì để tăng tỉ lệ đậu, thầy Hải đã chia sẻ “đến giải thưởng thi âm nhạc cũng có thể góp phần nâng điểm năng lực cho việc đậu”. Ở phần xét tuyển tài năng, thí sinh có điểm trung bình các môn 3 năm học đều trên 8.0, có thể tập hợp hồ sơ bao gồm cả việc đạt giải học sinh giỏi cấp tỉnh, các chứng nhận giải thưởng âm nhạc, thể thao, các chứng nhận đã tham gia vào các hoạt động thiện nguyện, xã hội… “Các thành tích sẽ được tính điểm, nhưng các thành tích được tính điểm theo cách khác nhau, thấp nhất là các đơn vị. Ở mức 100 điểm là cao nhất, các thí sinh có điểm cao sẽ có lợi thế hơn khi bước vào cuộc phỏng vấn tuyển chọn”, thầy Hải cho biết.</p>
+                        <p class="text-para-content">Các thí sinh xuất sắc, nhiều thành tích có thể tham gia cả 3 phương thức xét tuyển thẳng qua tài năng, năng lực, với nhiều lựa chọn về các nguyện vọng học.</p>
+                        <p class="text-para-content">Thầy Hải cũng lưu ý thêm, dù có thể đăng ký nhiều nguyện vọng, nhưng việc xét tuyển đại học sẽ phụ thuộc vào nguyện vọng đăng ký trên trang của Bộ Giáo dục và Đào tạo. Bộ sẽ tiến hành lọc ảo, để tránh thí sinh đăng ký quá nhiều nguyện vọng, khiến việc xét tuyển khó khăn, thế nên nguyện vọng mong muốn nhất phải là nguyện vọng 1 được đăng ký trên trang này. Sau kỳ thi tốt nghiệp, thí sinh sẽ có 6 tuần để đưa ra đáp án cuối cùng về nguyện vọng ngành học của mình.</p>
+                    </div>
+
+                    <div id="page26" class="page page-section" >
+                        <h2 class="text-heading-content">Đại học Y Hà Nội tổ chức tư vấn hướng nghiệp online trước tuyển sinh năm 2021</h2>
+                        <h3 class="text-subheading-content">Nhằm cung cấp thông tin hướng nghiệp cho học sinh trước khi quyết định lựa chọn Trường Đại học - Vào 14h ngày 25 tháng 3 năm 2021 tại Trường Đại học Y Hà Nội sẽ tổ chức chương trình Tư vấn hướng nghiệp trực tuyến với sự góp mặt của các giảng viên – tư vấn đến từ các Khoa/ Phòng/ Bộ môn của Trường Đại học Y Hà Nội.  </h3>
+                        <p class="text-para-content">Để chuẩn bị hành trang trên con đường chinh phục cánh cổng đại học mơ ước không chỉ cần tri thức, mà điều quan trong là lựa chọn hướng đi cho tương lai phía trước.  Các em học sinh và gia đình cần nhạy bén nắm bắt thông tin, lựa chọn hướng đi cho phù hợp xu thế phát triển của xã hội.</p>
+                        <p class="text-para-content">Nhằm cung cấp thông tin hướng nghiệp cho học sinh trước khi quyết định lựa chọn Trường Đại học - Vào 14h ngày 25 tháng 3 năm 2021 tại Trường Đại học Y Hà Nội sẽ tổ chức chương trình Tư vấn hướng nghiệp trực tuyến với sự góp mặt của các giảng viên – tư vấn đến từ các Khoa/ Phòng/ Bộ môn của Trường Đại học Y Hà Nội.</p>
+                        <p class="text-para-content">Ngay từ bây giờ, các bạn học sinh và phụ huynh  có thể đặt câu hỏi  tại đường link sau: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcEp28ljq6GfR7B0ltnJ390GjC3DvAULR4xpiDzM9cOEikHw/viewform">https://forms.gle/eUwRKCpR1woYv57c6</a></p>
+                        <p class="text-para-content">Các câu trả lời sẽ được livestream qua Fanpage của Trường Đại học Y Hà Nội tại địa chỉ: https://www.facebook.com/daihocyhanoi2014</a></p>
+                    </div>
+                </div>  
+                
+            </div>      
+
+
+
+            <div id="footer-container"></div>
+    
+    
+    
+    
+        </div>
+        
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Lấy giá trị "page" từ URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const currentPage = urlParams.get('page');
+                let targetLink = null;
+
+                // Xử lý phần sidebar
+                if (currentPage) {
+                    // Nếu có tham số "page" trong URL, tìm link tương ứng trong sidebar
+                    targetLink = document.querySelector(`.bar-list-link[data-page="${currentPage}"]`);
+                }
+
+                // Nếu không có hoặc không đúng, fallback về cái đầu tiên trong sidebar
+                if (!targetLink) {
+                    targetLink = document.querySelector('.bar-list-link');
+                }
+
+                // Đảm bảo là có tìm thấy phần tử targetLink
+                if (targetLink) {
+                    setActive(targetLink);
+                    const pageId = targetLink.getAttribute('data-page');
+                    const title = targetLink.textContent.trim();
+                    setTitleAndShowPage(pageId, title);
+                }
+
+                // Gắn click cho các link trong sidebar
+                const links = document.querySelectorAll('.bar-list-link');
+                links.forEach(link => {
+                    link.addEventListener('click', e => {
+                        e.preventDefault();
+                        setActive(link);
+                        const pageId = link.dataset.page;
+                        const title = link.textContent.trim();
+                        setTitleAndShowPage(pageId, title);
+                    });
+                });
+            });
+
+            // Hàm setActive
+            function setActive(element) {
+                document.querySelectorAll('.bar-list a').forEach(link => link.classList.remove('active'));
+                element.classList.add('active');
+            }
+
+            // Hàm setTitleAndShowPage
+            function setTitleAndShowPage(pageId, title) {
+                document.title = title;
+                history.replaceState(null, '', `?page=${pageId}`);
+
+                document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+                const target = document.getElementById(pageId);
+                if (target) {
+                    target.style.display = 'block';
+                }
+
+                // Ẩn hoặc hiện .content-detail tùy vào page
+                const detailSection = document.querySelector('.content-detail');
+                const pageNumber = parseInt(pageId.replace('page', ''));
+
+                if (pageNumber >= 1 && pageNumber <= 6) {
+                    detailSection.style.display = 'none';
+                } else {
+                    detailSection.style.display = 'block';  // Mặc định ẩn nếu không phải page1 đến page16
+                }
+            };
+
+        </script>
+        
+
+        <script src="/javascript/load-header.js"></script>
+        <script src="/javascript/load-footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học sinh</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
+    <style>
+            
+        .bar-list a.active{
+            background-color: #3e769a;
+            color: #fff;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+
+        <div id="main">
+            <div id="header-container"></div>
+
+            <div class="row margin-t250 content-section">
+                <ul class="col col-20pt bar-list">
+                    <a style="display: none;" class="bar-list-link" data-page="page1" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page1','Học sinh' )">Học sinh</a>
+                    <li><a class="bar-list-link" data-page="page2" href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page2','Hoạt động Đoàn' )">Hoạt động Đoàn</a></li>
+                    <li><a class="bar-list-link" data-page="page3"  href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page3', 'Sáng tác của học sinh')" >Sáng tác của học sinh</a></li>
+                    <li><a class="bar-list-link" data-page="page4"  href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page4', 'Câu lạc bộ')">Câu lạc bộ</a></li>
+                    <li><a class="bar-list-link" data-page="page5"  href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page5', 'Cựu học sinh')">Cựu học sinh</a></li>
+
+                    <a style="display: none;" class="bar-list-link" data-page="page6"  href="javascript:void(0)"  onclick=" setActive(this); setTitleAndShowPage('page6', 'Khánh thành công trình thanh niên sáng tạo của tuổi trẻ trường Ams')">Khánh thành công trình thanh niên sáng tạo của tuổi trẻ trường Ams</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page7" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page7', 'Trò chuyện cùng Chu Hoa Bảo Trâm (Sử 20-23) - Phó bí thư Đoàn trường trúng cử vào Ban Chấp hành Thành đoàn Hà Nội khóa XVI')">Trò chuyện cùng Chu Hoa Bảo Trâm (Sử 20-23) - Phó bí thư Đoàn trường trúng cử vào Ban Chấp hành Thành đoàn Hà Nội khóa XVI</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page8" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page8', 'Học và làm theo lời Bác dần trở thành việc làm thường xuyên, liên tục')">Học và làm theo lời Bác dần trở thành việc làm thường xuyên, liên tục</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page9" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page9', 'Giải Nhì cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: ĐỂ TỚ KỂ CẬU NGHE')">Giải Nhì cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: ĐỂ TỚ KỂ CẬU NGHE</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page10" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page10', 'Giải Nhất cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: AMS: BẦU TRỜI KỲ DIỆU')">Giải Nhất cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: AMS: BẦU TRỜI KỲ DIỆU</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page11" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page11', 'Nữ sinh chuyên Hà Nội - Amsterdam sáng tác bài hát dành tặng trường')">Nữ sinh chuyên Hà Nội - Amsterdam sáng tác bài hát dành tặng trường</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page12" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page12', 'MOCK TRIAL 2023: Phiên tòa tranh biện của CLB Puzzles Ams gửi gắm mong muốn đề cao công lý.')">MOCK TRIAL 2023: Phiên tòa tranh biện của CLB Puzzles Ams gửi gắm mong muốn đề cao công lý.</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page13" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page13', 'Trải nghiệm thú vị tại GART Workshop 2023')">Trải nghiệm thú vị tại GART Workshop 2023</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page14" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page14', 'Tuần lễ traning sôi động cùng Cheer Ams')">Tuần lễ traning sôi động cùng Cheer Ams</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page15" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page15', 'Cựu Amser đỗ học bổng tiến sĩ đại học số 1 thế giới')">Cựu Amser đỗ học bổng tiến sĩ đại học số 1 thế giới</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page16" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page16', 'Cựu học sinh Ams đỗ Đại học Cornell sau một năm gap year')">Cựu học sinh Ams đỗ Đại học Cornell sau một năm 'gap year'</a>
+                    <a style="display: none;" class="bar-list-link" data-page="page17" href="javascript:void(0)"   onclick=" setActive(this); setTitleAndShowPage('page17', 'Cựu Amser chia sẻ bí quyết giành bằng tốt nghiệp Xuất sắc tại Đại học Công nghệ hàng đầu thế giới')">Cựu Amser chia sẻ bí quyết giành bằng tốt nghiệp Xuất sắc tại Đại học Công nghệ hàng đầu thế giới</a>
+
+                </ul>   
+
+                <div class="col col-80pt">
+                    <div id="page1" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page6" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/cong_trinh_thanh_nien.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page6">Khánh thành công trình thanh niên sáng tạo của tuổi trẻ trường Ams</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                25/03/2024
+                            </p>
+                            <p class="desc-introduce">Sáng tạo không gian thư viện xanh - Green Study Corner là một điểm sáng trong chuỗi hoạt động chào mừng kỷ niệm 93 năm Ngày thành lập Đoàn TNCS của tuổi trẻ trường THPT chuyên Hà Nội - Amsterdam, đồng thời là sự khẳng định cho một bước phát triển mới của giáo dục STEM tại nhà trường.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page7" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/304807014_5018516438254405_5881216482254100236_n.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page7">Trò chuyện cùng Chu Hoa Bảo Trâm (Sử 20-23) - Phó bí thư Đoàn trường trúng cử vào Ban Chấp hành Thành đoàn Hà Nội khóa XVI</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                30/09/2022
+                            </p>
+                            <p class="desc-introduce">Ngày 29/9 vừa qua, Đại hội đại biểu Đoàn Thanh niên cộng sản Hồ Chí Minh thành phố Hà Nội lần thứ XVI, nhiệm kỳ 2022 - 2027  đã công bố kết quả các đồng chí ưu tú trúng cử vào Ban Chấp hành Thành đoàn Hà Nội. Trong đó, học sinh Chu Hoa Bảo Trâm - Phó bí thư Đoàn trường THPT Chuyên Hà Nội - Amsterdam đã vinh dự là một trong 59 đồng chí trúng cử. Hãy cùng theo chân ban biên tập của Ams Wide Web phỏng vấn cô gái vô cùng có duyên với những hoạt động Đoàn, Đội này nhé!</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page8" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/thanh_doan_hn_2021.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page8">Học và làm theo lời Bác dần trở thành việc làm thường xuyên, liên tục</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                26/05/2021
+                            </p>
+                            <p class="desc-introduce">Qua 5 năm thực hiện Chỉ thị 05, việc học và làm theo lời Bác dần trở thành việc làm thường xuyên, kiên trì, bền bỉ, góp phần hình thành ý thức tự giác, trách nhiệm của mỗi cán bộ, đoàn viên, thanh thiếu nhi Việt Nam.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page9" ><img  src="https://www.hn-ams.edu.vn/sites/default/files/imagecache/icon-slide80x65/nguyen_mai_trang_h2_4.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page9">Giải Nhì cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: ĐỂ TỚ KỂ CẬU NGHE</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                12/12/2020
+                            </p>
+                            <p class="desc-introduce">Tác giả: Đỗ Quyên <br>
+                                Lớp: Anh 2 1821 - THPT chuyên Hà Nội - Amsterdam</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page10" ><img  src="https://www.hn-ams.edu.vn/sites/default/files/imagecache/icon-slide80x65/imgp0753_-_giai_nhat_02_-_nguyen_quynh_trang_11_trung.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page10">Giải Nhất cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: AMS: BẦU TRỜI KỲ DIỆU</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                12/12/2020
+                            </p>
+                            <p class="desc-introduce">Tác giả: Mai Khánh Linh <br>
+                                Lớp: Địa 1922 - THPT chuyên Hà Nội - Amsterdam</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page11" ><img  src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8e0cd634599e3f31319f556c6063fa7234bcae2b465c98063cab48870dd3bd6298/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_DAJQ.JPG.jpg.webp" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page11">Nữ sinh chuyên Hà Nội - Amsterdam sáng tác bài hát dành tặng trường</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                17/05/2016
+                            </p>
+                            <p class="desc-introduce">Dựa trên chủ đề của Ngày Hội Anh Tài năm nay - Clarion, 2 thí sinh Hà Thu và Lê Khanh đã trình bày một ca khúc tự sáng tác như một món quà dành tặng cuộc thi – một kỉ niệm đẹp thời đi học đối với tất cả những ai tham dự.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page12" ><img  src="/assets/img/page12-student/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page12">MOCK TRIAL 2023: Phiên tòa tranh biện của CLB Puzzles Ams gửi gắm mong muốn đề cao công lý.</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                16/01/2024
+                            </p>
+                            <p class="desc-introduce">Mock Trial là sự kiện thường niên được tổ chức bởi CLB Puzzles Ams, mô phỏng phiên tòa phương Tây theo trình tự của một phiên tòa thực tế với đầy đủ thẩm phán, bồi thẩm đoàn, luật sư, công tố viên và nhân chứng. Năm nay, sự kiện đã quay trở lại, đánh dấu cột mốc 10 mùa tổ chức phiên tòa thành công, mở màn cho nhiệm kỳ 2023-2024 thật sôi động và bùng nổ.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page13" ><img  src="/assets/img/page13-student/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page13">Trải nghiệm thú vị tại GART Workshop 2023</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                22/10/2023
+                            </p>
+                            <p class="desc-introduce">Diễn ra vào hai buổi chiều ngày 17 và 18 tháng 10 vừa qua, workshop do câu lạc bộ GreenAms 6520 Robotics Team tổ chức đã thu hút đông đảo các bạn học sinh có niềm yêu thích và đam mê với lĩnh vực thiết kế, xây dựng và ứng dụng robot cơ khí. </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page14" ><img  src="/assets/img/page14-student/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page14">Tuần lễ traning sôi động cùng Cheer Ams</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                26/10/2023
+                            </p>
+                            <p class="desc-introduce">Từ ngày 5-7/10/2023, CLB Cheer Ams đã tổ chức chuỗi hoạt động training tại sảnh AB ở trường THPT Chuyên Hà Nội - Amsterdam. Chuỗi sự kiện đã thu hút sự tham gia của rất nhiều học sinh, mang trong mình sứ mệnh lan tỏa tinh thần thể thao và hoạt động nhảy cổ vũ trong nhà trường nói riêng và cộng đồng nói chung.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page15" ><img  src="https://i1-vnexpress.vnecdn.net/2024/02/22/z5181842615306-1c1ae8544121d99-8334-9370-1708573318.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=V4SwndmN2s44j-8-ZgWu9Q" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page15">Cựu Amser đỗ học bổng tiến sĩ đại học số 1 thế giới</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                24/02/2024
+                            </p>
+                            <p class="desc-introduce">Lê Hoàng Minh trúng tuyển chương trình tiến sĩ Hóa học tại Viện Công nghệ Massachusetts (MIT), Mỹ, trường đứng đầu bảng xếp hạng đại học tốt nhất thế giới 2024, theo QS.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page16" ><img  src="https://i1-vnexpress.vnecdn.net/2023/12/19/linh-anh1-5620-1702921545.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=bSj6Y5IDH3h8fqx4rIUjXA" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page16">Cựu học sinh Ams đỗ Đại học Cornell sau một năm 'gap year'</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                19/12/2023
+                            </p>
+                            <p class="desc-introduce">Linh Anh, cựu học sinh chuyên Lý trường chuyên Hà Nội - Amsterdam, trúng tuyển Đại học Cornell với hỗ trợ tài chính 8 tỷ đồng, sau một năm "gap year" để chuẩn bị hồ sơ.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page17" ><img  src="/assets/img/page17-student/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page17">Cựu Amser chia sẻ bí quyết giành bằng tốt nghiệp Xuất sắc tại Đại học Công nghệ hàng đầu thế giới</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                20/10/2023
+                            </p>
+                            <p class="desc-introduce">Tháng 10/2023, Trường THPT Chuyên Hà Nội - Amsterdam vui mừng nhận được thông báo từ Đại học Công Nghệ Nanyang 2 cựu học sinh Nguyễn Tô Vĩnh Huy và Tạ Quỳnh Nga nhận bằng Cử nhân Xuất sắc - Honour, danh hiệu cao nhất tại trường Đại học xếp hạng 12th Thế giới (QS Ranking 2022) trong mùa tốt nghiệp vừa qua. Cùng theo chân Ban Biên tập tìm hiểu bí quyết học tập của các bạn ấy nhé! </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page2" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page6" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/205x165/cong_trinh_thanh_nien.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page6">Khánh thành công trình thanh niên sáng tạo của tuổi trẻ trường Ams</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                25/03/2024
+                            </p>
+                            <p class="desc-introduce">Sáng tạo không gian thư viện xanh - Green Study Corner là một điểm sáng trong chuỗi hoạt động chào mừng kỷ niệm 93 năm Ngày thành lập Đoàn TNCS của tuổi trẻ trường THPT chuyên Hà Nội - Amsterdam, đồng thời là sự khẳng định cho một bước phát triển mới của giáo dục STEM tại nhà trường.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page7" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/304807014_5018516438254405_5881216482254100236_n.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page7">Trò chuyện cùng Chu Hoa Bảo Trâm (Sử 20-23) - Phó bí thư Đoàn trường trúng cử vào Ban Chấp hành Thành đoàn Hà Nội khóa XVI</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                30/09/2022
+                            </p>
+                            <p class="desc-introduce">Ngày 29/9 vừa qua, Đại hội đại biểu Đoàn Thanh niên cộng sản Hồ Chí Minh thành phố Hà Nội lần thứ XVI, nhiệm kỳ 2022 - 2027  đã công bố kết quả các đồng chí ưu tú trúng cử vào Ban Chấp hành Thành đoàn Hà Nội. Trong đó, học sinh Chu Hoa Bảo Trâm - Phó bí thư Đoàn trường THPT Chuyên Hà Nội - Amsterdam đã vinh dự là một trong 59 đồng chí trúng cử. Hãy cùng theo chân ban biên tập của Ams Wide Web phỏng vấn cô gái vô cùng có duyên với những hoạt động Đoàn, Đội này nhé!</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page8" ><img  src="https://hn-ams.edu.vn/sites/default/files/imagecache/145x120/thanh_doan_hn_2021.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page8">Học và làm theo lời Bác dần trở thành việc làm thường xuyên, liên tục</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                26/05/2021
+                            </p>
+                            <p class="desc-introduce">Qua 5 năm thực hiện Chỉ thị 05, việc học và làm theo lời Bác dần trở thành việc làm thường xuyên, kiên trì, bền bỉ, góp phần hình thành ý thức tự giác, trách nhiệm của mỗi cán bộ, đoàn viên, thanh thiếu nhi Việt Nam.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="page3" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page9" ><img  src="https://www.hn-ams.edu.vn/sites/default/files/imagecache/icon-slide80x65/nguyen_mai_trang_h2_4.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page9">Giải Nhì cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: ĐỂ TỚ KỂ CẬU NGHE</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                12/12/2020
+                            </p>
+                            <p class="desc-introduce">Tác giả: Đỗ Quyên <br>
+                                Lớp: Anh 2 1821 - THPT chuyên Hà Nội - Amsterdam</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page10" ><img  src="https://www.hn-ams.edu.vn/sites/default/files/imagecache/icon-slide80x65/imgp0753_-_giai_nhat_02_-_nguyen_quynh_trang_11_trung.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page10">Giải Nhất cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: AMS: BẦU TRỜI KỲ DIỆU</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                12/12/2020
+                            </p>
+                            <p class="desc-introduce">Tác giả: Mai Khánh Linh <br>
+                                Lớp: Địa 1922 - THPT chuyên Hà Nội - Amsterdam</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page11" ><img  src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8e0cd634599e3f31319f556c6063fa7234bcae2b465c98063cab48870dd3bd6298/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_DAJQ.JPG.jpg.webp" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page11">Nữ sinh chuyên Hà Nội - Amsterdam sáng tác bài hát dành tặng trường</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                17/05/2016
+                            </p>
+                            <p class="desc-introduce">Dựa trên chủ đề của Ngày Hội Anh Tài năm nay - Clarion, 2 thí sinh Hà Thu và Lê Khanh đã trình bày một ca khúc tự sáng tác như một món quà dành tặng cuộc thi – một kỉ niệm đẹp thời đi học đối với tất cả những ai tham dự.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page4" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page12" ><img  src="/assets/img/page12-student/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page12">MOCK TRIAL 2023: Phiên tòa tranh biện của CLB Puzzles Ams gửi gắm mong muốn đề cao công lý.</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                16/01/2024
+                            </p>
+                            <p class="desc-introduce">Mock Trial là sự kiện thường niên được tổ chức bởi CLB Puzzles Ams, mô phỏng phiên tòa phương Tây theo trình tự của một phiên tòa thực tế với đầy đủ thẩm phán, bồi thẩm đoàn, luật sư, công tố viên và nhân chứng. Năm nay, sự kiện đã quay trở lại, đánh dấu cột mốc 10 mùa tổ chức phiên tòa thành công, mở màn cho nhiệm kỳ 2023-2024 thật sôi động và bùng nổ.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page13" ><img  src="/assets/img/page13-student/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page13">Trải nghiệm thú vị tại GART Workshop 2023</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                22/10/2023
+                            </p>
+                            <p class="desc-introduce">Diễn ra vào hai buổi chiều ngày 17 và 18 tháng 10 vừa qua, workshop do câu lạc bộ GreenAms 6520 Robotics Team tổ chức đã thu hút đông đảo các bạn học sinh có niềm yêu thích và đam mê với lĩnh vực thiết kế, xây dựng và ứng dụng robot cơ khí. </p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page14" ><img  src="/assets/img/page14-student/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page14">Tuần lễ traning sôi động cùng Cheer Ams</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                26/10/2023
+                            </p>
+                            <p class="desc-introduce">Từ ngày 5-7/10/2023, CLB Cheer Ams đã tổ chức chuỗi hoạt động training tại sảnh AB ở trường THPT Chuyên Hà Nội - Amsterdam. Chuỗi sự kiện đã thu hút sự tham gia của rất nhiều học sinh, mang trong mình sứ mệnh lan tỏa tinh thần thể thao và hoạt động nhảy cổ vũ trong nhà trường nói riêng và cộng đồng nói chung.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page5" class="page page-section">
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page15" ><img  src="https://i1-vnexpress.vnecdn.net/2024/02/22/z5181842615306-1c1ae8544121d99-8334-9370-1708573318.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=V4SwndmN2s44j-8-ZgWu9Q" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page15">Cựu Amser đỗ học bổng tiến sĩ đại học số 1 thế giới</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                24/02/2024
+                            </p>
+                            <p class="desc-introduce">Lê Hoàng Minh trúng tuyển chương trình tiến sĩ Hóa học tại Viện Công nghệ Massachusetts (MIT), Mỹ, trường đứng đầu bảng xếp hạng đại học tốt nhất thế giới 2024, theo QS.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page16" ><img  src="https://i1-vnexpress.vnecdn.net/2023/12/19/linh-anh1-5620-1702921545.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=bSj6Y5IDH3h8fqx4rIUjXA" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page16">Cựu học sinh Ams đỗ Đại học Cornell sau một năm 'gap year'</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                19/12/2023
+                            </p>
+                            <p class="desc-introduce">Linh Anh, cựu học sinh chuyên Lý trường chuyên Hà Nội - Amsterdam, trúng tuyển Đại học Cornell với hỗ trợ tài chính 8 tỷ đồng, sau một năm "gap year" để chuẩn bị hồ sơ.</p>
+                            </div>
+                        </div>
+
+                        <div class="row content-introduce">
+                            <a href="student.html?page=page17" ><img  src="/assets/img/page17-student/img-1.jpg" alt="" class="col col-20pt img-introduce"></a>
+                            <div class="col col-80pt about-introduce">
+                            <a href="student.html?page=page17">Cựu Amser chia sẻ bí quyết giành bằng tốt nghiệp Xuất sắc tại Đại học Công nghệ hàng đầu thế giới</a>
+                            <p class="time-up-load">
+                                <i class="time-icon ti-time"></i>
+                                20/10/2023
+                            </p>
+                            <p class="desc-introduce">Tháng 10/2023, Trường THPT Chuyên Hà Nội - Amsterdam vui mừng nhận được thông báo từ Đại học Công Nghệ Nanyang 2 cựu học sinh Nguyễn Tô Vĩnh Huy và Tạ Quỳnh Nga nhận bằng Cử nhân Xuất sắc - Honour, danh hiệu cao nhất tại trường Đại học xếp hạng 12th Thế giới (QS Ranking 2022) trong mùa tốt nghiệp vừa qua. Cùng theo chân Ban Biên tập tìm hiểu bí quyết học tập của các bạn ấy nhé! </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="col col-80pt content-detail " >
+                    <div id="page6" class="page page-section" >
+                        <h2 class="text-heading-content">Khánh thành công trình thanh niên sáng tạo của tuổi trẻ trường Ams</h2>
+                        <h3 class="text-subheading-content">Sáng tạo không gian thư viện xanh - Green Study Corner là một điểm sáng trong chuỗi hoạt động chào mừng kỷ niệm 93 năm Ngày thành lập Đoàn TNCS của tuổi trẻ trường THPT chuyên Hà Nội - Amsterdam, đồng thời là sự khẳng định cho một bước phát triển mới của giáo dục STEM tại nhà trường.</h3>
+                        <p class="text-para-content">Trong những năm gần đầy, Nhà giáo Trần Thùy Dương - Hiệu trưởng trường THPT chuyên Hà Nội - Amsterdam đã có nhiều sáng kiến trong việc tạo dựng những mô hình thư viện xanh. Có thể kể đến việc bài trí, làm mới thư viện truyền thống với nhiều cây xanh, thư viện mini tại các sảnh tòa nhà, cà phê sách được thiết kế với không gian mở…</p>
+                        <p class="text-para-content">Chính những ý tưởng này đã khơi nguồn cảm hứng sáng tạo cho các bạn học sinh trong trường. Trong đó, Câu lạc bộ Green Hanoi - Amsterdam đã lên ý tưởng phát triển không gian thư viện mini trước đây tại sảnh A trong khuôn viên nhà trường thành một không gian học tập thân thiện với tự nhiên, đồng thời đem lại nhiều tiện ích cho các bạn học sinh.</p>
+                        <p class="text-para-content">Các thành viên trong câu lạc bộ đã chủ động xây dựng một bản thiết kế thư viện xanh có tính thẩm mĩ cao, phù hợp với thị hiếu của giới trẻ. Điểm nhấn của thư viện xanh là tận dụng được khuôn viên rộng, thoáng đãng của khu vực sảnh nhà A, từ đó tạo nên một không gian mở, hòa nhập với thiên nhiên.</p>
+                        <p class="text-para-content">ừ không gian thư viện sẵn có, các em đã vận dụng kiến thức liên môn để sáng tạo thêm những tiện ích mới của thư viện xanh. Ở giai đoạn thứ nhất, học sinh đã áp dụng kiến thức sinh học để lựa chọn những loài cây phù hợp với không gian thư viện như các loài ưa bóng (cây cau cảnh, cây trúc nhất…), các loài ưa sáng (cỏ lan chi, cây vạn lộc…) để tạo nên một thư viện rợp sắc xanh.</p>
+                        <p class="text-para-content">Phụ trách chăm sóc cây xanh ở khu vực thư viện này, Câu lạc bộ Green Hanoi - Amsterdam còn thiết kế thêm hệ thống tưới tự động để vừa tiết kiệm nước tưới, vừa đảm bảo cây cối được cung cấp đủ lượng nước theo từng mùa trong năm.</p>
+                        <p class="text-para-content">Câu lạc bộ cũng đã thực hiện khảo sát địa hình của thư viện để có những thiết kế phù hợp. Nhận thấy sảnh nhà A ở hướng chính Tây, đón nhiều ánh sáng tự nhiên của mặt trời. Các em đã tận dụng điều này kết hợp với những kiến thức vật lý để đề xuất sử dụng năng lượng tái tạo từ pin năng lượng mặt trời, xe đạp tập thể dục phát điện phục vụ nhu cầu điện cho khuôn viên thư viện.</p>
+                        <p class="text-para-content">Những sáng tạo mới mẻ này cũng chính là thành quả của giáo dục STEM ở trường THPT chuyên Hà Nội - Amsterdam. Vận dụng kiến thức khoa học vào thực tiễn, teen trường Ams đã giúp thư viện xanh trở thành một không gian học tập thân thiện với thiên nhiên, một nguồn cảm hứng về tinh thần bảo vệ môi trường, tinh thần sáng tạo, tự học đối với các bạn học sinh trong trường.</p>
+                        <p class="text-para-content">Với sự hỗ trợ của những cựu học sinh trường THPT chuyên Hà Nội - Amsterdam hiện đang công tác tại trường Đại học VinUni, ý tưởng thiết kế của các em đã được hoàn thiện và từng bước hiện thực hóa.</p>
+                        <p class="text-para-content">Green Study Corner sẽ được ra mắt vào ngày 26/3 để chào mừng kỷ niệm 93 năm Ngày thành lập Đoàn TNCS Hồ Chí Minh.</p>
+                    </div>
+
+                    <div id="page7" class="page page-section" >
+                        <h2 class="text-heading-content">Trò chuyện cùng Chu Hoa Bảo Trâm (Sử 20-23) - Phó bí thư Đoàn trường trúng cử vào Ban Chấp hành Thành đoàn Hà Nội khóa XVI</h2>
+                        <h3 class="text-subheading-content">Ngày 29/9 vừa qua, Đại hội đại biểu Đoàn Thanh niên cộng sản Hồ Chí Minh thành phố Hà Nội lần thứ XVI, nhiệm kỳ 2022 - 2027  đã công bố kết quả các đồng chí ưu tú trúng cử vào Ban Chấp hành Thành đoàn Hà Nội. Trong đó, học sinh Chu Hoa Bảo Trâm - Phó bí thư Đoàn trường THPT Chuyên Hà Nội - Amsterdam đã vinh dự là một trong 59 đồng chí trúng cử. Hãy cùng theo chân ban biên tập của Ams Wide Web phỏng vấn cô gái vô cùng có duyên với những hoạt động Đoàn, Đội này nhé!</h3>
+                        <h3 class="text-subheading-content">PV:<i> Chị có thể chia sẻ về cảm xúc của bản thân khi biết tin mình trúng cử Ban Chấp hành Thành đoàn Hà Nội không ạ?</i></h3>
+                        <p class="text-para-content"><b>Bảo Trâm:</b> Chị cảm thấy rất tự hào vì là Uỷ viên trẻ nhất trong các nhiệm kỳ của BCH, đây không chỉ là niềm vinh dự mà còn là niềm vui lớn mà chị muốn chia sẻ cho mọi người.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-student/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Chu Hoa Bảo Trâm trong buổi bầu cử </p>
+                        <h3 class="text-subheading-content">PV:<i>Chị cảm thấy sự kiện này có ý nghĩa như thế nào đối với chặng đường hoạt động của mình ạ?</i></h3>
+                        <p class="text-para-content"><b>Bảo Trâm:</b> Được trở thành Uỷ viên ở tuổi 17 là cột mốc rất lớn đối với chị và nó cũng là thành quả sau những năm tháng cống hiến cho hoạt động của chị. Với cương vị Phó Bí thư Đoàn trường, đây cũng là cơ hội quý giá để chị góp phần phát triển những hoạt động của Đoàn trường THPT Chuyên Hà Nội - Amsterdam, của quận Cầu Giấy.</p>
+                        <h3 class="text-subheading-content">PV:<i>Với một cương vị cao hơn trong thành đoàn, chị đã có dự định gì cho những hoạt động của mình sắp tới?</i></h3>
+                        <p class="text-para-content"><b>Bảo Trâm:</b> Trong thời gian tới, chị sẽ cố gắng sử dụng tiếng nói, hành động thiết thực của mình để lan tỏa nhiều hành động đẹp và ý nghĩa tới các bạn Đoàn viên, trước hết là trong nhà trường, quận Cầu Giấy. Bên cạnh đó, tích cực đẩy mạnh phong trào,  những hoạt động và chiến dịch để nâng cao trí tuệ, tiếng nói của Đoàn viên thanh niên, từ đó tìm kiếm, phát triển, bồi dưỡng Đoàn viên ưu tú trở thành những Hạt giống đỏ tạo nguồn cho Đảng Cộng sản Việt Nam cũng là điều chị hướng đến.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-student/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Rạng rỡ trong ngày Đại hội</p>
+                        <h3 class="text-subheading-content">PV:<i>Được biết chị là một tham gia vào các công việc của đoàn đội rất sớm, có thể nói là khá kỳ cựu đối so với lứa tuổi học sinh vậy đối với chị Đoàn có ý nghĩa như thế nào ạ?</i></h3>
+                        <p class="text-para-content"><b>Bảo Trâm:</b> Trước hết, hoạt động Đoàn, Đội đã gắn bó với chị từ lúc chị còn là 1 Đội viên lớp 3 và bây giờ trở thành Đoàn viên. Với chị hoạt động Đoàn không chỉ là hành động đơn lẻ mà nó còn là cơ hội để tích lũy thêm kinh nghiệm, trải nghiệm trong nhiều lĩnh vực khác nhau. Đoàn Đội đã mang lại cho chị nhiều kỷ niệm, dấu ấn giúp chị có được ngày hôm nay.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-student/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Bảo Trâm luôn là một cái tên nổi bật trong các hoạt động của Nhà trường</p>
+                        <h3 class="text-subheading-content">PV:<i>Chị có thể chia sẻ lý do tại sao bản thân lại yêu thích và lựa chọn con đường hoạt động Đoàn giữa muôn vàn những chương trình ngoại khoá khác không ạ?</i></h3>
+                        <p class="text-para-content"><b>Bảo Trâm:</b> Từ hồi bé, khi nhìn các anh chị học sinh, sinh viên mang trên mình màu áo xanh thì chị đã mong muốn có một ngày được tiếp bước. Tổ chức Đoàn là một tổ chức uỷ tín, giúp bổ sung ý chí, rèn trí tuệ, tư tưởng, bản lĩnh chính trị cho các Đoàn viên trong đó có chị. Đoàn đã giúp đỡ chị và tất cả các bạn khác, là nơi mà mọi người có cơ hội được lan tỏa mạnh mẽ nhất tiếng nói Thanh thiếu niên.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page7-student/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Duyên dáng bên tà áo dài</p>
+                        <h3 class="text-subheading-content">PV:<i>Là một đoàn viên sôi nổi, tích cực, có nhiều đóng góp cho Đoàn nhưng vẫn luôn đảm bảo được việc học tập và có nhiều thành tích đáng nể liệu chị có bí kíp gì trong việc sắp sếp và cân bằng thời gian của mình một cách hiệu quả nhất không?</i></h3>
+                        <p class="text-para-content"><b>Bảo Trâm:</b> Có nhiều cách để có thể cân bằng được việc học và học tập, với chị việc xác định rõ những việc cần làm và điều gì cần lưu tâm là quan trọng nhất. Khi nhận thức được mình cần làm gì, chúng ta sẽ có cách sắp xếp thời gian biểu hợp lý. Bên cạnh đó, đứng trước mỗi nhiệm vụ nào, hãy nghĩ về khả năng của bản thân trước khi đồng ý, tránh để ôm việc mà hoàn thành không trọn vẹn.</p>
+                        <p class="text-para-content"><i>Qua cuộc nói chuyện vô cùng thú vị, chúng ta đã có dịp hiểu thêm về cô gái nhỏ nhắn nhưng lại làm nên những chuyện lớn lao - Chu Hoa Bảo Trâm. Ban biên tập Website cũng xin chúc chị sẽ ngày càng gặt hái được thật nhiều thành công trên con đường hoạt động Đoàn và lan tỏa những giá trị tốt đẹp hơn nữa cho cộng động!</i></p>
+                    </div>
+
+                    <div id="page8" class="page page-section" >
+                        <h2 class="text-heading-content">Học và làm theo lời Bác dần trở thành việc làm thường xuyên, liên tục</h2>
+                        <h3 class="text-subheading-content">Qua 5 năm thực hiện Chỉ thị 05, việc học và làm theo lời Bác dần trở thành việc làm thường xuyên, kiên trì, bền bỉ, góp phần hình thành ý thức tự giác, trách nhiệm của mỗi cán bộ, đoàn viên, thanh thiếu nhi Việt Nam.</h3>
+                        <h3 class="text-subheading-content">Thay đổi nhận thức</h3>
+                        <p class="text-para-content">Sau khi Bộ Chính trị ban hành Chỉ thị số 05-CT/TW ngày 15/5/2016 về đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh (Chỉ thị 05-CT/TW), Ban Bí thư Trung ương Đảng ban hành Kế hoạch số 03-KH/TW ngày 25/7/2016 về thực hiện Chỉ thị số 05, Ban Thường vụ Trung ương Đoàn đã ban hành Kế hoạch số 527-KH/TWĐTN-BTG ngày 29/9/2016 về việc “Đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh trong cán bộ, đoàn viên, thanh thiếu nhi giai đoạn 2016 - 2021”.</p>
+                        <p class="text-para-content">Nghị quyết Đại hội Đoàn toàn quốc lần thứ XI xác định việc học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh là nhiệm vụ quan trọng trong công tác giáo dục của Đoàn; Xác định nhiệm vụ, giải pháp thực hiện Chỉ thị 05-CT/TW trong nhiệm kỳ 2017 - 2022, trong đó xác định hằng năm, tổ chức học tập theo chuyên đề trong cán bộ, đoàn viên, thanh niên.</p>
+                        <p class="text-para-content">Các cấp bộ Đoàn, Hội, Đội đã tổ chức những đợt sinh hoạt chính trị trong đoàn viên, thanh niên, đội viên, thiếu niên, nhi đồng để giới thiệu những nội dung cốt lõi, các chuyên đề học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh với nhiều hình thức đa dạng, phong phú.</p>
+                        <p class="text-para-content">Sau hơn 5 năm triển khai, có thể khẳng định nhận thức của đội ngũ cán bộ Đoàn và đoàn viên, thanh thiếu nhi với việc học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh được nâng lên. Học và làm theo lời Bác dần trở thành việc làm thường xuyên, liên tục, trở thành việc làm tự giác, có ý thức của số đông thanh thiếu nhi.</p>
+                        <p class="text-para-content">Tuổi trẻ Việt Nam luôn ra sức phấn đấu lao động, học tập, rèn luyện về mọi mặt, có tư duy năng động, sáng tạo, lạc quan, tự tin, dám nghĩ, dám làm, có ý chí khắc phục khó khăn vươn lên lập thân, lập nghiệp với khát vọng cống hiến vì tương lai tươi sáng của dân tộc; Sống nhân ái, sẻ chia, tương thân, tương ái, vì cộng đồng, có trách nhiệm với bản thân, gia đình và xã hội.</p>
+                        <p class="text-para-content">Qua học tập, cán bộ Đoàn, đoàn viên, thanh thiếu niên đã nắm vững được những nội dung cơ bản của tư tưởng, đạo đức, phong cách Hồ Chí Minh. Qua đó, các bạn trẻ có những chuyển biến tích cực trong nhận thức và hành động về việc rèn luyện, tu dưỡng tư tưởng, đạo đức, phong cáchngười cán bộ Đoàn, thế hệ tương lai của nước nhà, nâng cao tinh thần trách nhiệm, phát huy tinh thần tình nguyện, xung kích, sáng tạo, sẵn sàng góp sức trong công cuộc xây dựng và phát triển đất nước.</p>
+                        <h3 class="text-subheading-content">Cụ thể hóa qua phong trào hành động cách mạng</h3>
+                        <p class="text-para-content">Nhằm tạo môi trường, động lực để đoàn viên, thanh thiếu niên phấn đấu học tập và làm theo tấm gương tư tưởng, đạo đức, phong cách Hồ Chí Minh, các cấp bộ Đoàn tổ chức sâu rộng nhiều phong trào hành động cách mạng, trở thành phương thức giáo dục thiết thực và mang lại hiệu quả cao.</p>
+                        <p class="text-para-content">Giai đoạn 2016 - 2017, các cấp bộ Đoàn tập trung triển khai, nâng cao chất lượng tổ chức phong trào “Xung kích, tình nguyện phát triển kinh tế - xã hội và bảo vệ Tổ quốc” và “Đồng hành với thanh niên lập thân, lập nghiệp”.</p>
+                        <p class="text-para-content">Các cấp bộ Đoàn đã đảm nhận, thực hiện hơn 455.000 công trình, phần việc thanh niên, hơn 2.200 dự án trong các lĩnh vực, mang lại giá trị kinh tế - xã hội cao. Đoàn viên, thanh niên cả nước đã đóng góp hàng triệu ngày công tham gia các hoạt động tình nguyện, các hoạt động vì cộng đồng; Triển khai thực hiện 12 dự án Làng thanh niên lập nghiệp khu vực biên giới.</p>
+                        <p class="text-para-content">Tổ chức Đoàn đã hỗ trợ, tiếp sức đến trường cho gần 300.000 học sinh, sinh viên có hoàn cảnh khó khăn; Tư vấn, hướng nghiệp cho hơn 4 triệu lượt thanh niên, học sinh; tham gia dạy nghề cho hơn 420.000 thanh niên, giới thiệu việc làm cho gần 1 triệu thanh niên…</p>
+                        <p class="text-para-content">Giai đoạn 2018 - 2020, các cấp bộ Đoàn tập trung triển khai 3 phong trào “Thanh niên tình nguyện”, “Tuổi trẻ sáng tạo”, “Tuổi trẻ xung kích bảo vệ Tổ quốc” và 3 chương trình “Đồng hành với thanh niên trong học tập”, “Đồng hành với thanh niên khởi nghiệp, lập nghiệp”, “Đồng hành với thanh niên rèn luyện và phát triển kỹ năng trong cuộc sống, nâng cao thể chất, đời sống văn hóa tinh thần”.</p>
+                        <p class="text-para-content">Qua nửa nhiệm kỳ triển khai, toàn Đoàn đã thực hiện hơn 369.700 công trình, phần việc thanh niên với tổng trị giá hơn 2.600 tỷ đồng. Cổng thông tin Ngân hàng ý tưởng sáng tạo thanh niên Việt Nam đã đăng tải trên 646.700 ý tưởng, sáng kiến trên tổng số 2,2 triệu ý tưởng, sáng kiến được đoàn viên, thanh thiếu nhi đề xuất. Trong đó hơn 74.800 ý tưởng, sáng kiến đã được tổ chức Đoàn các cấp hỗ trợ để hiện thực hóa.</p>
+                        <p class="text-para-content">Toàn đoàn triển khai thực hiện 11 dự án xây dựng Làng thanh niên lập nghiệp, 16 dự án xây dựng cầu nông thôn các tỉnh miền núi phía Bắc, miền Trung, Tây Nguyên, hoàn thành và đưa vào sử dụng 173 cầu.</p>
+                        <p class="text-para-content">Các cấp bộ Đoàn đã tổ chức trên 21.500 hoạt động tuyên truyền về biển, đảo, thu hút gần 3,1 triệu lượt thanh thiếu nhi tham gia; thực hiện gần 11.000 công trình thanh niên nơi biên giới, hải đảo, trị giá hơn 86,7 tỷ đồng. Hơn 481.000 học sinh, sinh viên được trao học bổng, hơn 323.200 hoc sinh, sinh viên được vay vốn tín dụng.</p>
+                        <p class="text-para-content">Tổ chức Đoàn đã hỗ trợ 5.336 tỷ 256 triệu đồng cho thanh niên làm kinh tế; hỗ trợ 2.626 dự án khởi nghiệp sáng tạo của thanh niên; tư vấn, hướng nghiệp cho gần 7 triệu lượt thanh thiếu niên, giới thiệu việc làm cho hơn 1,4 triệu thanh niên.</p>
+                        <p class="text-para-content">Các cấp bộ đoàn đặc biệt chú trọng giáo dục ý thức trách nhiệm, tính nêu gương, gương mẫu của cán bộ Đoàn, Hội, Đội, nhất là cán bộ chủ chốt từ Trung ương đến cơ sở, thể hiện tinh thần học tập và làm theo tấm gương đạo đức, phong cách Hồ Chí Minh trong công tác, đời sống hàng ngày.</p>
+                        <p class="text-para-content">Từ những phong trào, hoạt động đó đã xuất hiện ngày càng nhiều các tập thể, cá nhân xuất sắc trong học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh, xứng đáng là thế hệ thanh niên thời kỳ mới với “Tâm trong - Trí sáng - Hoài bão lớn”.</p>
+                        <p class="text-para-content">Sáng 25/5, tại Hà Nội, Trung ương Đoàn tổ chức Hội nghị sơ kết 5 năm thực hiện Chỉ thị 05-CT/TW ngày 15/5/2016 của Bộ Chính trị về “Đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh” trong cán bộ, đoàn viên, thanh thiếu nhigiai đoạn 2016 – 2021. Hội nghị được tổ chức theo hình thức trực tuyến nhằm đảm bảo công tác phòng, chống dịch Covid-19.</p>
+                        <p class="text-para-content">Tại hội nghị, các đại biểu được nghe: Báo cáo tóm tắt sơ kết 05 năm thực hiện Chỉ thị 05-CT/TW trong cán bộ, đoàn viên, thanh thiếu nhi giai đoạn 2016 – 2021; Phóng sự sơ kết 05 năm thực hiện Chỉ thị 05-CT/TW trong cán bộ, đoàn viên, thanh thiếu nhi giai đoạn 2016 – 2021; Đại diện các Tỉnh, Thành đoàn chia sẻ mô hình hay, cách làm hiệu quả trong thực hiệm Chỉ thị 05.</p>
+                        <p class="text-para-content">Dịp này, Trung ương Đoàn cũng khen thưởng nhiều tập thể, cá nhân có thành tích xuất sắc trong năm thực hiện Chỉ thị 05-CT/TW.</p>
+                    </div>
+
+                    <div id="page9" class="page page-section" >
+                        <h2 class="text-heading-content">Giải Nhì cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: ĐỂ TỚ KỂ CẬU NGHE</h2>
+                        <h3 class="text-subheading-content">Tác giả: Đỗ Quyên</h3>
+                        <h3 class="text-subheading-content">Lớp: Anh 2 1821 - THPT chuyên Hà Nội - Amsterdam</h3>
+                        <h3 class="center italic text-subheading-content">Không một từ điển hay trang Wikipedia nào có thể định nghĩa đúng Ams, bởi Ams chính là các thầy cô, bạn bè, những mẩu chuyện nhỏ bé…</h3>
+                        <p class="text-para-content">Ngoài kia xô bồ quá phải không?</p>
+                        <p class="text-para-content">cậu nơi nắng hanh</p>
+                        <p class="text-para-content">tớ nơi lạnh giá</p>
+                        <p class="text-para-content">mình cách nhau, nửa Trái đất tất cả</p>
+                        <p class="text-para-content">nhưng cần bình yên, mình kề lại gần nhau</p><br>
+                        <p class="text-para-content">Để tớ kể cậu nghe</p>
+                        <p class="text-para-content">chuyện tớ thầm mê</p>
+                        <p class="text-para-content">mê giờ học của thầy, bởi thầy lạ lắm</p>
+                        <p class="text-para-content">khi rô bốt không chạy thầy chẳng mắng</p>
+                        <p class="text-para-content">hôm nay chưa được, ngày mai sẽ ổn thôi</p>
+                        <p class="text-para-content">và còn bao người thầy như vậy ở Ams</p>
+                        <p class="text-para-content">chẳng phải Ams, tìm thầy ở đâu nữa?</p>
+                        <p class="text-para-content">để hôm nay</p>
+                        <p class="text-para-content">đi chưa đúng đường</p>
+                        <p class="text-para-content">bài học ngày xưa</p>
+                        <p class="text-para-content">dẫn lối mình đi</p><br>
+                        <p class="text-para-content">Để tớ kể cậu nghe</p>
+                        <p class="text-para-content">khi mình chung nhà, ngôi nhà Ams</p>
+                        <p class="text-para-content">khi mình cùng ca vang khẩu hiệu khối</p>
+                        <p class="text-para-content">mười ba chuyên, một chuyên, chuyên một việc</p>
+                        <p class="text-para-content">Amser chuyên việc gì ngoài chuyên yêu thương</p> <br>
+                        <p class="text-para-content">Chẳng ai nói</p>
+                        <p class="text-para-content">mà mình lại cùng nghe</p>
+                        <p class="text-para-content">nghe những mẩu chuyện Ams ngày nắng</p>
+                        <p class="text-para-content">nghe những chiều nhảy xa, chạy ngắn</p>
+                        <p class="text-para-content">nghe những san sẻ ổ bánh mì căng tin</p>
+                        <p class="text-para-content">“cô ơi con đỗ”-nghe cả những tình yêu</p>
+                        <p class="text-para-content">nghe tiếng thở dài, nghe giọt nước mắt</p>
+                        <p class="text-para-content">nghe những bước chân vội vã trong vắng lặng</p>
+                        <p class="text-para-content">nghe tất cả</p>
+                        <p class="text-para-content">những khoảnh khắc chẳng hoàn hảo</p>
+                        <p class="text-para-content">để nhận ra</p>
+                        <p class="text-para-content">chỉ ở Ams</p>
+                        <p class="text-para-content">mới được nghe</p>
+                        <p class="text-para-content">những khoảnh khắc hoàn hảo không tên</p> <br>
+                        <p class="text-para-content">giọng cậu mờ đi</p>
+                        <p class="text-para-content">lại đến giờ tớ đi làm</p>
+                        <p class="text-para-content">đã đến giờ cậu tan sở</p>
+                        <p class="text-para-content">tiếng tàu xe,</p>
+                        <p class="text-para-content">tiếng thở dài, trách quở</p>
+                        <p class="text-para-content">tìm bình yên</p>
+                        <p class="text-para-content">lặng nghe</p>
+                        <p class="text-para-content">nhịp đập từ Ams.</p>
+                    </div>
+
+                    <div id="page10" class="page page-section" >
+                        <h2 class="text-heading-content">Giải Nhất cuộc thi Viết và Sáng tác về mái trường Hà Nội - Amsterdam: AMS: BẦU TRỜI KỲ DIỆU</h2>
+                        <h3 class="text-subheading-content">Tác giả: Mai Khánh Linh</h3>
+                        <h3 class="text-subheading-content">Lớp: Địa 1922 - THPT chuyên Hà Nội - Amsterdam</h3>
+                        <p class="text-para-content">Tôi ngồi dậy, xoa xoa đôi mắt mỏi nhừ. Mất một lúc tôi mới nhớ ra rằng mình vừa ngủ quên mất ngay trên sân bóng của trường.</p>
+                        <p class="text-para-content">Tôi nhìn sang. Hà vẫn đang tập trung vào bức tranh của nó, hoàn toàn không nhận ra tôi đã tỉnh. Xung quanh nó, giấy, cọ, màu vẽ để lăn lóc. Tôi ngó sang nó, “Mày vẽ gì đấy?”</p>
+                        <p class="text-para-content">Tôi với Hà đã là bạn thân thiết kể từ khi hai đứa còn bé tí.</p>
+                        <p class="text-para-content">Hà khác biệt so với đa số những đứa con trai đồng trang lứa khác. Nó không thích đá bóng hay cầu lông; nó chỉ yêu vẽ. Những bức tranh của Hà bao giờ cũng đầy sắc màu rực rỡ, trái ngược với tính trầm lặng của nó.</p>
+                        <p class="text-para-content">Nó thích ngồi vẽ trên sân bóng của ngôi trường này, Hà Nội - Amsterdam, vào khi mà những tia nắng cuối cùng của buổi chiều dần buông xuống. Tôi thường im lặng nằm bên cạnh Hà, nhìn lên trời cao, để làn gió khẽ lướt qua tóc, qua má và tạm quên đi hết mọi lo lắng, buồn phiền. Mỗi lần như thế, tôi lại nhận ra, bầu trời ở Ams thật đẹp biết bao. </p>
+                        <p class="text-para-content">Ams vào cái thời khắc chiều tàn luôn mang một vẻ gì đó thật yên bình, xao xuyến. Bầu trời nơi đây phản chiếu vô vàn sắc thái đậm nhạt khác nhau, vào những thời điểm khác nhau. Có khi sẽ là sắc đỏ rực như lửa cháy. Lúc thì lại là những đám mây ánh hồng như cây kẹo bông mềm mại. Và không thiếu những khi màu mây thật xám xịt ảm đạm, khiến tôi tưởng rằng trời Ams cũng như con người vậy, có thể vui, có thể buồn, có thể giận, có thể khóc.</p>
+                        <p class="text-para-content">Và dưới bầu trời xinh đẹp ấy, Ams tạo ra cho chúng tôi những giấc mơ đầy kỳ diệu. Ams cho tôi những giờ phút nô đùa thoải mái, Ams đưa đến những khát khao cháy bỏng, và Ams lưu giữ những kí ức tươi đẹp nhất. </p>
+                        <p class="text-para-content">Tôi thấy những tia nắng xinh đẹp của Ams trong đôi mắt của người bạn thân quen thuộc. Tôi thấy bàn tay dịu dàng, lời an ủi bao dung, ánh mắt đầy trìu mến của người thầy, người cô. Những tấm huy chương vàng trong những cuộc thi quốc tế,  những trận thể thao đầy căng thẳng, những tối Ngày hội Anh Tài sôi động, tất cả đều đã từng diễn ra dưới trời mây nơi đây.</p>
+                        <p class="text-para-content">Gió thổi mạnh. Tóc tôi bay tứ tung. Hà đã ngừng tay từ lúc nào, nó khẽ hỏi tôi:</p>
+                        <p class="text-para-content">“Sau này mày định như thế nào?”</p>
+                        <p class="text-para-content">“Hả?”</p>
+                        <p class="text-para-content">“Sau khi tốt nghiệp ấy. Mày sẽ làm gì?”</p>
+                        <p class="text-para-content">“Không biết nữa.” Đối với đứa học sinh như tôi, tương lai vẫn là một thứ gì rất mơ hồ, không thể đoán định. “Có lẽ tao sẽ thi vào một trường Đại học nào đấy. Cũng có thể tao sẽ đi du học. Tao…. không chắc nữa.” Tôi lơ đãng nói, “Tao chỉ muốn làm học sinh của Ams mãi mãi thôi.”</p>
+                        <p class="text-para-content">Ams vẫn sẽ giữ nguyên vẻ ngoài như vậy, vẫn sẽ giữ nguyên vẻ năng động, nhiệt huyết như thế. Ams sẽ chẳng già đi theo thời gian. Nhưng rồi tất cả chúng tôi đều sẽ lớn lên, trưởng thành, sẽ có những lối đi riêng dù có muốn hay không.</p>
+                        <p class="text-para-content">“Mình nên về thôi.” Tôi ngáp, “Muộn rồi.”</p>
+                        <p class="text-para-content">Hà không nói gì khi chúng tôi ra tới cổng. Mãi tới khi tôi chuẩn bị lên xe, nó mới gọi giật tôi lại: “Chi này.”</p>
+                        <p class="text-para-content">“Gì thế?”</p>
+                        <p class="text-para-content">Những tia sáng cuối cùng của ngày hắt lên tóc nó. Hà ngập ngừng, dường như có điều gì cực kì khó nói, và….</p>
+                        <p class="text-para-content">“Chi!”</p>
+                        <p class="text-para-content">Tôi giật mình tỉnh giấc, nhận ra mình đang ngồi ở hành lang quen thuộc. Nắng chiều dìu dịu hắt qua khung cửa, hắt cả lên những trang sách đang mở trước mặt.</p>
+                        <p class="text-para-content">“Nếu mày mệt thì chúng ta về thôi.” Bên cạnh tôi, Liên bắt đầu thu dọn đồ vào trong cặp, “Tao biết sắp thi cuối kì rồi nhưng cũng đừng nên cố quá chứ.”</p>
+                        <p class="text-para-content">Phải rồi, Hà đã theo gia đình sang Mĩ từ ba tuần trước. </p>
+                        <p class="text-para-content">Rốt cuộc thì buổi chiều hôm đó, Hà đã chẳng nói gì ngoài “hẹn gặp lại”. Thế nên nghe tin, tôi cực kì ngỡ ngàng và lại càng buồn hơn khi nhận ra rằng hai đứa chúng tôi còn chẳng có lấy một lời tạm biệt tử tế.</p>
+                        <p class="text-para-content">Tôi chán nản liếc nhìn đồng hồ. Đã 5h30’.</p>
+                        <p class="text-para-content">“Tao bảo này.”</p>
+                        <p class="text-para-content">Tôi tò mò quay sang nhìn cô bạn thân, “Ừ?”</p>
+                        <p class="text-para-content">“Tao tìm thấy thứ này kẹp trong cuốn sách mày đưa tao tuần trước. Chắc thứ này của thằng Hà phải không?”</p>
+                        <p class="text-para-content">Trong tay Liên chính là bức vẽ bầu trời rực rỡ như lửa cháy, với những đám mây ráng đỏ như hòn than sắp tàn, sân bóng vắng lặng không bóng người và cả cái vẻ trầm tư như bậc hiền giả của Ams vào cái thời khắc chiều dần tàn. </p>
+                        <p class="text-para-content">Trong khoảnh khắc ấy, tôi nhận ra, cho dù chúng tôi có trưởng thành như thế nào, cho dù có lựa chọn những con đường khác biệt ra sao đi nữa, thì Ams vẫn sẽ ở đó, và chúng tôi luôn có thể trở lại nơi đây bất cứ lúc nào. Những kỉ niệm từng có, những yêu thương từng gửi trao, những lời hứa hẹn hồn nhiên trong sáng….Thời học sinh tươi đẹp đó không chỉ nằm lại trên những bức họa bình thường, mà sẽ còn mãi trong lòng, trong kí ức của tất cả chúng tôi.</p>
+                        <p class="text-para-content"><i>“Kỷ niệm chẳng là gì, khi người ta vội xóa. Những sẽ là tất cả, khi lòng người còn ghi….”</i></p>
+                        <p class="text-para-content">Tôi mỉm cười, cất bức vẽ vào trong cặp, rồi chạy thật nhanh về phía cổng, “Tạm biệt!”</p>
+                    </div>
+
+                    <div id="page11" class="page page-section" >
+                        <h2 class="text-heading-content">Nữ sinh chuyên Hà Nội - Amsterdam sáng tác bài hát dành tặng trường</h2>
+                        <h3 class="text-subheading-content">Dựa trên chủ đề của Ngày Hội Anh Tài năm nay - Clarion, 2 thí sinh Hà Thu và Lê Khanh đã trình bày một ca khúc tự sáng tác như một món quà dành tặng cuộc thi – một kỉ niệm đẹp thời đi học đối với tất cả những ai tham dự.</h3>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8e0cd634599e3f31319f556c6063fa7234bcae2b465c98063cab48870dd3bd6298/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_DAJQ.JPG.jpg.webp" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Chiều ngày 16/05, phần thi tài năng của cuộc thi tìm kiếm đại sứ trường chuyên Hà Nội - Amsterdam (Ams Ambassador) đã diễn ra với màn thể hiện của 10 cặp thí sinh đã xuất sắc nhất toàn trường.</p>
+                        <p class="text-para-content">Ams Ambassador được tổ chức bởi chính các học sinh của trường, với mục đích tìm ra gương mặt đại diện cho toàn trường đưa hình ảnh của ngôi trường giàu truyền thống nhất Thủ đô đến với rộng rãi giới trẻ, cuộc thi nhận được sự ủng hộ và tham gia của nhiều học sinh.</p>
+                        <p class="text-para-content">Với những phương thức biểu đạt rất đa dạng bằng cả hình ảnh và âm thanh như đàn, sáo, hát, múa, kịch, vẽ, 20 thí sinh đã truyền tải những thông điệp đầy ý nghĩa khác nhau, gợi lên những dòng cảm xúc, suy nghĩ khác nhau trong lòng khán giả.</p>
+                        <p class="text-para-content">Bên cạnh đó, các thí sinh cũng đã khéo léo lồng ghép cá tính riêng của bản thân vào từng tiết mục, thể hiện rõ màu sắc của mình cũng như khối chuyên mà mình đang theo học.</p>
+                        <p class="text-para-content">Dựa trên chủ đề của Ngày Hội Anh Tài năm nay - Clarion, 2 nữ sinh Hà Thu và Lê Khanh đã trình bày một ca khúc tự sáng tác như một món quà dành tặng mái trường – một kỉ niệm đẹp thời đi học.</p>
+                        <p class="text-para-content">Ca khúc đã để lại rất nhiều ấn tượng trong lòng người nghe bởi tiếng đàn mang giai điệu vui tươi của Thu và giọng ca cá tính, đầy nội lực của Khanh. Khả năng viết nhạc, sự phối hợp vô cùng ăn ý của hai cô gái dịu dàng, nữ tính cùng tính mộc mạc, giản đơn đã gây ấn tượng với toàn bộ khán giả và ban giám khảo.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8ed1040fd055fc003003632fa7d10b6842bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_EXFD.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Lê Khanh tinh khôi, trong sáng trong bộ váy trắng, hát ca khúc tự sáng tác về chủ để Clarion</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8e0cd634599e3f31319f556c6063fa7234bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_DAJQ.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Hà Thu thể hiện khả năng chơi đàn điêu luyện</p>
+                        <p class="text-para-content">Nói về sự chuẩn bị kĩ càng, đầu tư công phu trong từng chi tiết như trang phục, phụ kiện, biên kịch cũng như sự chuyên nghiệp của từng diễn viên trên sân khấu, không thể không nhắc tới tiết mục của Lê Thanh Cường và Phạm Vân Nhi: một tiểu phẩm dựa trên tác phẩm “Số Đỏ” của Vũ Trọng Phụng.</p>
+                        <p class="text-para-content">Cảnh ông bà Týp Phờ Nờ được thể hiện rất sống động và giúp người xem hiểu rõ hơn về phong trào Âu hóa trong xã hội phong kiến. Qua màn trình diễn này, khán giả không chỉ nhận được tràng cười sảng khoái trước diễn xuất nhí nhảnh và không kém phần chuyên nghiệp của hai bạn mà còn biết được thêm ít nhiều về những nét hay của tác phẩm thời kì bấy giờ.</p>
+                        <p class="text-para-content">Thành công của tiết mục này nằm ở chính sự hài hước, dí dỏm trong diễn xuất của diễn viên cùng cách tôn lên những nét đẹp của tác phẩm xưa.</p>
+                        <p class="text-para-content">Các thí sinh sẽ tiếp tục tham gia các tiền sự kiện của Ngày hội Anh tài 2016 trước khi đến với đêm chung kết được tổ chức vào thời gian đầu năm học 2016-2017 để tìm ra gương mặt đại sứ xứng đáng nhất.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8e47703fd5bd49afbc0e5e35dc530dcba5bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_UARA.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Tiểu phẩm dựa trên tác phẩm “Số Đỏ” qua bàn tay biên kịch của Lê Thanh Cường và Phạm Vân Nhi trở nên hài hước, sống động</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8e4c6becae365d019ab16594c4776266e0bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_ECUZ.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Cặp đôi Thanh Bình và Phương Thảo đã mở màn buổi thi với câu chuyện tình của Hậu Nghệ và Hằng Nga. Mối tình éo le, trắc trở được thể hiện qua màn biểu diễn múa đương đại dưới tiếng đàn guitar và sáo bài “Endless love”.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8ec70bf0ed0c46c10b2eafa5cf7dd7d21bbc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_XGWA.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Kim Nguyễn Diệp Linh mang đến màn cover “Skinny Love” của Birdy. Với cảm xúc sâu lắng và những nốt rung tinh tế kết hợp với tiếng đàn piano, Diệp Linh cùng với người bạn Mạnh Hùng của mình đã làm chạm đến trái tim của khán giả.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8eef4ef7f560ee82f5d028729b7253e4c0bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_SCNM.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Câu chuyện tình yêu tiếp tục được khai thác trong phần thi của cặp đôi Nam Anh - Nguyệt Hà. Tình yêu đã làm xao nhãng niềm đam mê của cô gái với âm nhạc nhưng sau cùng, cô gái không chỉ dung hòa tình yêu của mình mà còn giúp chàng trai cùng hòa mình với tình yêu âm nhạc. Câu chuyện tình của họ đã có một cái kết đẹp khi cả hai song tấu với piano và cajon.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8eb095d80d4314434bd14527cb969a93c4bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_LMQH.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Tiết mục giản dị đúng chất Ams nhưng đã làm người xem không thể rời mắt của Nguyễn Lê Thùy Dương và Ngô Gia Khánh. Thùy Dương đã thể hiện kĩ năng nhảy điêu luyện của mình trong phần đầu, và rồi trở thành nhạc công cho Gia Khánh tỏa sáng, chinh phục khán giả với giọng hát trầm lắng, da diết với bài hát “Sắc màu”.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8ef3756ca22e0f5997af27aaa83ae00470bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_KZEJ.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Cặp đôi Trương Quang Minh và Hà My gây bất ngờ cho các thầy cô và những người bạn học của mình khi cống hiến một phần trình diễn đầy mạo hiểm nhưng vô cùng tròn trịa.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8e2297b3b1ab0d9664e42b467190356ed7bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_VMNE.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Màn trình diễn của Nguyễn Hoàng Trâm Anh và Nguyễn Đức Dũng là sự kết hợp ăn ý của những thí sinh yêu âm nhạc. Với giọng hát trong trẻo, tinh khiết của Trâm Anh cùng những lời rap mạnh mẽ của Đức Dũng, bản mash-up về Mưa đã được các bạn thể hiện một cách hết sức đáng yêu, hấp dẫn.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8ec762588eae5d1ba7253e01f93f40f875bc63b4cc55323ef70a33248940d3c8c9/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_LZSG.JPG.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Cặp đôi Phương Linh - Ngọc Mai đem 1 luồng gió mới đến cho cuộc thi ngày hôm nay với vở kịch ngắn về tuổi học trò, với bao lỗi lầm, bồng bột của tuổi trẻ và sự bao dung, độ lượng của các bậc cha mẹ, thầy cô.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://cdn.giaoducthoidai.vn/images/53f2edc943c6a726321536465e2e03bc2db4b47525f83d89935205a11efadc4ce25841ccc7aa9b883d20673ebc2e404b373092eb41e6bb272496cf8b46957de6df7c5d2fe99223e621b53c6e9f497f8eab3c50704bdb2ae9616ed14aba816e36/nusinhchuyenhanoiamsterdamsangtacbaihatdanhtangtruong_ZVWJ.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="text-para-content">Khán giả nhiệt tình tạo nên “bầu trời sao” cổ vũ cho các tiết mục của 10 cặp thí sinh</p>
+                    </div>
+
+                    <div id="page12" class="page page-section" >
+                        <h2 class="text-heading-content">MOCK TRIAL 2023: Phiên tòa tranh biện của CLB Puzzles Ams gửi gắm mong muốn đề cao công lý.</h2>
+                        <h3 class="text-subheading-content">Mock Trial là sự kiện thường niên được tổ chức bởi CLB Puzzles Ams, mô phỏng phiên tòa phương Tây theo trình tự của một phiên tòa thực tế với đầy đủ thẩm phán, bồi thẩm đoàn, luật sư, công tố viên và nhân chứng. Năm nay, sự kiện đã quay trở lại, đánh dấu cột mốc 10 mùa tổ chức phiên tòa thành công, mở màn cho nhiệm kỳ 2023-2024 thật sôi động và bùng nổ.</h3>
+                        <p class="text-para-content">Vào ngày 14/01/2024 vừa qua, phiên tòa Mock Trial đã diễn ra với khâu chuẩn bị kỹ lưỡng, chuyên nghiệp từ mặt chuyên môn đến hình thức phiên tòa. Đến với năm tổ chức thứ 10 - một con số quan trọng và ấn tượng - sự kiện đã thu hút hơn 200 người tham gia. Trưởng ban Tổ chức, bạn Lê Hà Châu, chia sẻ: “Thông qua sự kiện lần này, chúng em mong rằng phiên tòa có thể lan tỏa những điểm nhìn mới lạ song cũng không kém phần sâu sắc, bao quát về tranh biện và luật pháp. Từ đó, mang lại những kiến thức quý giá, xây dựng nền tảng cho mối quan tâm và tìm hiểu về các lĩnh vực nói trên.”</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-student/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Trưởng ban Tổ chức Lê Hà Châu phát biểu khai mạc</p>
+                        <p class="text-para-content">Phiên tòa Mock Trial 2023 khai thác thực trạng gian lận trong thi cử, khéo léo lồng ghép vấn đề nhức nhối này vào một vụ án vô cùng độc đáo và kịch tính: ba nhân vật chính bao gồm Anne Marcus, Pat Harding và Alex Johnson là những học sinh lớp Anh Văn loại Xuất sắc tại trường THPT Clearwater. Sau cuộc thi giành suất học bổng vào đại học của Quỹ Nhà văn Ưu tú, Anne phát hiện ra Pat và Alex đã gian lận khi hai người đang bàn nhau cách thủ tiêu đề kiểm tra lấy được trước đó. Anne đã đe dọa sẽ báo cáo sự việc lên Ban Giám hiệu nếu Pat và Alex không đi đầu thú, vì vậy, vào Chủ nhật ngày 7/6, hai người họ đã đến nơi Anne thường hay leo núi để trao đổi về việc thú tội. Tuy nhiên, sáng ngày hôm sau, thi thể của Anne được phát hiện trôi dạt vào bờ từ vịnh nhỏ phía Nam với những vết thương đáng ngờ.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-student/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các bạn quan sát viên hào hứng bàn luận về phiên tòa</p>
+                        <p class="text-para-content">Tại phiên tòa giả lập này, mỗi phe Luật sư bào chữa và Công tố viên sẽ bao gồm hai thành viên ban Chuyên môn của CLB Puzzles Ams. Hai phe sẽ dùng hiểu biết và kiến thức của bản thân về những lĩnh vực xoay quanh vụ án để đưa ra những luận điểm thuyết phục nhằm kết tội hoặc bào chữa cho nhân vật chính. Sự kiện còn có sự góp mặt của nhân chứng mỗi phe và 12 thành viên đến từ các CLB tranh biện của các trường THPT Chuyên trên địa bàn thành phố Hà Nội với vai trò là Bồi thẩm đoàn. Năm nay, phiên tòa may mắn có cơ hội được tiếp tục đồng hành cùng chị Đoàn Trang Anh - một thẩm phán tài giỏi, giàu kinh nghiệm và đã gắn bó với Mock Trial qua nhiều mùa tổ chức.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-student/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Chị Đoàn Trang Anh trên cương vị là người thẩm phán công tâm, sáng suốt</p>
+                        <p class="text-para-content">Sau cùng, với lý lẽ thuyết phục và khả năng tranh biện đáng ngưỡng mộ của mình, phe Công tố viên đã giành chiến thắng với số phiếu bầu 8-4 đến từ các thành viên Bồi thẩm đoàn, đồng thời chiếm trọn cảm tình của các quan sát viên với giải thưởng “Đội được yêu thích nhất”. Bên cạnh đó, với phần thể hiện trôi chảy, tự tin của mình, bạn Trần Diệu Linh đã nhận được danh hiệu “Nhân chứng tốt nhất” và bạn Nguyễn Linh Chi phe Công tố viên đã được trao giải “Người nói xuất sắc nhất” với số phiếu bầu áp đảo.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-student/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">BTC trao giấy chứng nhận cho phe giành chiến thắng</p>
+                        <p class="text-para-content">Phiên tòa Mock Trial đã đem đến cho người đọc những trải nghiệm chân thực, bổ ích và thú vị. Không chỉ nhận được sự ủng hộ của cộng đồng tranh biện nói chung và các bạn học sinh THPT trên địa bàn Thủ Đô nói riêng, sự kiện còn thành công gây được ấn tượng tốt đẹp với các bậc phụ huynh. “Lần đầu tiên bác dự một phiên tòa mô phỏng được tổ chức chuyên nghiệp và chỉn chu như thế này. Bác vô cùng bất ngờ và ấn tượng bởi màn thể hiện rõ ràng, mạch lạc cùng phong thái điềm tĩnh, tự tin của các bạn phe Luật sư. Bên cạnh đó, bác cũng rất thích phần trình bày của phe Công tố viên với những lí lẽ và lập luận sắc bén.”, một vị phụ huynh có mặt tại phiên tòa chia sẻ.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page12-student/img-5.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các quan sát viên chia sẻ về trải nghiệm đáng nhớ của mình tại Mock Trial</p>
+                        <h3 class="text-subheading-content"><i>Thay mặt cho Ban biên tập Ams Wide Web, xin chúc mừng CLB Puzzles Ams vì phiên tòa Mock Trial đã diễn ra suôn sẻ và thành công mỹ mãn! Mong rằng trong các mùa tiếp theo của sự kiện, CLB sẽ phát huy được sự chỉn chu, chuyên nghiệp cùng tinh thần nhiệt huyết của các thế hệ đi trước để có thể tiếp tục lan tỏa niềm đam mê tranh biện đến với cộng đồng!</i></h3>
+                    </div>
+
+                    <div id="page13" class="page page-section" >
+                        <h2 class="text-heading-content">Trải nghiệm thú vị tại GART Workshop 2023</h2>
+                        <h3 class="text-subheading-content">Diễn ra vào hai buổi chiều ngày 17 và 18 tháng 10 vừa qua, workshop do câu lạc bộ GreenAms 6520 Robotics Team tổ chức đã thu hút đông đảo các bạn học sinh có niềm yêu thích và đam mê với lĩnh vực thiết kế, xây dựng và ứng dụng robot cơ khí. </h3>
+                        <p class="text-para-content">Là một hoạt động thường niên của CLB GART (CLB đầu tiên và duy nhất trường Ams tham dự kì thi quốc tế FIRST Robotics Competition), GART Workshop được tổ chức với mục tiêu quảng bá rộng rãi hình ảnh của nhóm, đồng thời mang đến cái nhìn cụ thể và rõ nét hơn về các hoạt động trong từng phân ban của câu lạc bộ này. Qua đó, GART mong muốn được truyền cảm hứng và lan tỏa tinh thần say mê, thích thú với robot tới những Amsers khác. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-student/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các thành viên BTC nhiệt tình hướng dẫn, giải đáp các câu hỏi</p>
+                        <p class="text-para-content">Sự kiện diễn ra với 4 hoạt động chính, có thể nói rằng, điều thành công nhất của sự kiện lần này là gây ra được sự hào hứng, thích thú không ngừng cho những người tham gia. Đến với GART Workshop 2023, các bạn học sinh không khỏi háo hức khi lần đầu được tận mắt nhìn thấy phòng lab của câu lạc bộ. Càng đặc biệt hơn nữa là không chỉ được tham quan, các bạn còn được tận tay trải nghiệm sử dụng các thiết bị, dụng cụ dưới sự hướng dẫn nhiệt tình của các thành viên ban tổ chức. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-student/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Học sinh tham gia được chỉ dẫn cách sử dụng thiết bị, dụng cụ chuyên nghiệp</p>
+                        <p class="text-para-content">Không những thế, với tinh thần nhân rộng tình yêu robot tới tất cả mọi người, workshop đã dành hẳn một khu vực riêng để giải đáp các thắc mắc về công việc, nhiệm vụ của mỗi phân ban như “Cơ khí - thiết kế”, “Lập trình - Điện tử”... Với sự cởi mở đến từ hai phía ban tổ chức và khách mời, bầu không khí nhanh chóng trở nên sôi nổi hơn khi các bạn học sinh tham dự không ngần ngại đặt ra những câu hỏi với mong muốn được tìm hiểu thêm về lĩnh vực này.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-student/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">BTC và người tham dự tương tác sôi nổi</p>
+                        <p class="text-para-content">Bên cạnh đó, workshop còn khiến người tham gia ấn tượng mạnh bởi khu trưng bày với rất nhiều chiếc cúp và huân chương vốn là niềm tự hào của câu lạc bộ. Chứng kiến chặng đường trưởng thành và phát triển không ngừng, các bạn học sinh càng thêm yêu mến và khâm phục những thành viên của GART - những con người luôn nhiệt huyết, miệt mài chinh phục một lĩnh vực đầy thử thách như cơ khí, robotics.</p>
+                        <p class="text-para-content">Nét đặc biệt nhất của sự kiện năm nay có lẽ nằm ở phần trải nghiệm thực tế. Tại đây, các thành viên ban tổ chức hướng dẫn và hỗ trợ mọi người sử dụng một số loại thiết bị, dụng cụ để ứng dụng vào thực hành các hoạt động nhỏ như lắp ráp mô hình robot đơn giản. Và cuối cùng, hoạt động gây cho người tham dự nhiều hứng thú, tò mò nhất chính là được tự tay cưa cắt và điều khiển những chú robot thật. Theo chia sẻ của một số em học sinh, “trải nghiệm này mang lại cảm giác như được lái một chiếc xe hơi thực thụ.”</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-student/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các bạn thích thú khi được đích thân điều khiển robot</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-student/img-5.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">BTC hướng dẫn sát sao, tận tâm, nhiệt tình</p>
+                        <p class="text-para-content">“Xuyên suốt buổi trải nghiệm, các bạn sẽ được trải nghiệm cưa gỗ, lái bot, nối điện,... đây sẽ là những trải nghiệm có một không hai với các bạn Amsers. Quan trọng nhất là, sự kiện mở cửa tự do cho tất cả mọi người quan tâm, theo dõi và muốn tìm hiểu về GART6520 trong thời gian sắp tới. Đây là một trong phần trong quá trình thực hiện tinh thần của FIRST (một cuộc thi robot thường niên có lịch sử lâu đời - PV), gồm lan tỏa và áp dụng những kiến thức chúng mình học được.” - Chia sẻ của Nguyễn Minh Quang, học sinh lớp 11 Cambridge - Trưởng ban tổ chức GART Workshop 2023. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-student/img-6.jpg" alt="" class="img-content-new">
+                        </div>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page13-student/img-7.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Trải nghiệm khó quên khi tự tay thao tác các bước cưa, cắt</p>
+                        <h3 class="text-subheading-content">Sau hai ngày tổ chức sự kiện, GART Workshop 2023 đã diễn ra thành công rực rỡ khi quảng bá hình ảnh câu lạc bộ vừa năng động, vừa đòi hỏi kiến thức chuyên môn cao, và đặc biệt hơn nữa là khơi dậy nguồn đam mê với khoa học công nghệ cho các bạn học sinh ngay khi còn ngồi trên ghế nhà trường. </h3>
+                    </div>
+
+                    <div id="page14" class="page page-section" >
+                        <h2 class="text-heading-content">Tuần lễ traning sôi động cùng Cheer Ams</h2>
+                        <h3 class="text-subheading-content">Từ ngày 5-7/10/2023, CLB Cheer Ams đã tổ chức chuỗi hoạt động training tại sảnh AB ở trường THPT Chuyên Hà Nội - Amsterdam. Chuỗi sự kiện đã thu hút sự tham gia của rất nhiều học sinh, mang trong mình sứ mệnh lan tỏa tinh thần thể thao và hoạt động nhảy cổ vũ trong nhà trường nói riêng và cộng đồng nói chung.</h3>
+                        <p class="text-para-content">Cheer Ams là CLB Cổ động lớn nhất trường THPT Chuyên Hà Nội - Amsterdam, thường xuyên góp mặt trong tất cả các sự kiện lớn của trường như Ams Got Talent, Science Tornado,.... Với sức lan tỏa của mình, Cheer Ams đã tổ chức chuỗi hoạt động training nhằm quảng bá hình ảnh CLB cũng như phổ biến bộ môn thể thao này đến các học sinh trong trường. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-student/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Cheerleading - môn thể thao đồng đội </p>
+                        <p class="text-para-content">Trong ba ngày hoạt động, với các ca  12h30 - 1h (5-6/10) và 9h - 11h, CLB đã bố trí khi vực bàn Check-in để người tham gia đăng kí vào hoạt động training.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-student/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Buổi training nhận được sự quan tâm từ đông đảo Amsers </p>
+                        <p class="text-para-content">Các học sinh được chia thành 3 nhóm lần lượt là Cheerleader (Người cổ động), Baser (Người bê tháp) và Flyer (Người lên tháp - bay). Trước khi bước vào buổi huấn luyện, các học sinh được chia thành 2 nhóm tùy vào nguyện vọng, Baser và Flyer - Cheerleader. Người tham gia cũng được hướng dẫn khởi động bằng những bài tập đặc trưng của Cheer Ams để đảm bảo an toàn trong suốt buổi training. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-student/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các động tác khởi động</p>
+                        <p class="text-para-content">Tùy các nhóm và chuyên môn, các bài khởi động sẽ có các động tác khác nhau. Baser sẽ được khởi động bằng những bài tập thể lực yêu cầu sự khỏe mạnh, bền bỉ còn các bạn Cheerleader và Flyers dược tận tình hướng dẫn bài tập ép dẻo.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-student/img-4.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Training Baser</p>
+                        <p class="text-para-content">Ở các động tác chuyên môn, Baser sẽ được thực hành tập bê tháp, nhào lộn, chống, các bạn Cheerleader và Flyer được tập bài nhảy theo vũ đạo của Cheer Ams, tập lộn cartwheel và toe touch,... Đặc sắc hơn cả, các bạn Flyer sẽ được trải nghiệm lên tháp cơ bản cùng các anh chị Baser kinh nghiệm, đảm bảo an toàn cho người tham gia mà vẫn thú vị. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-student/img-5.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thành viên CLB tận tình hướng dẫn</p>
+                        <p class="text-para-content">Mỗi ngày training, các học sinh đều được tặng những món quà xinh xắn như kẹo, bánh; những bức thiệp nhỏ động viên các em. Đây giống như món quà tiếp thêm tinh thần và sự tự tin cho các em sau mỗi buổi training. Không chỉ vậy, khép lại mỗi ca tập, tất cả mọi người sẽ hô tỏ khẩu hiệu của Cheer Ams để khẳng định tinh thần, tiếp thêm nhiệt huyết và khí thế. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-student/img-6.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Các phần quà xinh xắn do thành viên Cheer Ams tự tay chuẩn bị </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page14-student/img-7.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">“5, 6, 7, 8 Cheer Ams!”</p>
+                        <h3 class="text-subheading-content">Tuần lễ Training của CLB Cheer Ams đã diễn rathành công tốt đẹp, quảng bá hình ảnh của môn thể thao đồng đội đặc sắc này tới dông đảo các bạn học sinh. Ams Wide Web xin chúc Cheer Ams tiếp tục giữ vững tinh thần và lan tỏa tình yêu với bộ môn Cheerleading tới  tất cả mọi người!</h3>
+                    </div>
+
+                    <div id="page15" class="page page-section" >
+                        <h2 class="text-heading-content">Cựu Amser đỗ học bổng tiến sĩ đại học số 1 thế giới</h2>
+                        <h3 class="text-subheading-content">Lê Hoàng Minh trúng tuyển chương trình tiến sĩ Hóa học tại Viện Công nghệ Massachusetts (MIT), Mỹ, trường đứng đầu bảng xếp hạng đại học tốt nhất thế giới 2024, theo QS.</h3>
+                        <p class="text-para-content">Cựu học sinh chuyên Hóa trường THPT chuyên Hà Nội - Amsterdam nhận thư mời nhập học hồi cuối tháng 1, được miễn học phí và nhận trợ cấp sinh hoạt phí hàng tháng.</p>
+                        <p class="text-para-content">Trước đó một tháng, Minh tốt nghiệp cử nhân loại xuất sắc (Magna cum laude) hai ngành Hóa học và Khoa học sinh học tại Đại học Cornell. Đây là một trong tám đại học tinh hoa của Mỹ (Ivy League), top 13 thế giới.</p>
+                        <p class="text-para-content">Cô Lê Thị Ngọc Hà, giáo viên chủ nhiệm của Hoàng Minh ở trường Ams, cho biết học trò từng giành huy chương đồng Olympic Khoa học trẻ quốc tế (IJSO) từ năm lớp 10 (2017). Minh sớm xác định theo đuổi môn học này và xây dựng nền tảng kiến thức rất chắc chắn. Anh là cựu học sinh hiếm hoi của trường đỗ học bổng tiến sĩ của MIT khi 22 tuổi.</p>
+                        <p class="text-para-content">"Đam mê và sự bền bỉ đã giúp bạn đạt được điều này", cô nhận định.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://i1-vnexpress.vnecdn.net/2024/02/22/z5181842615306-1c1ae8544121d99-8334-9370-1708573318.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=V4SwndmN2s44j-8-ZgWu9Q" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Hoàng Minh trong trang phục tốt nghiệp của Đại học Cornell, năm 2023. Ảnh: Nhân vật cung cấp</p>
+                        <p class="text-para-content">MIT là ước mơ của Hoàng Minh từ khi học phổ thông. Tuy vậy, cách đây 4 năm, Minh không đặt nguyện vọng vào đây vì cho rằng bản thân còn nhiều điểm chưa phù hợp, cả về thành tích học thuật lẫn hoạt động ngoại khóa. Minh chọn thử sức với Đại học Cornell, nơi cậu nhìn nhận có ưu thế giảng dạy các môn khoa học tự nhiên và chương trình học linh hoạt, sinh viên được chọn chuyên ngành muộn nhất vào cuối năm thứ hai.</p>
+                        <p class="text-para-content">Là cựu học sinh chuyên Hóa, Minh hiểu được tầm quan trọng của các môn khoa học liên ngành.</p>
+                        <p class="text-para-content">"Các nghiên cứu có tính ứng dụng cao hiện nay thường không nằm gọn trong một phân môn khoa học truyền thống mà có tính bao quát, trải dài trên nhiều phạm vi kiến thức đa ngành", Minh nói.</p>
+                        <p class="text-para-content">Vào học, Minh tham gia hai nhóm nghiên cứu về khoa học vật liệu và phương pháp tổng hợp các chất hữu cơ, với điểm chung là tìm ra chất xúc tác đơn giản cho các phản ứng điều chế hóa chất với hiệu suất cao trong các ngành công nghiệp, như hóa mỹ phẩm và dược phẩm.</p>
+                        <p class="text-para-content">Ở một môi trường học thuật cạnh tranh cao, phải học và nghiên cứu gần như cả ngày nên Minh thấy quản lý thời gian là điều khó và quan trọng nhất. Minh thi thoảng căng thẳng, nhưng may mắn được bạn bè xung quanh và người thân từ xa động viên.</p>
+                        <p class="text-para-content">Sẵn định hướng học lên cao, Minh chuẩn bị hồ sơ ứng tuyển nghiên cứu sinh từ sớm. Khi gần tốt nghiệp, Minh rải hồ sơ ở nhiều nơi, trong đó có ngôi trường mơ ước thời cấp 3. MIT cũng có thế mạnh đào tạo đa ngành, gồm lĩnh vực Hóa hữu cơ mà Minh hứng thú.</p>
+                        <p class="text-para-content">Hoàng Minh cho hay đa phần biệt dược hay các loại thuốc bán sẵn trên thị trường được tổng hợp với quy mô lớn trong phòng thí nghiệm. "Chúng có nguồn gốc là các hợp chất hữu cơ thiên nhiên hoặc nhân tạo. Mình muốn tạo ra các chất xúc tác giúp gia tăng tốc độ phản ứng và các phương pháp làm tăng hiệu suất của quá trình điều chế", Minh lý giải.</p>
+                        <p class="text-para-content">Hồ sơ ứng tuyển vào MIT của Minh gồm bảng điểm, sơ yếu lý lịch, thư giới thiệu và hai bài luận. Bảng điểm đại học của Minh không điểm nào dưới A-. Trong sơ yếu lý lịch, nam sinh ghi thông tin cơ bản về học vấn, giải thưởng sinh viên xuất sắc năm thứ ba của khoa, hai đề tài nghiên cứu, bài báo khoa học, cùng kinh nghiệm làm gia sư và cố vấn cho sinh viên khóa dưới. Với thư giới thiệu, Minh được hai giáo sư phụ trách nhóm nghiên cứu mà cậu đã tham gia và hai giảng viên khác hỗ trợ.</p>
+                        <p class="text-para-content">Ở khâu viết luận, Hoàng Minh cũng ít gặp khó khăn vì đã có kinh nghiệm ngày ứng tuyển đại học, kết hợp với trải nghiệm học tập, nghiên cứu tại Cornell.</p>
+                        <p class="text-para-content">Trong bài luận đầu, chàng trai 22 tuổi trình bày mục đích học tập, các nhóm nghiên cứu tại MIT mà mình muốn tham gia và định hướng sau tốt nghiệp. Phần này đòi hỏi ứng viên tìm hiểu kỹ về trường, xác định mục tiêu khi học và sau khi tốt nghiệp nên Minh khá mất thời gian. Minh cũng trình bày chi tiết kinh nghiệm nghiên cứu thời đại học.</p>
+                        <p class="text-para-content">Bài luận thứ hai yêu cầu làm rõ nền tảng, kinh nghiệm của ứng viên và khả năng đóng góp cho một cộng đồng đa dạng như khoa Hóa học của MIT. Hoàng Minh chọn viết về trải nghiệm làm gia sư mà qua đó bản thân hiểu được giá trị của việc hỗ trợ cá nhân hóa.</p>
+                        <p class="text-para-content">"Mình thấy quá trình viết luận giúp mình trưởng thành hơn, kiên định về quyết định đi học tiến sĩ", Minh kể, nhìn nhận viết luận là cơ hội để ứng viên hiểu thêm về thế mạnh của trường, bao gồm các nghiên cứu hàng đầu cũng như chất lượng giáo dục.</p>
+                        <p class="text-para-content">Đến vòng phỏng vấn, Minh khá thoải mái khi trao đổi cùng hai giáo sư về hướng nghiên cứu và mong muốn của bản thân. Một tuần sau, anh nhận được thư mời.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://i1-vnexpress.vnecdn.net/2024/02/22/z5181242733241-ca90b54ae4b2225-6631-9678-1708573318.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=oD6KINKLDfdvquMXrieR3w" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Lê Hoàng Minh tại Cảng Delaware, Philadelphia, Mỹ, năm 2022. Ảnh: Nhân vật cung cấp</p>
+                        <p class="text-para-content">Cử nhân Đại học Cornell nhìn nhận yếu tố quyết định là mức độ phù hợp giữa ứng viên và chương trình đào tạo. Có nhiều người dù đạt yêu cầu đầu vào nhưng không hợp với định hướng của trường thì vẫn có thể không trúng tuyển.</p>
+                        <p class="text-para-content">"Do đó, khi ứng tuyển, bạn cần nộp nhiều chương trình, không nên 'bỏ hết trứng vào một giỏ'", Minh đúc rút. Ứng viên cần giữ tinh thần lạc quan vì các trường có thể trả kết quả theo nhiều đợt, có người được nhận sớm, nhưng cũng nhiều người phải chờ.</p>
+                        <p class="text-para-content">"Ứng viên nên liên hệ trước với giáo sư tại chương trình mình định nộp hồ sơ để tìm hiểu các dự án nghiên cứu sẵn có và khả năng họ nhận thêm nghiên cứu sinh vào năm tới", Minh gợi ý.</p>
+                        <p class="text-para-content">Minh sẽ nhập học ở MIT vào tháng 8 tới.</p>
+
+                    </div>
+
+                    <div id="page16" class="page page-section" >
+                        <h2 class="text-heading-content">Cựu học sinh Ams đỗ Đại học Cornell sau một năm 'gap year'</h2>
+                        <h3 class="text-subheading-content">Linh Anh, cựu học sinh chuyên Lý trường chuyên Hà Nội - Amsterdam, trúng tuyển Đại học Cornell với hỗ trợ tài chính 8 tỷ đồng, sau một năm "gap year" để chuẩn bị hồ sơ.</h3>
+                        <p class="text-para-content">Linh Anh, 19 tuổi, nhận tin trúng tuyển ngôi trường Ivy League hôm 14/12. Sau khi trừ hỗ trợ tài chính, gia đình Linh Anh chỉ còn phải đóng khoảng 400 triệu đồng cho bốn năm học.</p>
+                        <p class="text-para-content">"Em không tin nổi", Linh Anh chia sẻ, thêm rằng trước đó đã chuẩn bị tâm lý bị từ chối vì điểm bài thi chuẩn hóa SAT (1.520/1.600) của em trên mức trung bình của trường (1.510) không nhiều. Nữ sinh cũng không có giải thưởng ở các cuộc thi.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/12/19/linh-anh1-5620-1702921545.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=bSj6Y5IDH3h8fqx4rIUjXA" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Nguyễn Linh Anh. Ảnh: Nhân vật cung cấp</p>
+                        <p class="text-para-content">Linh Anh từng bị 11/14 trường từ chối vào mùa tuyển sinh trước. Vì mơ ước du học Mỹ, nữ sinh quyết định gap year (tạm dừng học) để chuẩn bị chu đáo hơn.</p>
+                        <p class="text-para-content">Cô gái 19 tuổi cho hay ấn tượng với Đại học Cornell sau lần tình cờ xem video của một sinh viên trong trường. Trong video, Cornell hiện ra "cực đẹp" với hồ nước, thác, núi. Trường có nhiều hoạt động thể chất cho sinh viên như yoga, pilates. Cornell cũng có trường đào tạo về cơ khí lớn nhất trong các trường thuộc nhóm Ivy League.</p>
+                        <p class="text-para-content">"Em mê Cornell, đặt mục tiêu phải vào được đây, thậm chí tải ảnh trường làm avatar cho trang cá nhân để làm động lực", Linh Anh kể.</p>
+                        <p class="text-para-content">Linh Anh nhìn nhận điểm đặc biệt trong hồ sơ của mình là sự phù hợp. Cô cho rằng trường muốn tìm những ứng viên có sự sáng tạo, tinh thần cống hiến cho xã hội, tin cậy và khả năng kết nối tốt. Vì thế, trong bốn bài luận, Linh Anh đều hướng vào các tiêu chí đó.</p>
+                        <p class="text-para-content">Trong các bài luận phụ nộp vào trường Cơ khí, Linh Anh tâm đắc nhất khi viết về sự cống hiến cho xã hội.</p>
+                        <p class="text-para-content">Linh Anh kể hồi cấp 2 từng không thích và học kém các môn tự nhiên. Nhưng khi lên lớp 8, được thực hành thí nghiệm, cô nhận ra Vật lý thật kỳ diệu. Nữ sinh có cái nhìn mới về môn học này cũng như các môn tự nhiên khác như Toán, Hóa. Từ chỗ luôn xếp gần cuối lớp về môn Vật lý, Linh Anh đỗ chuyên Lý trường Ams khi thi vào lớp 10.</p>
+                        <p class="text-para-content">Nhiều trường ở Hà Nội khi đó chưa có phòng thí nghiệm nên học sinh không được thực hành. Vì thế, Linh Anh và các bạn trong câu lạc bộ Khoa học của trường tổ chức tour đến gần 20 trường THCS và THPT để hướng dẫn học sinh làm thí nghiệm, qua đó truyền đam mê về môn học cho các em.</p>
+                        <p class="text-para-content">"Nhìn các em đôi mắt long lanh, biểu cảm ngạc nhiên, thích thú khi xem thí nghiệm và được tự tay thực hiện, chúng em càng có thêm động lực", Linh Anh chia sẻ trong bài luận.</p>
+                        <p class="text-para-content">Ngoài ra, Linh Anh còn viết về đam mê sáng tạo sản phẩm để giải thích lý do muốn vào trường Cơ khí. Em từng tự làm ra chiếc áo đặc biệt, dựa trên cảm hứng từ chiếc máy ôm trong một bộ phim của Mỹ. Chiếc áo được lắp thêm bộ cảm nhiệt bên trong giúp người mặc thấy ấm áp như khi có ai đó ôm. Áo còn có quạt làm mát, chống nắng nóng. Cô cũng làm một cây đàn guitar tự động, hỗ trợ người khuyết tật chơi nhạc bằng cách sử dụng động cơ servo.</p>
+                        <p class="text-para-content">"Hai sản phẩm đều dựa trên kiến thức về điện, lập trình và cơ khí", Linh Anh cho biết.</p>
+                        <p class="text-para-content">Với bài luận chính, Linh Anh kể về trải nghiệm một mình vào TP HCM thi SAT nhưng bị muộn giờ vì nhầm đường. Một số người lấy điện thoại quay, chụp khi em đang ngồi thụp xuống khóc. Cảm giác bị mọi người chỉ chỏ, chụp ảnh khiến Linh Anh không thể quên.</p>
+                        <p class="text-para-content">Trước đây làm việc gì, Linh Anh thường chú ý đến kết quả mà không bận tâm đến tâm lý người xung quanh. Qua trải nghiệm này, cô chú ý tới cảm xúc của mọi người, đặc biệt các bạn trong câu lạc bộ. Các thành viên cũng dần đoàn kết hơn.</p>
+                        <p class="text-para-content">"Một câu lạc bộ thành công chưa chắc đã đoàn kết nhưng một câu lạc bộ đoàn kết thì chắc chắn thành công. Đấy cũng là kết bài luận của em", Linh Anh nói.</p>
+                        <p class="text-para-content">Khác với ba bài luận phụ viết trong một ngày, bài luận chính được hoàn thiện sau vài tháng.</p>
+                        <p class="text-para-content">Linh Anh nói sau một năm gap year, cô thay đổi, từ chỗ làm mọi thứ rất nhanh đến luôn suy nghĩ kỹ trước bất cứ hành động nào. Ngoài chuẩn bị bài luận và các chứng chỉ, Linh Anh học thêm khóa lập trình của Đại học Duke và khóa về Vật lý của Đại học Rice.</p>
+                        <p class="text-para-content">"Em học để hoàn thiện bản thân hơn và cũng thể hiện dù gap year nhưng mình vẫn đang hoạt động tích cực", Linh Anh cho hay.</p>
+                        <div class="content-introduce-img">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/12/19/linh-anh2-7680-1702921545.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=f08J1h7n8ytet8lVJ3yRRQ" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Linh Anh dạy học từ thiện ở Sơn La năm 2022. Ảnh: Nhân vật cung cấp</p>
+                        <p class="text-para-content">Đồng hành cùng Linh Anh trong quá trình làm hồ sơ, anh Nguyễn Ngọc Khương, chuyên gia tư vấn độc lập ở bang Minnesota, Mỹ, đánh giá hồ sơ của Linh Anh mạnh về điểm số lẫn thành tích ngoại khóa.</p>
+                        <p class="text-para-content">Xuyên suốt thời gian học trung học, Linh Anh tham gia nhiều dự án ngoại khóa liên quan đến Vật lý và khoa học nói chung, từ nghiên cứu đến truyền tải kiến thức khoa học cho học sinh khác.</p>
+                        <p class="text-para-content">"Đây là một yếu tố mà nhiều đại học hàng đầu Mỹ coi trọng, đó là sự tập trung liên tục và nhất quán qua thời gian dài trong các hoạt động liên quan đến ngành học đại học sau này", anh Khương cho hay.</p>
+                        <p class="text-para-content">Còn thầy Nguyễn Văn Quảng, giáo viên môn công nghệ năm lớp 12 của Linh Anh, đánh giá học trò xuất sắc, có niềm đam mê với khoa học kỹ thuật, kỹ thuật điện tử, mạch điện. Thầy Quảng là người đã viết thư giới thiệu cho Linh Anh.</p>
+                        <p class="text-para-content">"Em ấy đã cố gắng rất nhiều để đạt được ước mơ này", thầy Quảng nhìn nhận.</p>
+                        <p class="text-para-content">Với Linh Anh, một năm gap year đã mang lại kết quả xứng đáng. Tân sinh viên Cornell sẽ nhập học vào tháng 8 năm sau, dự định học ngành Kỹ sư cơ khí. Cô khuyên các ứng viên tìm hiểu kỹ, tìm trường phù hợp và xác định sớm nơi muốn đến để có kết quả tốt nhất.</p>
+                        <p class="text-para-content">"Đặt cái tâm vào những thứ mình làm, khi đấy thành quả xứng đáng sẽ đến", Linh Anh chia sẻ.</p>
+                    </div>
+
+                    <div id="page17" class="page page-section" >
+                        <h2 class="text-heading-content">Cựu Amser chia sẻ bí quyết giành bằng tốt nghiệp Xuất sắc tại Đại học Công nghệ hàng đầu thế giới</h2>
+                        <h3 class="text-subheading-content">Tháng 10/2023, Trường THPT Chuyên Hà Nội - Amsterdam vui mừng nhận được thông báo từ Đại học Công Nghệ Nanyang 2 cựu học sinh Nguyễn Tô Vĩnh Huy và Tạ Quỳnh Nga nhận bằng Cử nhân Xuất sắc - Honour, danh hiệu cao nhất tại trường Đại học xếp hạng 12th Thế giới (QS Ranking 2022) trong mùa tốt nghiệp vừa qua. Cùng theo chân Ban Biên tập tìm hiểu bí quyết học tập của các bạn ấy nhé! </h3>
+                        <h3 class="text-subheading-content">PV: <i>Lời đầu tiên, em xin cảm ơn anh/chị đã nhận lời tham gia phỏng vấn. Anh/chị hãy chia sẻ một chút về bản thân cũng như ngành anh đang theo học cho các bạn độc giả nhé!</i> </h3>
+                        <p class="text-para-content"><b>Nga:</b> Chị là Tạ Quỳnh Nga, cựu học sinh lớp Chuyên Toán khoá 2016-2019 Trường mình. Sau đó chị apply ngành Khoa học dữ liệu và Trí tuệ nhân tạo của Trường Đại học Công nghệ Nanyang.</p>
+                        <p class="text-para-content"><b>Huy:</b> Mình là Nguyễn Tô Vĩnh Huy, cựu học sinh chuyên Lý khoá 2016-1019, hiện tại mình vừa tốt nghiệp Đại học Công nghệ Nanyang (NTU) chuyên ngành Kỹ thuật Điện và Điện tử - Electrical and Electronic Engineering.</p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page17-student/img-1.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Thư chúc mừng từ Đại học Công nghệ Nanyang</p>
+                        <h3 class="text-subheading-content">PV: <i>Vậy không biết lý do nào khiến anh/chị quyết định chọn Đại học Công nghệ Nanyang, Singapore ạ?</i></h3>
+                        <p class="text-para-content"><b>Huy:</b> Có ba lý do chính khiến mình quyết định chọn NTU. Thứ nhất là vị trí địa lý: Singapore khá gần so với Việt Nam, chỉ tốn có khoảng ba giờ bay, rất thuận tiện cho những lúc mình muốn về thăm nhà hay khi gia đình qua chơi. Thứ hai là về độ uy tín của trường, riêng với ngành điện và điện tử thì NTU luôn nằm trong top 10 thế giới mấy năm vừa rồi. Trong suốt quãng thời gian học tại trường, mình có rất nhiều cơ hội tham gia thực tập và nghiên cứu. Lý do cuối cùng nhưng cũng không kém quan trọng, đó là ở Sing có một cộng đồng sinh viên Việt có thể hỗ trợ lẫn nhau cực gắn kết, điều đó cũng giúp phần nào bớt bỡ ngỡ hồi đầu mình qua đây học.</p>
+                        <p class="text-para-content"><b>Nga:</b> Thực ra chị tình cờ biết đến hệ thống giáo dục hàng đầu của Singapore qua cuốn sách “Tôi tài giỏi, bạn cũng thế” và từ đó bắt đầu nuôi ước mơ đến đây, trong đó có 2 trường công lập rất tốt là NTU và NUS. Không những thế, việc đi du học Singapore đối với chị khá là kinh tế, khi việc làm hồ sơ, học chứng chỉ hay mức sống không quá đắt đỏ như ở một số nước đặc thù. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page17-student/img-2.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Tạ Quỳnh Nga tươi tắn trong màu áo tốt nghiệp </p>
+                        <h3 class="text-subheading-content">PV: <i>Không biết anh/chị có thể chia sẻ bí quyết giành Bằng tốt nghiệp Xuất sắc tại 1 trong những trường Đại học tốt nhất Thế giới không ạ? </i></h3>
+                        <p class="text-para-content"><b>Huy:</b> Mình thấy để đạt điểm cao ở NTU, hay ở trường đại học nào cũng vậy. Quan trọng nhất là mình nên có tính tự học tự giác cao, chủ động hỏi han bạn bè hay các giáo sư và đọc một ít tài liệu ngoài những thứ được giảng trên trường nữa. Nhưng cũng cần phải cân đối giữa nghỉ ngơi nữa nha, tránh burnout làm giảm khả năng tập trung học.</p>
+                        <p class="text-para-content"><b>Nga:</b> Trong thời gian học ở Ams, chị thấy học sinh trường Chuyên nói chung đã được rèn luyện khả năng tư duy khá tốt rồi, chỉ cần chăm chỉ thì việc có được điểm cao không phải là quá khó. Với riêng chị, học Đại học ở đây khá nhàn so với Trung học ở Việt Nam, bên cạnh đó còn có Cộng đồng người Việt Nam ở NTU rất đoàn kết tạo thành văn hoá tự học nên chị cũng thích học và học tốt hơn! </p>
+                        <h3 class="text-subheading-content">PV: <i>Lựa chọn đi du học vẫn gây nhiều tranh cãi với các vị phụ huynh và các em học sinh. Vậy với anh/chị, thuận lợi và khó khăn lớn nhất trong quãng thời gian du học của anh/chị là gì ạ? </i></h3>
+                        <p class="text-para-content"><b>Nga:</b> Với chị thì, khó khăn duy nhất là vấn đề tài chính, khi mà học phí và tiền ăn ở đều cao hơn so với Việt Nam. Tuy nhiên đó cũng chính là động lực để chị học hành chăm chỉ và apply vào các công ty thực tập lương cao. Thêm nữa là đồ ăn ở đây nhiều dầu mỡ lắm (cười), chị thích đồ ăn Việt Nam hơn nên toàn tự nấu thôi. Đúng là rẻ và nhiều rau hơn thật nhưng cũng rất mất thời gian. Trái lại, thuận lợi lớn nhất của việc đi du học Singapore chắc là có cơ hội được làm việc, thực tập tại các Headquarter hay Office của công ty công nghệ lớn như Apple, Google, từ đó học hỏi và tích lũy kinh nghiệm thực tế cho chính những kiến thức lý thuyết trên Trường. Chị thấy đó là điều rất may mắn. </p>
+                        <p class="text-para-content"><b>Huy:</b> Khó khăn nhất đương nhiên vẫn là việc mọi người phải thích nghi với môi trường hoàn toàn mới, nhất là phải thích ứng với cách giao tiếp của người Sing, bọn mình hay gọi là Singlish ấy (cười). Thuận lợi lớn nhất là lượng cơ hội học tập và làm việc mình có thể được tiếp xúc tại đây. Singapore có rất nhiều tập đoàn lớn, đa quốc gia mà bạn có thể học hỏi và làm việc. Với mình, mình tập trung làm việc và nghiên cứu về mảng kỹ thuật bán dẫn, một ngành đang trên đà xu thế ở Việt Nam và đang được đầu tư mạnh trên thế giới. Singapore là nơi hội tụ của rất nhiều tập đoàn bán dẫn lớn, và mình đã có dịp được thực tập ở đó, một trải nghiệm rất hiếm có. </p>
+                        <div class="content-introduce-img">
+                            <img src="/assets/img/page17-student/img-3.jpg" alt="" class="img-content-new">
+                        </div>
+                        <p class="note-img">Nguyễn Tô Vĩnh Huy trong buổi lễ tốt nghiệp</p>
+                        <h3 class="text-subheading-content">PV: <i>Tốt nghiệp rồi, không biết định hướng tương lai của anh/chị thế nào ạ? </i></h3>
+                        <p class="text-para-content"><b>Huy:</b> Hiện tại mong muốn của mình sau tốt nghiệp có thể là tiếp tục học lên Tiến Sĩ, chuyên về mảng bán dẫn. Mong sau này mình sẽ có thêm nhiều cơ hội để phát triển công nghệ đột phá cho thị trường bán dẫn trên Thế giới.</p>
+                        <p class="text-para-content"><b>Nga:</b> Chắc cái này chị sẽ giữ cho riêng mình thôi. Hiện tại công việc chị đang theo đuổi khá trái ngược với ngành học, hy vọng chị sẽ thích nghi với công việc không quá nặng về kĩ thuật này!</p>
+                        <h3 class="text-subheading-content">PV: <i>Cuối cùng, anh/chị có lời khuyên nào muốn gửi đến các bạn Amser, những học sinh đang nuôi ước mơ đi du học và cả cộng đồng du học sinh ở nước ngoài không ạ? </i></h3>
+                        <p class="text-para-content"><b>Nga:</b> Lời khuyên của chị là hãy đi nhiều, trải nghiệm thật nhiều để biết mình thích làm gì. Đặc biệt, mỗi khi đã làm thì phải cố gắng hết sức để trọn vẹn trải nghiệm đó, trở thành phiên bản tốt nhất của chính mình thôi cũng đã là một thành công rồi. Chị cũng chúc các em đạt được mục tiêu, không chỉ trong đợt tuyển sinh Đại học sắp tới mà còn là những ước mơ của các em trong tương lai. </p>
+                        <p class="text-para-content"><b>Huy:</b> Mình thực sự mong các bạn đang ấp ủ tương lai du học có thể chuẩn bị tốt tâm lý, thật bình tĩnh, sẵn sàng đương đầu với những thử thách sắp tới. Vì chặng đường ở nơi đất khách quê người còn nhiều khó khăn, nhưng mình mong tất cả chúng ta sẽ đều trưởng thành và có quyền tự hào về bản thân!</p>
+                        <h3 class="text-subheading-content">PV: Thay mặt Ban Biên tập Ams Wide Web, em xin chúc anh chị thật nhiều sức khoẻ, may mắn và đạt được nhiều thành công trong cuộc sống! Các thế hệ nay và mai của Trường Trung học Phổ thông Chuyên Hà Nội - Amsterdam luôn tự hào của anh chị, những người đã mang bản đồ và trí tuệ Việt Nam ngày càng có vị thế trên trường Quốc tế.</h3>
+                    </div>
+                </div>  
+                
+
+            </div>      
+
+
+
+            <div id="footer-container"></div>
+    
+    
+    
+    
+        </div>
+        
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Lấy giá trị "page" từ URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const currentPage = urlParams.get('page');
+                let targetLink = null;
+
+                // Xử lý phần sidebar
+                if (currentPage) {
+                    // Nếu có tham số "page" trong URL, tìm link tương ứng trong sidebar
+                    targetLink = document.querySelector(`.bar-list-link[data-page="${currentPage}"]`);
+                }
+
+                // Nếu không có hoặc không đúng, fallback về cái đầu tiên trong sidebar
+                if (!targetLink) {
+                    targetLink = document.querySelector('.bar-list-link');
+                }
+
+                // Đảm bảo là có tìm thấy phần tử targetLink
+                if (targetLink) {
+                    setActive(targetLink);
+                    const pageId = targetLink.getAttribute('data-page');
+                    const title = targetLink.textContent.trim();
+                    setTitleAndShowPage(pageId, title);
+                }
+
+                // Gắn click cho các link trong sidebar
+                const links = document.querySelectorAll('.bar-list-link');
+                links.forEach(link => {
+                    link.addEventListener('click', e => {
+                        e.preventDefault();
+                        setActive(link);
+                        const pageId = link.dataset.page;
+                        const title = link.textContent.trim();
+                        setTitleAndShowPage(pageId, title);
+                    });
+                });
+            });
+
+            // Hàm setActive
+            function setActive(element) {
+                document.querySelectorAll('.bar-list a').forEach(link => link.classList.remove('active'));
+                element.classList.add('active');
+            }
+
+            // Hàm setTitleAndShowPage
+            function setTitleAndShowPage(pageId, title) {
+                document.title = title;
+                history.replaceState(null, '', `?page=${pageId}`);
+
+                document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+                const target = document.getElementById(pageId);
+                if (target) {
+                    target.style.display = 'block';
+                }
+
+                // Ẩn hoặc hiện .content-detail tùy vào page
+                const detailSection = document.querySelector('.content-detail');
+                const pageNumber = parseInt(pageId.replace('page', ''));
+
+                if (pageNumber >= 1 && pageNumber <= 5) {
+                    detailSection.style.display = 'none';
+                } else {
+                    detailSection.style.display = 'block';  // Mặc định ẩn nếu không phải page1 đến page16
+                }
+            };
+
+        </script>
+        
+
+        <script src="/javascript/load-header.js"></script>
+        <script src="/javascript/load-footer.js"></script>
+</body>
+</html>
